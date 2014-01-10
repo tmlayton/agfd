@@ -37,46 +37,8 @@ a {
 .small {
 	font-size: 0.9em;
 	font-weight: 300;
-}
 
-@media only screen and (min-width: 768px) {
-    #showMenu {
-    	transition: all 200ms ease-in-out;
-		  -moz-transition: all 200ms ease-in-out;
-		  -webkit-transition: all 200ms ease-in-out;
-		  -o-transition: all 200ms ease-out;
-			-ms-transition: all 200ms ease-out;
-			&:hover {
-				opacity: .5;
-				color: #000;
-			}
-    }
-}
-
-@media only screen and (max-width: 767px) {
-	#logo {
-		left: 20px;
-		top: 20px;
-		width: 39px;
-		height: 45px;
-
-		a {
-			background: url("../images/heart-logo@2x.png") no-repeat;
-			background-size: 39px 45px;
-		}
-	}
-
-	#showMenu {
-		right: 10px; 
-		top: 10px;
-		padding: 10px;
-	}
-
-	#gradient {
-		height: 100px;
-	}
-
-	.small {
+	@media only screen and (max-width: $mobile-max) {
 		font-size: 0.7em;
 		font-weight: 300;
 	}

@@ -8,6 +8,13 @@
 	width: 299px;
 	height: 48px;
 
+	@media only screen and (max-width: $mobile-max) {
+		left: 20px;
+		top: 20px;
+		width: 39px;
+		height: 45px;
+	}
+
 	a {
 		display: block;
 		width: 100%;
@@ -15,6 +22,11 @@
 		background: url("../img/agreatfirstdate-logo@2x.png") no-repeat center center;
 		/* IE 8 and below */ background: url("../img/agreatfirstdate-logo.png") no-repeat center center\9;
 		background-size: 298px 47px;
+
+		@media only screen and (max-width: $mobile-max) {
+			background: url("../images/heart-logo@2x.png") no-repeat;
+			background-size: 39px 45px;
+		}
 	}
 }
 
@@ -23,4 +35,8 @@
 	width: 100%;
 	height: 200px;
 	position: absolute;
+
+	@media only screen and (max-width: $mobile-max) {
+		height: 100px;
+	}
 }

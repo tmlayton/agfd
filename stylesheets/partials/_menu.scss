@@ -48,11 +48,6 @@
 	}
 }
 
-.push-to-left {
-  @include translate3d($menu-width, 0, 0);
-  /* IE 8 and 9  */ left: -260px #{$ie-8-9};
-}
-
 @media only screen and (min-width: 768px) {
 	#menuRight {
 

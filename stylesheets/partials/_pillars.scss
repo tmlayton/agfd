@@ -27,7 +27,7 @@
 		text-align: center;
 	}
 
-	.push {
+	#push {
 		z-index: 2;
 	  background: url(../img/background.jpg) no-repeat center center; 
 	  -webkit-background-size: cover;
@@ -48,6 +48,11 @@
 		/* Removes flicker in certain cases */
 		-webkit-perspective: 1000;
 		-webkit-backface-visibility: hidden;
+
+		&.active {
+			@include translate3d(-$menu-width, 0, 0);
+			/* IE 8 and 9  */ left: -$menu-width #{$ie-8-9};
+		}
 	}
 
 	.btn-home {

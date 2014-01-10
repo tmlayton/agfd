@@ -58,54 +58,14 @@ a:hover, a:active, a:focus {
   font-size: 0.9em;
   font-weight: 300;
 }
-
-@media only screen and (min-width: 768px) {
-  /* line 43, ../../stylesheets/partials/_elements.scss */
-  #showMenu {
-    transition: all 200ms ease-in-out;
-    -moz-transition: all 200ms ease-in-out;
-    -webkit-transition: all 200ms ease-in-out;
-    -o-transition: all 200ms ease-out;
-    -ms-transition: all 200ms ease-out;
-  }
-  /* line 49, ../../stylesheets/partials/_elements.scss */
-  #showMenu:hover {
-    opacity: .5;
-    color: #000;
-  }
-}
 @media only screen and (max-width: 767px) {
-  /* line 57, ../../stylesheets/partials/_elements.scss */
-  #logo {
-    left: 20px;
-    top: 20px;
-    width: 39px;
-    height: 45px;
-  }
-  /* line 63, ../../stylesheets/partials/_elements.scss */
-  #logo a {
-    background: url("../images/heart-logo@2x.png") no-repeat;
-    background-size: 39px 45px;
-  }
-
-  /* line 69, ../../stylesheets/partials/_elements.scss */
-  #showMenu {
-    right: 10px;
-    top: 10px;
-    padding: 10px;
-  }
-
-  /* line 75, ../../stylesheets/partials/_elements.scss */
-  #gradient {
-    height: 100px;
-  }
-
-  /* line 79, ../../stylesheets/partials/_elements.scss */
+  /* line 37, ../../stylesheets/partials/_elements.scss */
   .small {
     font-size: 0.7em;
     font-weight: 300;
   }
 }
+
 /* line 1, ../../stylesheets/partials/_buttons.scss */
 #showMenu {
   display: block;
@@ -123,6 +83,36 @@ a:hover, a:active, a:focus {
   opacity: .5;
   color: #000;
 }
+@media only screen and (min-width: 768px) {
+  /* line 1, ../../stylesheets/partials/_buttons.scss */
+  #showMenu {
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 200ms;
+    -moz-transition-duration: 200ms;
+    -o-transition-duration: 200ms;
+    transition-duration: 200ms;
+    -webkit-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+  }
+  /* line 20, ../../stylesheets/partials/_buttons.scss */
+  #showMenu:hover {
+    opacity: .5;
+    color: #000;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 1, ../../stylesheets/partials/_buttons.scss */
+  #showMenu {
+    right: 10px;
+    top: 10px;
+    padding: 10px;
+  }
+}
 
 /* line 1, ../../stylesheets/partials/_figures.scss */
 #logo {
@@ -135,7 +125,16 @@ a:hover, a:active, a:focus {
   width: 299px;
   height: 48px;
 }
-/* line 11, ../../stylesheets/partials/_figures.scss */
+@media only screen and (max-width: 767px) {
+  /* line 1, ../../stylesheets/partials/_figures.scss */
+  #logo {
+    left: 20px;
+    top: 20px;
+    width: 39px;
+    height: 45px;
+  }
+}
+/* line 18, ../../stylesheets/partials/_figures.scss */
 #logo a {
   display: block;
   width: 100%;
@@ -145,8 +144,15 @@ a:hover, a:active, a:focus {
   background: url("../img/agreatfirstdate-logo.png") no-repeat center center\9;
   background-size: 298px 47px;
 }
+@media only screen and (max-width: 767px) {
+  /* line 18, ../../stylesheets/partials/_figures.scss */
+  #logo a {
+    background: url("../images/heart-logo@2x.png") no-repeat;
+    background-size: 39px 45px;
+  }
+}
 
-/* line 21, ../../stylesheets/partials/_figures.scss */
+/* line 33, ../../stylesheets/partials/_figures.scss */
 #gradient {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(34, 34, 34, 0.4)), color-stop(100%, rgba(34, 34, 34, 0)));
   background-image: -webkit-linear-gradient(rgba(34, 34, 34, 0.4), rgba(34, 34, 34, 0));
@@ -156,6 +162,12 @@ a:hover, a:active, a:focus {
   width: 100%;
   height: 200px;
   position: absolute;
+}
+@media only screen and (max-width: 767px) {
+  /* line 33, ../../stylesheets/partials/_figures.scss */
+  #gradient {
+    height: 100px;
+  }
 }
 
 /* line 1, ../../stylesheets/partials/_menu.scss */
@@ -210,19 +222,8 @@ a:hover, a:active, a:focus {
   padding: 30px;
 }
 
-/* line 51, ../../stylesheets/partials/_menu.scss */
-.push-to-left {
-  -webkit-transform: translate3d(260px, 0, 0);
-  -moz-transform: translate3d(260px, 0, 0);
-  -ms-transform: translate3d(260px, 0, 0);
-  -o-transform: translate3d(260px, 0, 0);
-  transform: translate3d(260px, 0, 0);
-  /* IE 8 and 9  */
-  left: -260px \0/;
-}
-
 @media only screen and (min-width: 768px) {
-  /* line 59, ../../stylesheets/partials/_menu.scss */
+  /* line 54, ../../stylesheets/partials/_menu.scss */
   #menuRight a {
     transition: color 200ms ease-in-out;
     -moz-transition: color 200ms ease-in-out;
@@ -230,33 +231,33 @@ a:hover, a:active, a:focus {
     -o-transition: color 200ms ease-in-out;
     -ms-transition: color 200ms ease-in-out;
   }
-  /* line 65, ../../stylesheets/partials/_menu.scss */
+  /* line 60, ../../stylesheets/partials/_menu.scss */
   #menuRight a:hover {
     color: #000;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 73, ../../stylesheets/partials/_menu.scss */
+  /* line 68, ../../stylesheets/partials/_menu.scss */
   #menuRight {
     padding-top: 16px;
   }
-  /* line 76, ../../stylesheets/partials/_menu.scss */
+  /* line 71, ../../stylesheets/partials/_menu.scss */
   #menuRight a {
     padding: .4em 2em;
   }
-  /* line 80, ../../stylesheets/partials/_menu.scss */
+  /* line 75, ../../stylesheets/partials/_menu.scss */
   #menuRight .sub {
     margin-top: 1em;
   }
-  /* line 83, ../../stylesheets/partials/_menu.scss */
+  /* line 78, ../../stylesheets/partials/_menu.scss */
   #menuRight .sub a {
     padding: .1em 2.5em;
   }
-  /* line 88, ../../stylesheets/partials/_menu.scss */
+  /* line 83, ../../stylesheets/partials/_menu.scss */
   #menuRight .social {
     margin: 1em 0 0 2em;
   }
-  /* line 92, ../../stylesheets/partials/_menu.scss */
+  /* line 87, ../../stylesheets/partials/_menu.scss */
   #menuRight #closeMenu {
     top: 10px;
     right: 10px;
@@ -291,7 +292,7 @@ a:hover, a:active, a:focus {
   text-align: center;
 }
 /* line 30, ../../stylesheets/partials/_pillars.scss */
-.home .push {
+.home #push {
   z-index: 2;
   background: url(../img/background.jpg) no-repeat center center;
   -webkit-background-size: cover;
@@ -311,33 +312,43 @@ a:hover, a:active, a:focus {
   -webkit-perspective: 1000;
   -webkit-backface-visibility: hidden;
 }
-/* line 53, ../../stylesheets/partials/_pillars.scss */
+/* line 52, ../../stylesheets/partials/_pillars.scss */
+.home #push.active {
+  -webkit-transform: translate3d(-260px, 0, 0);
+  -moz-transform: translate3d(-260px, 0, 0);
+  -ms-transform: translate3d(-260px, 0, 0);
+  -o-transform: translate3d(-260px, 0, 0);
+  transform: translate3d(-260px, 0, 0);
+  /* IE 8 and 9  */
+  left: -260px \0/;
+}
+/* line 58, ../../stylesheets/partials/_pillars.scss */
 .home .btn-home {
   color: #fff;
   background-color: transparent;
   border-color: #fff;
   font-weight: 300;
 }
-/* line 58, ../../stylesheets/partials/_pillars.scss */
+/* line 63, ../../stylesheets/partials/_pillars.scss */
 .home .btn-home.touch, .home .btn-home:focus {
   color: #fff;
   background-color: rgba(255, 255, 255, 0.2);
   border-color: #fff;
   outline: 0;
 }
-/* line 66, ../../stylesheets/partials/_pillars.scss */
+/* line 71, ../../stylesheets/partials/_pillars.scss */
 .home .middle {
   display: table-cell;
   vertical-align: middle;
   padding: 7em 0;
 }
-/* line 72, ../../stylesheets/partials/_pillars.scss */
+/* line 77, ../../stylesheets/partials/_pillars.scss */
 .home .pillars {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-/* line 77, ../../stylesheets/partials/_pillars.scss */
+/* line 82, ../../stylesheets/partials/_pillars.scss */
 .home .pillars li {
   display: inline-block;
   padding: 10px;
@@ -347,12 +358,12 @@ a:hover, a:active, a:focus {
   line-height: 2em;
   cursor: pointer;
 }
-/* line 85, ../../stylesheets/partials/_pillars.scss */
+/* line 90, ../../stylesheets/partials/_pillars.scss */
 .home .pillars li.active i, .home .pillars li.active:hover i {
   background-color: #54BA53;
   border-color: #54BA53;
 }
-/* line 90, ../../stylesheets/partials/_pillars.scss */
+/* line 95, ../../stylesheets/partials/_pillars.scss */
 .home .pillars li i {
   border: 1px solid #fff;
   border-radius: 50%;
@@ -368,13 +379,13 @@ a:hover, a:active, a:focus {
   -o-transition: all 200ms ease-out;
   -ms-transition: all 200ms ease-out;
 }
-/* line 108, ../../stylesheets/partials/_pillars.scss */
+/* line 113, ../../stylesheets/partials/_pillars.scss */
 .home .looking-for {
   text-align: center;
   padding: 0;
   margin: 50px 0 0 0;
 }
-/* line 113, ../../stylesheets/partials/_pillars.scss */
+/* line 118, ../../stylesheets/partials/_pillars.scss */
 .home .looking-for .select-style {
   font-size: 2em;
   height: 70px;
@@ -386,7 +397,7 @@ a:hover, a:active, a:focus {
   display: inline-block;
   overflow: hidden;
 }
-/* line 124, ../../stylesheets/partials/_pillars.scss */
+/* line 129, ../../stylesheets/partials/_pillars.scss */
 .home .looking-for .select-style select {
   padding: 0 0 0 0.8em;
   width: 130%;
@@ -398,25 +409,25 @@ a:hover, a:active, a:focus {
   font-weight: 100;
   color: #fff;
 }
-/* line 134, ../../stylesheets/partials/_pillars.scss */
+/* line 139, ../../stylesheets/partials/_pillars.scss */
 .home .looking-for .select-style select:focus {
   outline: none;
 }
-/* line 138, ../../stylesheets/partials/_pillars.scss */
+/* line 143, ../../stylesheets/partials/_pillars.scss */
 .home .looking-for .select-style select option:not(:first-child) {
   color: #000;
 }
-/* line 144, ../../stylesheets/partials/_pillars.scss */
+/* line 149, ../../stylesheets/partials/_pillars.scss */
 .home .looking-for .next {
   display: inline-block;
   margin: 4px;
   vertical-align: top;
 }
-/* line 148, ../../stylesheets/partials/_pillars.scss */
+/* line 153, ../../stylesheets/partials/_pillars.scss */
 .home .looking-for .next.touch i, .home .looking-for .next:focus i {
   background-color: rgba(255, 255, 255, 0.2);
 }
-/* line 152, ../../stylesheets/partials/_pillars.scss */
+/* line 157, ../../stylesheets/partials/_pillars.scss */
 .home .looking-for .next i {
   height: 70px;
   width: 70px;
@@ -435,7 +446,7 @@ a:hover, a:active, a:focus {
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 176, ../../stylesheets/partials/_pillars.scss */
+  /* line 181, ../../stylesheets/partials/_pillars.scss */
   .home .btn-home {
     transition: all 200ms ease-in-out;
     -moz-transition: all 200ms ease-in-out;
@@ -443,35 +454,35 @@ a:hover, a:active, a:focus {
     -o-transition: all 200ms ease-in-out;
     -ms-transition: all 200ms ease-in-out;
   }
-  /* line 182, ../../stylesheets/partials/_pillars.scss */
+  /* line 187, ../../stylesheets/partials/_pillars.scss */
   .home .btn-home:hover {
     color: #fff;
     background-color: rgba(255, 255, 255, 0.2);
     border-color: #fff;
   }
-  /* line 193, ../../stylesheets/partials/_pillars.scss */
+  /* line 198, ../../stylesheets/partials/_pillars.scss */
   .home .pillars li:hover i {
     background-color: rgba(255, 255, 255, 0.2);
   }
-  /* line 202, ../../stylesheets/partials/_pillars.scss */
+  /* line 207, ../../stylesheets/partials/_pillars.scss */
   .home .looking-for .next:hover i {
     background-color: rgba(255, 255, 255, 0.2);
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 214, ../../stylesheets/partials/_pillars.scss */
+  /* line 219, ../../stylesheets/partials/_pillars.scss */
   .home h1 {
     font-size: 4em;
   }
-  /* line 218, ../../stylesheets/partials/_pillars.scss */
+  /* line 223, ../../stylesheets/partials/_pillars.scss */
   .home h2 {
     font-size: 2em;
   }
-  /* line 222, ../../stylesheets/partials/_pillars.scss */
+  /* line 227, ../../stylesheets/partials/_pillars.scss */
   .home .middle {
     padding: 4em 0;
   }
-  /* line 228, ../../stylesheets/partials/_pillars.scss */
+  /* line 233, ../../stylesheets/partials/_pillars.scss */
   .home .looking-for .select-style {
     font-size: 1.5em;
     height: 55px;
@@ -479,7 +490,7 @@ a:hover, a:active, a:focus {
     display: block;
     margin: 8px auto;
   }
-  /* line 236, ../../stylesheets/partials/_pillars.scss */
+  /* line 241, ../../stylesheets/partials/_pillars.scss */
   .home .looking-for .next {
     display: block;
   }
