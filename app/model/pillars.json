@@ -1,0 +1,50 @@
+[
+	{
+		"name": "Taste",
+		"icon": "cutlery"
+	},
+	{
+		"name": "Spirit",
+		"icon": "leaf"
+	},
+	{
+		"name": "Fitness",
+		"icon": "heart"
+	},
+	{
+		"name": "Style",
+		"icon": "female"
+	},
+	{	
+		"name": "Music",
+		"icon": "music"
+	},
+	{	
+		"name": "Sport",
+		"icon": "bullseye"
+	},
+	{	
+		"name": "Adventure",
+		"icon": "globe"
+	},
+	{	
+		"name": "Words",
+		"icon": "book"
+	},
+	{	
+		"name": "Giving",
+		"icon": "smile-o"
+	},
+	{	
+		"name": "Screen",
+		"icon": "film"
+	},
+	{	
+		"name": "Family",
+		"icon": "home"
+	},
+	{	
+		"name": "Career",
+		"icon": "road"
+	}
+]
