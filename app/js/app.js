@@ -2,15 +2,15 @@
 
 
 // Declare app level module which depends on filters, and services
-angular.module('myApp', [
+angular.module('agfdApp', [
   'ngRoute',
-  'myApp.filters',
-  'myApp.services',
-  'myApp.directives',
-  'myApp.controllers'
+  'agfdApp.filters',
+  'agfdApp.services',
+  'agfdApp.directives',
+  'agfdApp.controllers'
 ]).
 config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/view1', {templateUrl: 'partials/partial1.html', controller: 'MyCtrl1'});
-  $routeProvider.when('/view2', {templateUrl: 'partials/partial2.html', controller: 'MyCtrl2'});
-  $routeProvider.otherwise({redirectTo: '/view1'});
+  $routeProvider.when('/', {templateUrl: 'partials/pillars.html', controller: 'Pillars'});
+  $routeProvider.when('/sign-up', {templateUrl: 'partials/sign-up.html', controller: 'SignUp'});
+  $routeProvider.otherwise({redirectTo: '/'});
 }]);
