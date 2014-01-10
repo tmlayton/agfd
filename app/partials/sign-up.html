@@ -1,59 +1,22 @@
-<section class="push">
-	<div id="gradient"></div>
-	<a href="" id="showMenu"><i class="fa fa-bars"></i></a>
-	<div id="logo"><a href="index.html">A Great! First Date</a></div>
-	<div class="middle">
-		<div class="container">
+<div class="sign-up">
+	<ul class="pillars">
+		<li class="active" ng-repeat="pillar in pillars | filter:'y'"><i class="fa fa-{{pillar.icon}}"></i>{{pillar.name}}</li>
+	</ul>
+</div>
 
-			<ul class="pillars">
-				<li><i class="fa fa-cutlery"></i>Taste</li>
-				<li><i class="fa fa-leaf"></i>Spirit</li>
-				<li><i class="fa fa-heart"></i>Fitness</li>
-				<li><i class="fa fa-female"></i>Style</li>
-				<li><i class="fa fa-music"></i>Music</li>
-				<li><i class="fa fa-bullseye"></i>Sport</li>
-				<li><i class="fa fa-globe"></i>Adventure</li>
-				<li><i class="fa fa-book"></i>Words</li>
-				<li><i class="fa fa-smile-o"></i>Giving</li>
-				<li><i class="fa fa-film"></i>Screen</li>
-				<li><i class="fa fa-home"></i>Family</li>
-				<li><i class="fa fa-road"></i>Career</li>
-			</ul>
-
-			<a class="btn btn-primary btn-lg btn-facebook"><i class="fa fa-facebook fa-lg"></i>Sign Up Privately with Facebook</a><br />
-			<span class="small">We never post to your wall</span>
-			<div class="or">or</div>
-			<form class="info">
-				<input type="text" placeholder="First Name" />
-				<input type="email" placeholder="Email" />
-				<input type="password" placeholder="Password" />
-				<a href="#" class="next"><i class="fa fa-chevron-right animate"></i></a>
-			</form>
-		</div>
-	</div>
-	<div class="sample">
+<a class="btn btn-primary btn-lg btn-facebook"><i class="fa fa-facebook fa-lg"></i>Sign Up Privately with Facebook</a><br />
+<span class="small">We never post to your wall</span>
+<div class="or">or</div>
+<form class="info">
+	<input type="text" placeholder="First Name" />
+	<input type="email" placeholder="Email" />
+	<input type="password" placeholder="Password" />
+	<a href="#" class="next"><i class="fa fa-chevron-right animate"></i></a>
+</form>
+</div>
+</div>
+<div class="sample">
 	<p><img src="img/profile-small-sample-1.jpg" /><i class="fa fa-heart"></i></p>
-		<p class="quote">"Had an awesome run on the Mesa Trail today!"</p>
-		<p class="what">What's this?</p>
-	</div>
-</section>
-<nav id="menuRight">
-	<a href="#" id="closeMenu"><i class="fa fa-times"></i></a>
-	<a href="#">How It Works</a>
-	<a href="#">Get Started</a>
-	<a href="#">Sign Up</a>
-	<a href="#">Log In</a>
-	<nav class="sub">
-		<a href="#">Blog</a>
-		<a href="#">FAQ</a>
-		<a href="#">About</a>
-		<a href="#">Careers</a>
-		<a href="#">Contact</a>
-		<a href="#">Privacy</a>
-		<a href="#">Terms of Use</a>
-	</nav>
-	<nav class="social">
-		<a href="https://twitter.com/agreatfirstdate" target="_blank" title="A Great! First Date Twitter"><i class="fa fa-twitter-square"></i></a>
-		<a href="https://www.facebook.com/makegreatdateshappen" target="_blank" title="A Great! First Date Facebook"><i class="fa fa-facebook-square"></i></a>
-	</nav>
-</nav>
+	<p class="quote">"Had an awesome run on the Mesa Trail today!"</p>
+	<p class="what">What's this?</p>
+</div>
