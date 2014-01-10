@@ -2,40 +2,40 @@
 
 /* http://docs.angularjs.org/guide/dev_guide.e2e-testing */
 
-describe('my app', function() {
+describe('agfd app', function() {
 
   beforeEach(function() {
     browser().navigateTo('/app/index.html');
   });
 
 
-  it('should automatically redirect to /view1 when location hash/fragment is empty', function() {
-    expect(browser().location().url()).toBe("/view1");
+  it('should automatically render pillars when hash/fragment is empty', function() {
+    expect(element('[ng-view] h1').text()).toMatch('Pick Your Pillars');
   });
 
 
-  describe('view1', function() {
+  describe('pillars', function() {
 
     beforeEach(function() {
-      browser().navigateTo('/app/index.html#/view1');
+      browser().navigateTo('/app/index.html#/');
     });
 
 
-    it('should render view1 when user navigates to /view1', function() {
-      expect(element('[ng-view] p:first').text()).toMatch(/partial for view 1/);
+    it('should render pillars when user navigates to /', function() {
+      expect(element('[ng-view] h1').text()).toMatch('Pick Your Pillars');
     });
 
   });
 
 
-  describe('view2', function() {
+  describe('sign up', function() {
 
     beforeEach(function() {
-      browser().navigateTo('/app/index.html#/view2');
+      browser().navigateTo('/app/index.html#/sign-up');
     });
 
-    it('should render view2 when user navigates to /view2', function() {
-      expect(element('[ng-view] p:first').text()).toMatch(/partial for view 2/);
+    it('should render sign-up when user navigates to /sign-up', function() {
+      expect(element('[ng-view] .btn-facebook').text()).toMatch('Sign Up Privately with Facebook');
     });
 
   });
