@@ -8,8 +8,24 @@
   <script src="lib/modernizr.custom.js"></script>
 </head>
 <body class="home">
-  
-  <div ng-view></div>
+
+  <section class="push">
+
+    <!-- Header partial -->
+    <header ng-include="'partials/header.html'"></header>
+    
+    <div class="middle">
+      <div class="container">
+        
+        <!-- Views -->
+        <div ng-view></div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu partial -->
+  <nav id="menuRight" ng-include="'partials/menu.html'"></nav>
 
   <script src="//code.jquery.com/jquery.js"></script>
   <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
