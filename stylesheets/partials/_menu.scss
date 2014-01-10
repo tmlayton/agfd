@@ -1,0 +1,101 @@
+#menuRight {
+	position: absolute;
+	width: 260px;
+	top: 0;
+	z-index: 1;
+	padding-top: 38px;
+	right: 0px;
+
+	a {
+		display: block;
+		color: #fff;
+		font-size: 1em;
+		font-weight: 400;
+		padding: .75em 2em;
+		&.touch, &:focus {
+			color: #000;
+		}
+	}
+
+	.sub {
+		margin-top: 2em;
+
+		a {
+			font-size: 0.8em;
+			padding: .25em 2.5em;
+			opacity: .5;
+		}
+	}
+
+	.social {
+		margin: 2em 0 0 2em;
+
+		a {
+			font-size: 2em;
+			display: inline-block;
+			padding: .1em;
+			opacity: .5;
+		}
+	}
+
+	#closeMenu {
+		font-size: 1.5em;
+		position: absolute;
+		top: 20px;
+		right: 0px;
+		line-height: 0;
+		padding: 30px;
+	}
+}
+
+.push-to-left {
+	-webkit-transform: translate3d(-260px,0,0);
+  -moz-transform: translate3d(-260px,0,0);
+  -ms-transform: translate3d(-260px,0,0);
+  -o-transform: translate3d(-260px,0,0);
+  transform: translate3d(-260px,0,0);
+}
+
+@media only screen and (min-width: 768px) {
+	#menuRight {
+
+		a {
+			transition: color 200ms ease-in-out;
+			-moz-transition: color 200ms ease-in-out;
+			-webkit-transition: color 200ms ease-in-out;
+			-o-transition: color 200ms ease-in-out;
+			-ms-transition: color 200ms ease-in-out;
+			&:hover {
+				color: #000;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	#menuRight {
+		padding-top: 16px;
+
+		a {
+			padding: .4em 2em;
+		}
+
+		.sub {
+			margin-top: 1em;
+
+			a {
+				padding: .1em 2.5em;
+			}
+		}
+
+		.social {
+			margin: 1em 0 0 2em;
+		}
+
+		#closeMenu {
+			top: 10px;
+			right: 10px;
+			padding: 10px;
+		}
+	}
+}

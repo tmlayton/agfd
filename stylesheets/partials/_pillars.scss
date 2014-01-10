@@ -1,0 +1,241 @@
+.home {
+
+	h1, h2, p {
+		text-align: center;
+	}
+
+	h1, h2 {
+		font-weight: 100;
+		line-height: 1em;
+	}
+
+	h1 {
+		font-size: 7.5em;
+	}
+
+	h2 {
+		font-size: 3em;
+		margin-top: 50px;
+	}
+
+	p {
+		font-weight: 300;
+		font-size: 1.1em;
+	}
+
+	.container {
+		text-align: center;
+	}
+
+	.push {
+		z-index: 2;
+	  background: url(../images/background.jpg) no-repeat center center; 
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	  display: table;
+		position: absolute;
+		height: 100%;
+		width: 100%;
+
+		-o-transition: all 0.3s ease;
+		-ms-transition: all 0.3s ease;
+		-webkit-transition: all 0.3s ease;
+		-moz-transition: all 0.3s ease;
+		transition: all 0.3s ease;
+
+		/* Removes flicker in certain cases */
+		-webkit-perspective: 1000;
+		-webkit-backface-visibility: hidden;
+	}
+
+	.btn-home {
+		color: #fff;
+		background-color: transparent;
+		border-color: #fff;
+		font-weight: 300;
+		&.touch, &:focus {
+			color: #fff;
+			background-color: rgba(255,255,255,.2);
+			border-color: #fff;
+			outline: 0;
+		}
+	}
+
+	.middle {
+		display: table-cell;
+		vertical-align: middle;
+		padding: 7em 0;
+	}
+
+	.pillars {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+
+		li {
+			display: inline-block;
+			padding: 10px;
+			font-weight: 400;
+			font-size: 0.8em;
+			text-align: center;
+			line-height: 2em;
+			cursor: pointer;
+			&.active i, &.active:hover i {
+				background-color: #54BA53;
+				border-color: #54BA53;
+			}
+
+			i {
+				border: 1px solid #fff;
+				border-radius: 50%;
+				display: block;
+				font-size: 2em;
+				height: 64px;
+				width: 64px;
+				text-align: center;
+				line-height: 64px;
+				transition: all 200ms ease-out;
+				-moz-transition: all 200ms ease-out;
+				-webkit-transition: all 200ms ease-out;
+				-o-transition: all 200ms ease-out;
+				-ms-transition: all 200ms ease-out;
+			}
+		}
+	}
+
+	.looking-for {
+		text-align: center;
+		padding: 0;
+		margin: 50px 0 0 0;
+		
+		.select-style {
+			font-size: 2em;
+			height: 70px;
+			line-height: 70px;
+			border: 1px solid #fff;
+			border-radius: 6px;
+			margin: 4px;
+			width: 260px;
+			display: inline-block;
+			overflow: hidden;
+		
+			select {
+		    padding: 0 0 0 0.8em;
+				width: 130%;
+				border: none;
+				box-shadow: none;
+				background: transparent;
+				background-image: none;
+				-webkit-appearance: none;
+				font-weight: 100;
+				color: #fff;
+				&:focus {
+		    	outline: none;
+				}
+
+				option:not(:first-child) {
+			    color: #000;
+				}
+			}
+		}
+
+		.next {
+			display: inline-block;
+			margin: 4px;
+			vertical-align: top;
+			&.touch i, &:focus i {
+				background-color: rgba(255,255,255,.2);
+			}
+
+			i {
+				height: 70px;
+				width: 70px;
+				border: 1px solid #fff;
+				line-height: 70px;
+				text-align: center;
+				border-radius: 50%;
+				font-size: 2em;
+				color: #fff;
+				display: inline-block;
+				transition: all 200ms ease-out;
+				-moz-transition: all 200ms ease-out;
+				-webkit-transition: all 200ms ease-out;
+				-o-transition: all 200ms ease-out;
+				-ms-transition: all 200ms ease-out;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 768px) {
+
+	.home {
+
+		.btn-home {
+			transition: all 200ms ease-in-out;
+			-moz-transition: all 200ms ease-in-out;
+			-webkit-transition: all 200ms ease-in-out;
+			-o-transition: all 200ms ease-in-out;
+			-ms-transition: all 200ms ease-in-out;
+			&:hover {
+				color: #fff;
+				background-color: rgba(255,255,255,.2);
+				border-color: #fff;
+			}
+		}
+
+		.pillars{
+
+			li { 
+
+				&:hover i {
+					background-color: rgba(255,255,255,.2);
+				}
+			}
+		}
+
+		.looking-for {
+
+			.next {
+				&:hover i {
+					background-color: rgba(255,255,255,.2);
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 767px) {
+
+	.home {
+
+		h1 {
+			font-size: 4em;
+		}
+
+		h2 {
+			font-size: 2em;
+		}
+
+		.middle {
+			padding: 4em 0;
+		}
+
+		.looking-for {
+
+			.select-style {
+				font-size: 1.5em;
+				height: 55px;
+				line-height: 55px;
+				display: block;
+				margin: 8px auto;
+			}
+			
+			.next {
+				display: block;
+			}
+		}
+	}
+}

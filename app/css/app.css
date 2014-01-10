@@ -1,30 +1,813 @@
-/* app css stylesheet */
-
-.menu {
-  list-style: none;
-  border-bottom: 0.1em solid black;
-  margin-bottom: 2em;
-  padding: 0 0 0.5em;
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,700);
+@import url(https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css);
+/* line 21, ../../stylesheets/partials/_base.scss */
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.menu:before {
-  content: "[";
+/* line 26, ../../stylesheets/partials/_base.scss */
+body, html {
+  font-size: 100%;
+  height: 100%;
 }
 
-.menu:after {
-  content: "]";
+/* line 31, ../../stylesheets/partials/_base.scss */
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  color: white;
+  background-color: #597754;
 }
 
-.menu > li {
-  display: inline;
+/* line 37, ../../stylesheets/partials/_base.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 300;
 }
 
-.menu > li:before {
-  content: "|";
-  padding-right: 0.3em;
+/* line 42, ../../stylesheets/partials/_base.scss */
+a {
+  text-decoration: none;
+  outline: 0;
+}
+/* line 45, ../../stylesheets/partials/_base.scss */
+a:hover, a:active, a:focus {
+  text-decoration: none;
+  outline: 0;
 }
 
-.menu > li:nth-child(1):before {
-  content: "";
+/* line 51, ../../stylesheets/partials/_base.scss */
+.animate {
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+
+/* line 57, ../../stylesheets/partials/_base.scss */
+.small {
+  font-size: 0.9em;
+  font-weight: 300;
+}
+
+@media only screen and (min-width: 768px) {
+  /* line 63, ../../stylesheets/partials/_base.scss */
+  #showMenu {
+    transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -webkit-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-out;
+    -ms-transition: all 200ms ease-out;
+  }
+  /* line 69, ../../stylesheets/partials/_base.scss */
+  #showMenu:hover {
+    opacity: .5;
+    color: #000;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 77, ../../stylesheets/partials/_base.scss */
+  #logo {
+    left: 20px;
+    top: 20px;
+    width: 39px;
+    height: 45px;
+  }
+  /* line 83, ../../stylesheets/partials/_base.scss */
+  #logo a {
+    background: url("../images/heart-logo@2x.png") no-repeat;
+    background-size: 39px 45px;
+  }
+
+  /* line 89, ../../stylesheets/partials/_base.scss */
+  #showMenu {
+    right: 10px;
+    top: 10px;
+    padding: 10px;
+  }
+
+  /* line 95, ../../stylesheets/partials/_base.scss */
+  #gradient {
+    height: 100px;
+  }
+
+  /* line 99, ../../stylesheets/partials/_base.scss */
+  .small {
+    font-size: 0.7em;
+    font-weight: 300;
+  }
+}
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
   padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../../stylesheets/partials/_buttons.scss */
+#showMenu {
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  padding: 30px;
+  line-height: 0;
+  color: #fff;
+  font-size: 1.5em;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+/* line 11, ../../stylesheets/partials/_buttons.scss */
+#showMenu.active, #showMenu:focus {
+  opacity: .5;
+  color: #000;
+}
+
+/* line 1, ../../stylesheets/partials/_figures.scss */
+#logo {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  text-indent: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 299px;
+  height: 48px;
+}
+/* line 11, ../../stylesheets/partials/_figures.scss */
+#logo a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url("../images/agreatfirstdate-logo@2x.png") no-repeat center center;
+  background-size: 298px 47px;
+}
+
+/* line 20, ../../stylesheets/partials/_figures.scss */
+#gradient {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(34, 34, 34, 0.4)), color-stop(100%, rgba(34, 34, 34, 0)));
+  background-image: -webkit-linear-gradient(rgba(34, 34, 34, 0.4), rgba(34, 34, 34, 0));
+  background-image: -moz-linear-gradient(rgba(34, 34, 34, 0.4), rgba(34, 34, 34, 0));
+  background-image: -o-linear-gradient(rgba(34, 34, 34, 0.4), rgba(34, 34, 34, 0));
+  background-image: linear-gradient(rgba(34, 34, 34, 0.4), rgba(34, 34, 34, 0));
+  width: 100%;
+  height: 200px;
+  position: absolute;
+}
+
+/* line 1, ../../stylesheets/partials/_menu.scss */
+#menuRight {
+  position: absolute;
+  width: 260px;
+  top: 0;
+  z-index: 1;
+  padding-top: 38px;
+  right: 0px;
+}
+/* line 9, ../../stylesheets/partials/_menu.scss */
+#menuRight a {
+  display: block;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 400;
+  padding: .75em 2em;
+}
+/* line 15, ../../stylesheets/partials/_menu.scss */
+#menuRight a.touch, #menuRight a:focus {
+  color: #000;
+}
+/* line 20, ../../stylesheets/partials/_menu.scss */
+#menuRight .sub {
+  margin-top: 2em;
+}
+/* line 23, ../../stylesheets/partials/_menu.scss */
+#menuRight .sub a {
+  font-size: 0.8em;
+  padding: .25em 2.5em;
+  opacity: .5;
+}
+/* line 30, ../../stylesheets/partials/_menu.scss */
+#menuRight .social {
+  margin: 2em 0 0 2em;
+}
+/* line 33, ../../stylesheets/partials/_menu.scss */
+#menuRight .social a {
+  font-size: 2em;
+  display: inline-block;
+  padding: .1em;
+  opacity: .5;
+}
+/* line 41, ../../stylesheets/partials/_menu.scss */
+#menuRight #closeMenu {
+  font-size: 1.5em;
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  line-height: 0;
+  padding: 30px;
+}
+
+/* line 51, ../../stylesheets/partials/_menu.scss */
+.push-to-left {
+  -webkit-transform: translate3d(-260px, 0, 0);
+  -moz-transform: translate3d(-260px, 0, 0);
+  -ms-transform: translate3d(-260px, 0, 0);
+  -o-transform: translate3d(-260px, 0, 0);
+  transform: translate3d(-260px, 0, 0);
+}
+
+@media only screen and (min-width: 768px) {
+  /* line 62, ../../stylesheets/partials/_menu.scss */
+  #menuRight a {
+    transition: color 200ms ease-in-out;
+    -moz-transition: color 200ms ease-in-out;
+    -webkit-transition: color 200ms ease-in-out;
+    -o-transition: color 200ms ease-in-out;
+    -ms-transition: color 200ms ease-in-out;
+  }
+  /* line 68, ../../stylesheets/partials/_menu.scss */
+  #menuRight a:hover {
+    color: #000;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 76, ../../stylesheets/partials/_menu.scss */
+  #menuRight {
+    padding-top: 16px;
+  }
+  /* line 79, ../../stylesheets/partials/_menu.scss */
+  #menuRight a {
+    padding: .4em 2em;
+  }
+  /* line 83, ../../stylesheets/partials/_menu.scss */
+  #menuRight .sub {
+    margin-top: 1em;
+  }
+  /* line 86, ../../stylesheets/partials/_menu.scss */
+  #menuRight .sub a {
+    padding: .1em 2.5em;
+  }
+  /* line 91, ../../stylesheets/partials/_menu.scss */
+  #menuRight .social {
+    margin: 1em 0 0 2em;
+  }
+  /* line 95, ../../stylesheets/partials/_menu.scss */
+  #menuRight #closeMenu {
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+  }
+}
+/* line 3, ../../stylesheets/partials/_pillars.scss */
+.home h1, .home h2, .home p {
+  text-align: center;
+}
+/* line 7, ../../stylesheets/partials/_pillars.scss */
+.home h1, .home h2 {
+  font-weight: 100;
+  line-height: 1em;
+}
+/* line 12, ../../stylesheets/partials/_pillars.scss */
+.home h1 {
+  font-size: 7.5em;
+}
+/* line 16, ../../stylesheets/partials/_pillars.scss */
+.home h2 {
+  font-size: 3em;
+  margin-top: 50px;
+}
+/* line 21, ../../stylesheets/partials/_pillars.scss */
+.home p {
+  font-weight: 300;
+  font-size: 1.1em;
+}
+/* line 26, ../../stylesheets/partials/_pillars.scss */
+.home .container {
+  text-align: center;
+}
+/* line 30, ../../stylesheets/partials/_pillars.scss */
+.home .push {
+  z-index: 2;
+  background: url(../images/background.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: table;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  /* Removes flicker in certain cases */
+  -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden;
+}
+/* line 53, ../../stylesheets/partials/_pillars.scss */
+.home .btn-home {
+  color: #fff;
+  background-color: transparent;
+  border-color: #fff;
+  font-weight: 300;
+}
+/* line 58, ../../stylesheets/partials/_pillars.scss */
+.home .btn-home.touch, .home .btn-home:focus {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: #fff;
+  outline: 0;
+}
+/* line 66, ../../stylesheets/partials/_pillars.scss */
+.home .middle {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 7em 0;
+}
+/* line 72, ../../stylesheets/partials/_pillars.scss */
+.home .pillars {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 77, ../../stylesheets/partials/_pillars.scss */
+.home .pillars li {
+  display: inline-block;
+  padding: 10px;
+  font-weight: 400;
+  font-size: 0.8em;
+  text-align: center;
+  line-height: 2em;
+  cursor: pointer;
+}
+/* line 85, ../../stylesheets/partials/_pillars.scss */
+.home .pillars li.active i, .home .pillars li.active:hover i {
+  background-color: #54BA53;
+  border-color: #54BA53;
+}
+/* line 90, ../../stylesheets/partials/_pillars.scss */
+.home .pillars li i {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: block;
+  font-size: 2em;
+  height: 64px;
+  width: 64px;
+  text-align: center;
+  line-height: 64px;
+  transition: all 200ms ease-out;
+  -moz-transition: all 200ms ease-out;
+  -webkit-transition: all 200ms ease-out;
+  -o-transition: all 200ms ease-out;
+  -ms-transition: all 200ms ease-out;
+}
+/* line 108, ../../stylesheets/partials/_pillars.scss */
+.home .looking-for {
+  text-align: center;
+  padding: 0;
+  margin: 50px 0 0 0;
+}
+/* line 113, ../../stylesheets/partials/_pillars.scss */
+.home .looking-for .select-style {
+  font-size: 2em;
+  height: 70px;
+  line-height: 70px;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  margin: 4px;
+  width: 260px;
+  display: inline-block;
+  overflow: hidden;
+}
+/* line 124, ../../stylesheets/partials/_pillars.scss */
+.home .looking-for .select-style select {
+  padding: 0 0 0 0.8em;
+  width: 130%;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  background-image: none;
+  -webkit-appearance: none;
+  font-weight: 100;
+  color: #fff;
+}
+/* line 134, ../../stylesheets/partials/_pillars.scss */
+.home .looking-for .select-style select:focus {
+  outline: none;
+}
+/* line 138, ../../stylesheets/partials/_pillars.scss */
+.home .looking-for .select-style select option:not(:first-child) {
+  color: #000;
+}
+/* line 144, ../../stylesheets/partials/_pillars.scss */
+.home .looking-for .next {
+  display: inline-block;
+  margin: 4px;
+  vertical-align: top;
+}
+/* line 148, ../../stylesheets/partials/_pillars.scss */
+.home .looking-for .next.touch i, .home .looking-for .next:focus i {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+/* line 152, ../../stylesheets/partials/_pillars.scss */
+.home .looking-for .next i {
+  height: 70px;
+  width: 70px;
+  border: 1px solid #fff;
+  line-height: 70px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 2em;
+  color: #fff;
+  display: inline-block;
+  transition: all 200ms ease-out;
+  -moz-transition: all 200ms ease-out;
+  -webkit-transition: all 200ms ease-out;
+  -o-transition: all 200ms ease-out;
+  -ms-transition: all 200ms ease-out;
+}
+
+@media only screen and (min-width: 768px) {
+  /* line 176, ../../stylesheets/partials/_pillars.scss */
+  .home .btn-home {
+    transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -webkit-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    -ms-transition: all 200ms ease-in-out;
+  }
+  /* line 182, ../../stylesheets/partials/_pillars.scss */
+  .home .btn-home:hover {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: #fff;
+  }
+  /* line 193, ../../stylesheets/partials/_pillars.scss */
+  .home .pillars li:hover i {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  /* line 202, ../../stylesheets/partials/_pillars.scss */
+  .home .looking-for .next:hover i {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 214, ../../stylesheets/partials/_pillars.scss */
+  .home h1 {
+    font-size: 4em;
+  }
+  /* line 218, ../../stylesheets/partials/_pillars.scss */
+  .home h2 {
+    font-size: 2em;
+  }
+  /* line 222, ../../stylesheets/partials/_pillars.scss */
+  .home .middle {
+    padding: 4em 0;
+  }
+  /* line 228, ../../stylesheets/partials/_pillars.scss */
+  .home .looking-for .select-style {
+    font-size: 1.5em;
+    height: 55px;
+    line-height: 55px;
+    display: block;
+    margin: 8px auto;
+  }
+  /* line 236, ../../stylesheets/partials/_pillars.scss */
+  .home .looking-for .next {
+    display: block;
+  }
+}
+/* line 3, ../../stylesheets/partials/_sign-up.scss */
+.home .middle {
+  padding: 8em 0 220px 0;
+}
+/* line 7, ../../stylesheets/partials/_sign-up.scss */
+.home ul.pillars {
+  margin-bottom: 50px;
+}
+/* line 10, ../../stylesheets/partials/_sign-up.scss */
+.home ul.pillars li {
+  display: none;
+  font-size: 1.1em;
+  font-weight: 300;
+  cursor: default;
+}
+/* line 16, ../../stylesheets/partials/_sign-up.scss */
+.home ul.pillars li i {
+  font-size: 2em;
+  height: 96px;
+  width: 96px;
+  line-height: 96px;
+}
+/* line 25, ../../stylesheets/partials/_sign-up.scss */
+.home .btn-facebook {
+  background-color: #4c66a4 !important;
+  border-color: #4c66a4 !important;
+  font-weight: 100;
+  font-size: 2.5em;
+  padding: .6em 1em;
+  border-radius: .15em;
+  transition: opacity 200ms ease-in-out;
+  -moz-transition: opacity 200ms ease-in-out;
+  -webkit-transition: opacity 200ms ease-in-out;
+  -o-transition: opacity 200ms ease-in-out;
+  -ms-transition: opacity 200ms ease-in-out;
+}
+/* line 37, ../../stylesheets/partials/_sign-up.scss */
+.home .btn-facebook:hover {
+  opacity: 0.9;
+}
+/* line 41, ../../stylesheets/partials/_sign-up.scss */
+.home .btn-facebook i {
+  margin-right: .5em;
+}
+/* line 46, ../../stylesheets/partials/_sign-up.scss */
+.home .or {
+  overflow: hidden;
+  text-align: center;
+  font-size: 2.2em;
+  font-weight: 100;
+  margin: .5em auto;
+  width: 50%;
+}
+/* line 53, ../../stylesheets/partials/_sign-up.scss */
+.home .or:before, .home .or:after {
+  background-color: #fff;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+/* line 62, ../../stylesheets/partials/_sign-up.scss */
+.home .or:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+/* line 66, ../../stylesheets/partials/_sign-up.scss */
+.home .or:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+/* line 72, ../../stylesheets/partials/_sign-up.scss */
+.home .info {
+  margin: 0;
+  padding: 0;
+}
+/* line 76, ../../stylesheets/partials/_sign-up.scss */
+.home .info input {
+  background-color: transparent;
+  border: 1px solid #fff;
+  font-size: 2em;
+  font-weight: 100;
+  color: #fff;
+  padding: .4em .7em;
+  border-radius: 6px;
+  margin: 4px;
+  width: 7em;
+}
+/* line 86, ../../stylesheets/partials/_sign-up.scss */
+.home .info input:focus {
+  outline: none;
+}
+/* line 89, ../../stylesheets/partials/_sign-up.scss */
+.home .info input::-webkit-input-placeholder {
+  color: white;
+}
+/* line 92, ../../stylesheets/partials/_sign-up.scss */
+.home .info input:-moz-placeholder {
+  color: white;
+}
+/* line 95, ../../stylesheets/partials/_sign-up.scss */
+.home .info input::-moz-placeholder {
+  color: white;
+}
+/* line 98, ../../stylesheets/partials/_sign-up.scss */
+.home .info input:-ms-input-placeholder {
+  color: white;
+}
+/* line 102, ../../stylesheets/partials/_sign-up.scss */
+.home .info input[type="email"] {
+  width: 12em;
+}
+/* line 107, ../../stylesheets/partials/_sign-up.scss */
+.home .info .next {
+  display: inline-block;
+  margin: 4px;
+}
+/* line 110, ../../stylesheets/partials/_sign-up.scss */
+.home .info .next.touch i, .home .info .next:focus i {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+/* line 114, ../../stylesheets/partials/_sign-up.scss */
+.home .info .next i {
+  height: 72px;
+  width: 72px;
+  border: 1px solid #fff;
+  line-height: 72px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 2em;
+  color: #fff;
+  display: inline-block;
+}
+/* line 128, ../../stylesheets/partials/_sign-up.scss */
+.home .sample {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 90%;
+  margin-left: -45%;
+  text-align: center;
+}
+/* line 135, ../../stylesheets/partials/_sign-up.scss */
+.home .sample img {
+  border-radius: 50%;
+  margin: 0 4px;
+}
+/* line 139, ../../stylesheets/partials/_sign-up.scss */
+.home .sample i {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 1.5em;
+  height: 64px;
+  width: 64px;
+  text-align: center;
+  line-height: 64px;
+  vertical-align: middle;
+  margin: 0 4px;
+}
+/* line 151, ../../stylesheets/partials/_sign-up.scss */
+.home .sample .quote {
+  font-size: 1.1em;
+}
+/* line 154, ../../stylesheets/partials/_sign-up.scss */
+.home .sample .what {
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1199px) {
+  /* line 167, ../../stylesheets/partials/_sign-up.scss */
+  .home .info input {
+    display: block;
+    width: 50%;
+    margin: 8px auto;
+  }
+  /* line 172, ../../stylesheets/partials/_sign-up.scss */
+  .home .info input[type="email"] {
+    width: 50%;
+  }
+  /* line 177, ../../stylesheets/partials/_sign-up.scss */
+  .home .info .next {
+    display: block;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* line 191, ../../stylesheets/partials/_sign-up.scss */
+  .home .info .next:hover i {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 203, ../../stylesheets/partials/_sign-up.scss */
+  .home .middle {
+    padding: 5em 0 220px 0;
+  }
+  /* line 207, ../../stylesheets/partials/_sign-up.scss */
+  .home .btn-facebook {
+    font-weight: 400;
+    font-size: .9em;
+    padding: 1em .5em;
+    border-radius: 4px;
+    width: 260px;
+  }
+  /* line 215, ../../stylesheets/partials/_sign-up.scss */
+  .home ul.pillars {
+    margin-bottom: 30px;
+  }
+  /* line 218, ../../stylesheets/partials/_sign-up.scss */
+  .home ul.pillars li {
+    font-size: 0.8em;
+  }
+  /* line 221, ../../stylesheets/partials/_sign-up.scss */
+  .home ul.pillars li i {
+    height: 76px;
+    width: 76px;
+    line-height: 76px;
+  }
+  /* line 229, ../../stylesheets/partials/_sign-up.scss */
+  .home .or {
+    font-size: 1.2em;
+    font-weight: 300;
+  }
+  /* line 234, ../../stylesheets/partials/_sign-up.scss */
+  .home .info {
+    padding: .5em 0 0 0;
+  }
+  /* line 237, ../../stylesheets/partials/_sign-up.scss */
+  .home .info input {
+    font-size: 1.5em;
+    width: 90%;
+    margin: 8px auto;
+  }
+  /* line 242, ../../stylesheets/partials/_sign-up.scss */
+  .home .info input[type="email"] {
+    width: 90%;
+  }
+  /* line 247, ../../stylesheets/partials/_sign-up.scss */
+  .home .info .next {
+    margin: 8px;
+  }
+}
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ * <!--[if IE]>
+ *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ * <![endif]--> */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  /* IE 10 & 11 specific styles */
+}
+/* line 11, ../../stylesheets/partials/_ie.scss */
+.push-to-left {
+  left: -260px;
+}
+
+/* IE 8 and below*/
+/* line 16, ../../stylesheets/partials/_ie.scss */
+#logo a {
+  background: url("../images/agreatfirstdate-logo.png") no-repeat center center\9;
 }
