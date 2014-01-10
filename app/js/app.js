@@ -10,7 +10,7 @@ angular.module('agfdApp', [
   'agfdApp.controllers'
 ]).
 config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/', {templateUrl: 'partials/pillars.html', controller: 'Pillars'});
-  $routeProvider.when('/sign-up', {templateUrl: 'partials/sign-up.html', controller: 'SignUp'});
+  $routeProvider.when('/', {templateUrl: 'partials/pillars.html', controller: 'PillarsCtrl'});
+  $routeProvider.when('/sign-up', {templateUrl: 'partials/sign-up.html', controller: 'PillarsCtrl'});
   $routeProvider.otherwise({redirectTo: '/'});
 }]);
