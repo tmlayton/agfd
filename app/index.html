@@ -7,9 +7,9 @@
   <link rel="stylesheet" href="css/app.css"/>
   <script src="lib/modernizr.custom.js"></script>
 </head>
-<body class="home">
+<body class="home" ng-controller="AgfdCtrl">
 
-  <section class="push">
+  <section id="push" ng-class="{active: open}">
 
     <!-- Header partial -->
     <header ng-include="'partials/header.html'"></header>

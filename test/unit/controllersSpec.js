@@ -2,7 +2,7 @@
 
 /* jasmine specs for controllers go here */
 
-describe('PillarsCtrl', function(){
+describe('AgfdCtrl', function(){
 	var scope, ctrl, $httpBackend;
 
   beforeEach(module('agfdApp'));
@@ -13,7 +13,7 @@ describe('PillarsCtrl', function(){
   		respond([{name: 'Taste'}, {name: 'Spirit'}]);
  
       scope = $rootScope.$new();
-      ctrl = $controller('PillarsCtrl', {$scope: scope});
+      ctrl = $controller('AgfdCtrl', {$scope: scope});
     }));
 
   it('should create "pillars" model with 2 pillars fetched from xhr', function() {

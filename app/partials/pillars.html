@@ -4,7 +4,7 @@
 
 <h2>Which 4 are you?</h2>
 <ul class="pillars">
-	<li ng-repeat="pillar in pillars"><i class="fa fa-{{pillar.icon}}"></i>{{pillar.name}}</li>
+	<li ng-repeat="pillar in pillars" ng-click="on = !on" ng-class="{active: on}"><i class="fa fa-{{pillar.icon}}"></i>{{pillar.name}}</li>
 </ul>
 
 <form class="looking-for">
