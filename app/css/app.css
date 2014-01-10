@@ -1,42 +1,43 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,700);
+@import url(//fonts.googleapis.com/css?family=Roboto:100,300,400,700);
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
 @import url(https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css);
-/* line 21, ../../stylesheets/partials/_base.scss */
+/* line 1, ../../stylesheets/partials/_elements.scss */
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 26, ../../stylesheets/partials/_base.scss */
+/* line 6, ../../stylesheets/partials/_elements.scss */
 body, html {
   font-size: 100%;
   height: 100%;
 }
 
-/* line 31, ../../stylesheets/partials/_base.scss */
+/* line 11, ../../stylesheets/partials/_elements.scss */
 body {
   font-family: "Roboto", Arial, sans-serif;
   color: white;
   background-color: #597754;
 }
 
-/* line 37, ../../stylesheets/partials/_base.scss */
+/* line 17, ../../stylesheets/partials/_elements.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", Arial, sans-serif;
   font-weight: 300;
 }
 
-/* line 42, ../../stylesheets/partials/_base.scss */
+/* line 22, ../../stylesheets/partials/_elements.scss */
 a {
   text-decoration: none;
   outline: 0;
 }
-/* line 45, ../../stylesheets/partials/_base.scss */
+/* line 25, ../../stylesheets/partials/_elements.scss */
 a:hover, a:active, a:focus {
   text-decoration: none;
   outline: 0;
 }
 
-/* line 51, ../../stylesheets/partials/_base.scss */
+/* line 31, ../../stylesheets/partials/_elements.scss */
 .animate {
   -webkit-transition-property: all;
   -moz-transition-property: all;
@@ -52,14 +53,14 @@ a:hover, a:active, a:focus {
   transition-timing-function: ease-in-out;
 }
 
-/* line 57, ../../stylesheets/partials/_base.scss */
+/* line 37, ../../stylesheets/partials/_elements.scss */
 .small {
   font-size: 0.9em;
   font-weight: 300;
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 63, ../../stylesheets/partials/_base.scss */
+  /* line 43, ../../stylesheets/partials/_elements.scss */
   #showMenu {
     transition: all 200ms ease-in-out;
     -moz-transition: all 200ms ease-in-out;
@@ -67,113 +68,44 @@ a:hover, a:active, a:focus {
     -o-transition: all 200ms ease-out;
     -ms-transition: all 200ms ease-out;
   }
-  /* line 69, ../../stylesheets/partials/_base.scss */
+  /* line 49, ../../stylesheets/partials/_elements.scss */
   #showMenu:hover {
     opacity: .5;
     color: #000;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 77, ../../stylesheets/partials/_base.scss */
+  /* line 57, ../../stylesheets/partials/_elements.scss */
   #logo {
     left: 20px;
     top: 20px;
     width: 39px;
     height: 45px;
   }
-  /* line 83, ../../stylesheets/partials/_base.scss */
+  /* line 63, ../../stylesheets/partials/_elements.scss */
   #logo a {
     background: url("../images/heart-logo@2x.png") no-repeat;
     background-size: 39px 45px;
   }
 
-  /* line 89, ../../stylesheets/partials/_base.scss */
+  /* line 69, ../../stylesheets/partials/_elements.scss */
   #showMenu {
     right: 10px;
     top: 10px;
     padding: 10px;
   }
 
-  /* line 95, ../../stylesheets/partials/_base.scss */
+  /* line 75, ../../stylesheets/partials/_elements.scss */
   #gradient {
     height: 100px;
   }
 
-  /* line 99, ../../stylesheets/partials/_base.scss */
+  /* line 79, ../../stylesheets/partials/_elements.scss */
   .small {
     font-size: 0.7em;
     font-weight: 300;
   }
 }
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-
-/* line 22, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-html {
-  line-height: 1;
-}
-
-/* line 24, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-ol, ul {
-  list-style: none;
-}
-
-/* line 26, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* line 28, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-
-/* line 30, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-q, blockquote {
-  quotes: none;
-}
-/* line 103, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-
-/* line 32, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-a img {
-  border: none;
-}
-
-/* line 116, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
-  display: block;
-}
-
 /* line 1, ../../stylesheets/partials/_buttons.scss */
 #showMenu {
   display: block;
@@ -208,11 +140,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
   width: 100%;
   height: 100%;
-  background: url("../images/agreatfirstdate-logo@2x.png") no-repeat center center;
+  background: url("../img/agreatfirstdate-logo@2x.png") no-repeat center center;
+  /* IE 8 and below */
+  background: url("../img/agreatfirstdate-logo.png") no-repeat center center\9;
   background-size: 298px 47px;
 }
 
-/* line 20, ../../stylesheets/partials/_figures.scss */
+/* line 21, ../../stylesheets/partials/_figures.scss */
 #gradient {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(34, 34, 34, 0.4)), color-stop(100%, rgba(34, 34, 34, 0)));
   background-image: -webkit-linear-gradient(rgba(34, 34, 34, 0.4), rgba(34, 34, 34, 0));
@@ -278,15 +212,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 51, ../../stylesheets/partials/_menu.scss */
 .push-to-left {
-  -webkit-transform: translate3d(-260px, 0, 0);
-  -moz-transform: translate3d(-260px, 0, 0);
-  -ms-transform: translate3d(-260px, 0, 0);
-  -o-transform: translate3d(-260px, 0, 0);
-  transform: translate3d(-260px, 0, 0);
+  -webkit-transform: translate3d(260px, 0, 0);
+  -moz-transform: translate3d(260px, 0, 0);
+  -ms-transform: translate3d(260px, 0, 0);
+  -o-transform: translate3d(260px, 0, 0);
+  transform: translate3d(260px, 0, 0);
+  /* IE 8 and 9  */
+  left: -260px \0/;
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 62, ../../stylesheets/partials/_menu.scss */
+  /* line 59, ../../stylesheets/partials/_menu.scss */
   #menuRight a {
     transition: color 200ms ease-in-out;
     -moz-transition: color 200ms ease-in-out;
@@ -294,33 +230,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -o-transition: color 200ms ease-in-out;
     -ms-transition: color 200ms ease-in-out;
   }
-  /* line 68, ../../stylesheets/partials/_menu.scss */
+  /* line 65, ../../stylesheets/partials/_menu.scss */
   #menuRight a:hover {
     color: #000;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 76, ../../stylesheets/partials/_menu.scss */
+  /* line 73, ../../stylesheets/partials/_menu.scss */
   #menuRight {
     padding-top: 16px;
   }
-  /* line 79, ../../stylesheets/partials/_menu.scss */
+  /* line 76, ../../stylesheets/partials/_menu.scss */
   #menuRight a {
     padding: .4em 2em;
   }
-  /* line 83, ../../stylesheets/partials/_menu.scss */
+  /* line 80, ../../stylesheets/partials/_menu.scss */
   #menuRight .sub {
     margin-top: 1em;
   }
-  /* line 86, ../../stylesheets/partials/_menu.scss */
+  /* line 83, ../../stylesheets/partials/_menu.scss */
   #menuRight .sub a {
     padding: .1em 2.5em;
   }
-  /* line 91, ../../stylesheets/partials/_menu.scss */
+  /* line 88, ../../stylesheets/partials/_menu.scss */
   #menuRight .social {
     margin: 1em 0 0 2em;
   }
-  /* line 95, ../../stylesheets/partials/_menu.scss */
+  /* line 92, ../../stylesheets/partials/_menu.scss */
   #menuRight #closeMenu {
     top: 10px;
     right: 10px;
@@ -357,7 +293,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* line 30, ../../stylesheets/partials/_pillars.scss */
 .home .push {
   z-index: 2;
-  background: url(../images/background.jpg) no-repeat center center;
+  background: url(../img/background.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -792,22 +728,4 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   .home .info .next {
     margin: 8px;
   }
-}
-/* Welcome to Compass. Use this file to write IE specific override styles.
- * Import this file using the following HTML or equivalent:
- * <!--[if IE]>
- *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
- * <![endif]--> */
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  /* IE 10 & 11 specific styles */
-}
-/* line 11, ../../stylesheets/partials/_ie.scss */
-.push-to-left {
-  left: -260px;
-}
-
-/* IE 8 and below*/
-/* line 16, ../../stylesheets/partials/_ie.scss */
-#logo a {
-  background: url("../images/agreatfirstdate-logo.png") no-repeat center center\9;
 }
