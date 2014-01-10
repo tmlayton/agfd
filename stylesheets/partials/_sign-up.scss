@@ -1,14 +1,14 @@
-.home {
-
-	.middle {
+.middle {
 		padding: 8em 0 220px 0;
 	}
+	
+.sign-up {
 
 	ul.pillars {
 			margin-bottom: 50px;
 
 		li {
-			display: none;
+			//display: none;
 			font-size: 1.1em;
 			font-weight: 300;
 			cursor: default;
@@ -21,6 +21,9 @@
 			}
 		}
 	}
+}
+
+.home {
 
 	.btn-facebook {
 	  background-color: #4c66a4 !important;

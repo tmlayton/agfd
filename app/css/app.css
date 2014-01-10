@@ -484,29 +484,30 @@ a:hover, a:active, a:focus {
     display: block;
   }
 }
-/* line 3, ../../stylesheets/partials/_sign-up.scss */
-.home .middle {
+/* line 1, ../../stylesheets/partials/_sign-up.scss */
+.middle {
   padding: 8em 0 220px 0;
 }
+
 /* line 7, ../../stylesheets/partials/_sign-up.scss */
-.home ul.pillars {
+.sign-up ul.pillars {
   margin-bottom: 50px;
 }
 /* line 10, ../../stylesheets/partials/_sign-up.scss */
-.home ul.pillars li {
-  display: none;
+.sign-up ul.pillars li {
   font-size: 1.1em;
   font-weight: 300;
   cursor: default;
 }
 /* line 16, ../../stylesheets/partials/_sign-up.scss */
-.home ul.pillars li i {
+.sign-up ul.pillars li i {
   font-size: 2em;
   height: 96px;
   width: 96px;
   line-height: 96px;
 }
-/* line 25, ../../stylesheets/partials/_sign-up.scss */
+
+/* line 28, ../../stylesheets/partials/_sign-up.scss */
 .home .btn-facebook {
   background-color: #4c66a4 !important;
   border-color: #4c66a4 !important;
@@ -520,15 +521,15 @@ a:hover, a:active, a:focus {
   -o-transition: opacity 200ms ease-in-out;
   -ms-transition: opacity 200ms ease-in-out;
 }
-/* line 37, ../../stylesheets/partials/_sign-up.scss */
+/* line 40, ../../stylesheets/partials/_sign-up.scss */
 .home .btn-facebook:hover {
   opacity: 0.9;
 }
-/* line 41, ../../stylesheets/partials/_sign-up.scss */
+/* line 44, ../../stylesheets/partials/_sign-up.scss */
 .home .btn-facebook i {
   margin-right: .5em;
 }
-/* line 46, ../../stylesheets/partials/_sign-up.scss */
+/* line 49, ../../stylesheets/partials/_sign-up.scss */
 .home .or {
   overflow: hidden;
   text-align: center;
@@ -537,7 +538,7 @@ a:hover, a:active, a:focus {
   margin: .5em auto;
   width: 50%;
 }
-/* line 53, ../../stylesheets/partials/_sign-up.scss */
+/* line 56, ../../stylesheets/partials/_sign-up.scss */
 .home .or:before, .home .or:after {
   background-color: #fff;
   content: "";
@@ -547,22 +548,22 @@ a:hover, a:active, a:focus {
   vertical-align: middle;
   width: 50%;
 }
-/* line 62, ../../stylesheets/partials/_sign-up.scss */
+/* line 65, ../../stylesheets/partials/_sign-up.scss */
 .home .or:before {
   right: 0.5em;
   margin-left: -50%;
 }
-/* line 66, ../../stylesheets/partials/_sign-up.scss */
+/* line 69, ../../stylesheets/partials/_sign-up.scss */
 .home .or:after {
   left: 0.5em;
   margin-right: -50%;
 }
-/* line 72, ../../stylesheets/partials/_sign-up.scss */
+/* line 75, ../../stylesheets/partials/_sign-up.scss */
 .home .info {
   margin: 0;
   padding: 0;
 }
-/* line 76, ../../stylesheets/partials/_sign-up.scss */
+/* line 79, ../../stylesheets/partials/_sign-up.scss */
 .home .info input {
   background-color: transparent;
   border: 1px solid #fff;
@@ -574,40 +575,40 @@ a:hover, a:active, a:focus {
   margin: 4px;
   width: 7em;
 }
-/* line 86, ../../stylesheets/partials/_sign-up.scss */
+/* line 89, ../../stylesheets/partials/_sign-up.scss */
 .home .info input:focus {
   outline: none;
 }
-/* line 89, ../../stylesheets/partials/_sign-up.scss */
+/* line 92, ../../stylesheets/partials/_sign-up.scss */
 .home .info input::-webkit-input-placeholder {
   color: white;
 }
-/* line 92, ../../stylesheets/partials/_sign-up.scss */
+/* line 95, ../../stylesheets/partials/_sign-up.scss */
 .home .info input:-moz-placeholder {
   color: white;
 }
-/* line 95, ../../stylesheets/partials/_sign-up.scss */
+/* line 98, ../../stylesheets/partials/_sign-up.scss */
 .home .info input::-moz-placeholder {
   color: white;
 }
-/* line 98, ../../stylesheets/partials/_sign-up.scss */
+/* line 101, ../../stylesheets/partials/_sign-up.scss */
 .home .info input:-ms-input-placeholder {
   color: white;
 }
-/* line 102, ../../stylesheets/partials/_sign-up.scss */
+/* line 105, ../../stylesheets/partials/_sign-up.scss */
 .home .info input[type="email"] {
   width: 12em;
 }
-/* line 107, ../../stylesheets/partials/_sign-up.scss */
+/* line 110, ../../stylesheets/partials/_sign-up.scss */
 .home .info .next {
   display: inline-block;
   margin: 4px;
 }
-/* line 110, ../../stylesheets/partials/_sign-up.scss */
+/* line 113, ../../stylesheets/partials/_sign-up.scss */
 .home .info .next.touch i, .home .info .next:focus i {
   background-color: rgba(255, 255, 255, 0.2);
 }
-/* line 114, ../../stylesheets/partials/_sign-up.scss */
+/* line 117, ../../stylesheets/partials/_sign-up.scss */
 .home .info .next i {
   height: 72px;
   width: 72px;
@@ -619,7 +620,7 @@ a:hover, a:active, a:focus {
   color: #fff;
   display: inline-block;
 }
-/* line 128, ../../stylesheets/partials/_sign-up.scss */
+/* line 131, ../../stylesheets/partials/_sign-up.scss */
 .home .sample {
   position: absolute;
   bottom: 0;
@@ -628,12 +629,12 @@ a:hover, a:active, a:focus {
   margin-left: -45%;
   text-align: center;
 }
-/* line 135, ../../stylesheets/partials/_sign-up.scss */
+/* line 138, ../../stylesheets/partials/_sign-up.scss */
 .home .sample img {
   border-radius: 50%;
   margin: 0 4px;
 }
-/* line 139, ../../stylesheets/partials/_sign-up.scss */
+/* line 142, ../../stylesheets/partials/_sign-up.scss */
 .home .sample i {
   border: 1px solid #fff;
   border-radius: 50%;
@@ -646,44 +647,44 @@ a:hover, a:active, a:focus {
   vertical-align: middle;
   margin: 0 4px;
 }
-/* line 151, ../../stylesheets/partials/_sign-up.scss */
+/* line 154, ../../stylesheets/partials/_sign-up.scss */
 .home .sample .quote {
   font-size: 1.1em;
 }
-/* line 154, ../../stylesheets/partials/_sign-up.scss */
+/* line 157, ../../stylesheets/partials/_sign-up.scss */
 .home .sample .what {
   font-size: 0.8em;
   cursor: pointer;
 }
 
 @media only screen and (max-width: 1199px) {
-  /* line 167, ../../stylesheets/partials/_sign-up.scss */
+  /* line 170, ../../stylesheets/partials/_sign-up.scss */
   .home .info input {
     display: block;
     width: 50%;
     margin: 8px auto;
   }
-  /* line 172, ../../stylesheets/partials/_sign-up.scss */
+  /* line 175, ../../stylesheets/partials/_sign-up.scss */
   .home .info input[type="email"] {
     width: 50%;
   }
-  /* line 177, ../../stylesheets/partials/_sign-up.scss */
+  /* line 180, ../../stylesheets/partials/_sign-up.scss */
   .home .info .next {
     display: block;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 191, ../../stylesheets/partials/_sign-up.scss */
+  /* line 194, ../../stylesheets/partials/_sign-up.scss */
   .home .info .next:hover i {
     background-color: rgba(255, 255, 255, 0.2);
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 203, ../../stylesheets/partials/_sign-up.scss */
+  /* line 206, ../../stylesheets/partials/_sign-up.scss */
   .home .middle {
     padding: 5em 0 220px 0;
   }
-  /* line 207, ../../stylesheets/partials/_sign-up.scss */
+  /* line 210, ../../stylesheets/partials/_sign-up.scss */
   .home .btn-facebook {
     font-weight: 400;
     font-size: .9em;
@@ -691,40 +692,40 @@ a:hover, a:active, a:focus {
     border-radius: 4px;
     width: 260px;
   }
-  /* line 215, ../../stylesheets/partials/_sign-up.scss */
+  /* line 218, ../../stylesheets/partials/_sign-up.scss */
   .home ul.pillars {
     margin-bottom: 30px;
   }
-  /* line 218, ../../stylesheets/partials/_sign-up.scss */
+  /* line 221, ../../stylesheets/partials/_sign-up.scss */
   .home ul.pillars li {
     font-size: 0.8em;
   }
-  /* line 221, ../../stylesheets/partials/_sign-up.scss */
+  /* line 224, ../../stylesheets/partials/_sign-up.scss */
   .home ul.pillars li i {
     height: 76px;
     width: 76px;
     line-height: 76px;
   }
-  /* line 229, ../../stylesheets/partials/_sign-up.scss */
+  /* line 232, ../../stylesheets/partials/_sign-up.scss */
   .home .or {
     font-size: 1.2em;
     font-weight: 300;
   }
-  /* line 234, ../../stylesheets/partials/_sign-up.scss */
+  /* line 237, ../../stylesheets/partials/_sign-up.scss */
   .home .info {
     padding: .5em 0 0 0;
   }
-  /* line 237, ../../stylesheets/partials/_sign-up.scss */
+  /* line 240, ../../stylesheets/partials/_sign-up.scss */
   .home .info input {
     font-size: 1.5em;
     width: 90%;
     margin: 8px auto;
   }
-  /* line 242, ../../stylesheets/partials/_sign-up.scss */
+  /* line 245, ../../stylesheets/partials/_sign-up.scss */
   .home .info input[type="email"] {
     width: 90%;
   }
-  /* line 247, ../../stylesheets/partials/_sign-up.scss */
+  /* line 250, ../../stylesheets/partials/_sign-up.scss */
   .home .info .next {
     margin: 8px;
   }
