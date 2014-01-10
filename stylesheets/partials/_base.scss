@@ -1,4 +1,4 @@
-// Use Compass ('cause it rocks!)
+// Use Compass
 @import "compass";
 
 // Font weights
@@ -11,93 +11,8 @@ $bold: 700;
 $base-font-family: 'Roboto', Arial, sans-serif;
 $base-font-weight: $regular;
 $base-font-size: 100%;
-$base-line-height: 1.428571429;
 
 // Headings
 $header-font-weight: $thin;
 
 @import "modules/all";
-
-html {
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-body, html { 
-	font-size: $base-font-size; 
-	height: 100%;
-}
-
-body {
-	font-family: $base-font-family;
-  color: $base-font-color;
-  background-color: $base-background-color;
-}
-
-h1, h2, h3, h4, h5, h6 {
-	font-family: $base-font-family;
-	font-weight: $light;
-}
-
-a {
-	text-decoration: none;
-	outline: 0;
-	&:hover, &:active, &:focus {
-		text-decoration: none;
-		outline: 0;
-	}
-}
-
-.animate {
-	@include transition-property(all);
-  @include transition-duration(200ms);
-  @include transition-timing-function(ease-in-out);
-}
-
-.small {
-	font-size: 0.9em;
-	font-weight: 300;
-}
-
-@media only screen and (min-width: 768px) {
-    #showMenu {
-    	transition: all 200ms ease-in-out;
-		  -moz-transition: all 200ms ease-in-out;
-		  -webkit-transition: all 200ms ease-in-out;
-		  -o-transition: all 200ms ease-out;
-			-ms-transition: all 200ms ease-out;
-			&:hover {
-				opacity: .5;
-				color: #000;
-			}
-    }
-}
-
-@media only screen and (max-width: 767px) {
-	#logo {
-		left: 20px;
-		top: 20px;
-		width: 39px;
-		height: 45px;
-
-		a {
-			background: url("../images/heart-logo@2x.png") no-repeat;
-			background-size: 39px 45px;
-		}
-	}
-
-	#showMenu {
-		right: 10px; 
-		top: 10px;
-		padding: 10px;
-	}
-
-	#gradient {
-		height: 100px;
-	}
-
-	.small {
-		font-size: 0.7em;
-		font-weight: 300;
-	}
-}
