@@ -49,11 +49,8 @@
 }
 
 .push-to-left {
-	-webkit-transform: translate3d(-260px,0,0);
-  -moz-transform: translate3d(-260px,0,0);
-  -ms-transform: translate3d(-260px,0,0);
-  -o-transform: translate3d(-260px,0,0);
-  transform: translate3d(-260px,0,0);
+  @include translate3d($menu-width, 0, 0);
+  /* IE 8 and 9  */ left: -260px #{$ie-8-9};
 }
 
 @media only screen and (min-width: 768px) {
