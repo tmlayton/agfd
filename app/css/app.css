@@ -228,16 +228,16 @@ p {
 
 /* line 31, ../../stylesheets/partials/_buttons.scss */
 .btn-home {
-  color: #fff;
+  color: white;
   background-color: transparent;
-  border-color: #fff;
+  border-color: white;
   font-weight: 300;
 }
 /* line 36, ../../stylesheets/partials/_buttons.scss */
 .btn-home.touch, .btn-home:focus {
-  color: #fff;
+  color: white;
   background-color: rgba(255, 255, 255, 0.2);
-  border-color: #fff;
+  border-color: white;
   outline: 0;
 }
 @media only screen and (min-width: 768px) {
@@ -258,9 +258,9 @@ p {
   }
   /* line 45, ../../stylesheets/partials/_buttons.scss */
   .btn-home:hover {
-    color: #fff;
+    color: white;
     background-color: rgba(255, 255, 255, 0.2);
-    border-color: #fff;
+    border-color: white;
   }
 }
 
@@ -282,8 +282,8 @@ p {
 }
 /* line 66, ../../stylesheets/partials/_buttons.scss */
 .pillars li.active i, .selected-pillars li.active i, .pillars li.active:hover i, .selected-pillars li.active:hover i {
-  background-color: #54BA53;
-  border-color: #54BA53;
+  background-color: #54ba53;
+  border-color: #54ba53;
 }
 @media only screen and (min-width: 768px) {
   /* line 72, ../../stylesheets/partials/_buttons.scss */
@@ -293,7 +293,7 @@ p {
 }
 /* line 77, ../../stylesheets/partials/_buttons.scss */
 .pillars li i, .selected-pillars li i {
-  border: 1px solid #fff;
+  border: 1px solid white;
   border-radius: 50%;
   display: block;
   font-size: 2em;
