@@ -39,11 +39,13 @@
 		border-color: $base-border-color;
 		outline: 0;
 	}
+	&:hover {
+		color: $base-font-color;
+	}
 
 	@media only screen and (min-width: $desktop-min) {
 		@include transition;
 		&:hover {
-			color: $base-font-color;
 			background-color: $base-button-background-color-hover;
 			border-color: $base-border-color;
 		}		

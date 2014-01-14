@@ -240,6 +240,10 @@ p {
   border-color: white;
   outline: 0;
 }
+/* line 42, ../../stylesheets/partials/_buttons.scss */
+.btn-home:hover {
+  color: white;
+}
 @media only screen and (min-width: 768px) {
   /* line 31, ../../stylesheets/partials/_buttons.scss */
   .btn-home {
@@ -256,21 +260,20 @@ p {
     -o-transition-timing-function: ease-in-out;
     transition-timing-function: ease-in-out;
   }
-  /* line 45, ../../stylesheets/partials/_buttons.scss */
+  /* line 48, ../../stylesheets/partials/_buttons.scss */
   .btn-home:hover {
-    color: white;
     background-color: rgba(255, 255, 255, 0.2);
     border-color: white;
   }
 }
 
-/* line 53, ../../stylesheets/partials/_buttons.scss */
+/* line 55, ../../stylesheets/partials/_buttons.scss */
 .pillars, .selected-pillars {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-/* line 58, ../../stylesheets/partials/_buttons.scss */
+/* line 60, ../../stylesheets/partials/_buttons.scss */
 .pillars li, .selected-pillars li {
   display: inline-block;
   padding: 10px;
@@ -280,18 +283,18 @@ p {
   line-height: 2em;
   cursor: pointer;
 }
-/* line 66, ../../stylesheets/partials/_buttons.scss */
+/* line 68, ../../stylesheets/partials/_buttons.scss */
 .pillars li.active i, .selected-pillars li.active i, .pillars li.active:hover i, .selected-pillars li.active:hover i {
   background-color: #54ba53;
   border-color: #54ba53;
 }
 @media only screen and (min-width: 768px) {
-  /* line 72, ../../stylesheets/partials/_buttons.scss */
+  /* line 74, ../../stylesheets/partials/_buttons.scss */
   .pillars li:hover i, .selected-pillars li:hover i {
     background-color: rgba(255, 255, 255, 0.2);
   }
 }
-/* line 77, ../../stylesheets/partials/_buttons.scss */
+/* line 79, ../../stylesheets/partials/_buttons.scss */
 .pillars li i, .selected-pillars li i {
   border: 1px solid white;
   border-radius: 50%;
@@ -315,17 +318,17 @@ p {
   transition-timing-function: ease-in-out;
 }
 
-/* line 91, ../../stylesheets/partials/_buttons.scss */
+/* line 93, ../../stylesheets/partials/_buttons.scss */
 .selected-pillars {
   margin-bottom: 50px;
 }
-/* line 95, ../../stylesheets/partials/_buttons.scss */
+/* line 97, ../../stylesheets/partials/_buttons.scss */
 .selected-pillars li {
   font-size: 1.1em;
   font-weight: 300;
   cursor: default;
 }
-/* line 100, ../../stylesheets/partials/_buttons.scss */
+/* line 102, ../../stylesheets/partials/_buttons.scss */
 .selected-pillars li i {
   font-size: 2em;
   height: 96px;
@@ -333,15 +336,15 @@ p {
   line-height: 96px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 91, ../../stylesheets/partials/_buttons.scss */
+  /* line 93, ../../stylesheets/partials/_buttons.scss */
   .selected-pillars {
     margin-bottom: 30px;
   }
-  /* line 111, ../../stylesheets/partials/_buttons.scss */
+  /* line 113, ../../stylesheets/partials/_buttons.scss */
   .selected-pillars li {
     font-size: 0.8em;
   }
-  /* line 114, ../../stylesheets/partials/_buttons.scss */
+  /* line 116, ../../stylesheets/partials/_buttons.scss */
   .selected-pillars li i {
     height: 76px;
     width: 76px;
@@ -349,7 +352,7 @@ p {
   }
 }
 
-/* line 123, ../../stylesheets/partials/_buttons.scss */
+/* line 125, ../../stylesheets/partials/_buttons.scss */
 .btn-facebook {
   background-color: #4c66a4 !important;
   border-color: #4c66a4 !important;
@@ -358,16 +361,16 @@ p {
   padding: .6em 1em;
   border-radius: .15em;
 }
-/* line 131, ../../stylesheets/partials/_buttons.scss */
+/* line 133, ../../stylesheets/partials/_buttons.scss */
 .btn-facebook:hover {
   opacity: 0.9;
 }
-/* line 135, ../../stylesheets/partials/_buttons.scss */
+/* line 137, ../../stylesheets/partials/_buttons.scss */
 .btn-facebook i {
   margin-right: .5em;
 }
 @media only screen and (max-width: 767px) {
-  /* line 123, ../../stylesheets/partials/_buttons.scss */
+  /* line 125, ../../stylesheets/partials/_buttons.scss */
   .btn-facebook {
     font-weight: 400;
     font-size: .9em;
@@ -377,16 +380,16 @@ p {
   }
 }
 
-/* line 148, ../../stylesheets/partials/_buttons.scss */
+/* line 150, ../../stylesheets/partials/_buttons.scss */
 .btn-next, .btn-next-pillars {
   display: inline-block;
   margin: 4px;
 }
-/* line 151, ../../stylesheets/partials/_buttons.scss */
+/* line 153, ../../stylesheets/partials/_buttons.scss */
 .btn-next.touch i, .touch.btn-next-pillars i, .btn-next:focus i, .btn-next-pillars:focus i {
   background-color: rgba(255, 255, 255, 0.2);
 }
-/* line 155, ../../stylesheets/partials/_buttons.scss */
+/* line 157, ../../stylesheets/partials/_buttons.scss */
 .btn-next i, .btn-next-pillars i {
   height: 72px;
   width: 72px;
@@ -411,25 +414,25 @@ p {
   transition-timing-function: ease-in-out;
 }
 @media only screen and (max-width: 1199px) {
-  /* line 148, ../../stylesheets/partials/_buttons.scss */
+  /* line 150, ../../stylesheets/partials/_buttons.scss */
   .btn-next, .btn-next-pillars {
     display: block;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 173, ../../stylesheets/partials/_buttons.scss */
+  /* line 175, ../../stylesheets/partials/_buttons.scss */
   .btn-next:hover i, .btn-next-pillars:hover i {
     background-color: rgba(255, 255, 255, 0.2);
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 148, ../../stylesheets/partials/_buttons.scss */
+  /* line 150, ../../stylesheets/partials/_buttons.scss */
   .btn-next, .btn-next-pillars {
     margin: 8px;
   }
 }
 
-/* line 183, ../../stylesheets/partials/_buttons.scss */
+/* line 185, ../../stylesheets/partials/_buttons.scss */
 .btn-next-pillars {
   vertical-align: top;
 }
