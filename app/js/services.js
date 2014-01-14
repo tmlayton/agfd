@@ -2,8 +2,8 @@
 
 /* Services */
 
+var agfdApp = angular.module('agfdApp.services', []);
 
 // Demonstrate how to register services
 // In this case it is a simple value service.
-angular.module('agfdApp.services', []).
-  value('version', '0.1');
+agfdApp.value('version', '0.1');
