@@ -1,0 +1,48 @@
+.container {
+	text-align: center;
+}
+
+.middle {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.pillars-box {
+	padding: 7em 0;
+
+	@media only screen and (max-width: $mobile-max) {
+		padding: 4em 0;
+	}
+}
+
+.sign-up-box {
+	padding: 8em 0 220px 0;
+
+	@media only screen and (max-width: $mobile-max) {
+		padding: 5em 0 220px 0;
+	}
+}
+
+#push {
+	z-index: 2;
+  background: url(../img/background.jpg) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: table;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+
+	@include transition(all, 0.3s, ease);
+
+	/* Removes flicker in certain cases */
+	-webkit-perspective: 1000;
+	-webkit-backface-visibility: hidden;
+
+	&.active {
+		@include translate3d(-$menu-width, 0, 0);
+		/* IE 8 and 9  */ left: -$menu-width #{$ie-8-9};
+	}
+}

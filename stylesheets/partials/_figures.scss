@@ -24,7 +24,7 @@
 		background-size: 298px 47px;
 
 		@media only screen and (max-width: $mobile-max) {
-			background: url("../images/heart-logo@2x.png") no-repeat;
+			background: url("../img/heart-logo@2x.png") no-repeat;
 			background-size: 39px 45px;
 		}
 	}
@@ -38,5 +38,68 @@
 
 	@media only screen and (max-width: $mobile-max) {
 		height: 100px;
+	}
+}
+
+.sample {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 90%;
+	margin-left: -45%;
+	text-align: center;
+	img {
+		border-radius: 50%;
+		margin: 0 4px;
+	}
+	i {
+		border: 1px solid #fff;
+		border-radius: 50%;
+		display: inline-block;
+		font-size: 1.5em;
+		height: 64px;
+		width: 64px;
+		text-align: center;
+		line-height: 64px;
+		vertical-align: middle;
+		margin: 0 4px;
+	}
+	.quote {
+		font-size: 1.1em;
+	}
+	.what {
+		font-size: 0.8em;
+		cursor: pointer;
+	}
+}
+
+.or {
+	overflow: hidden;
+	text-align: center;
+	font-size: 2.2em;
+	font-weight: 100;
+	margin: .5em auto;
+	width: 50%;
+	&:before, &:after {
+    background-color: #fff;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+	}
+	&:before {
+    right: 0.5em;
+    margin-left: -50%;
+	}
+	&:after {
+    left: 0.5em;
+    margin-right: -50%;
+	}
+
+	@media only screen and (max-width: $mobile-max) {
+		font-size: 1.2em;
+		font-weight: 300;
 	}
 }

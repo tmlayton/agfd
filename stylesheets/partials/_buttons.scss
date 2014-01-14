@@ -7,16 +7,14 @@
 	line-height: 0;
 	color: #fff;
 	font-size: 1.5em;
-	text-shadow: 1px 1px 1px rgba(0,0,0,.3);
+	text-shadow: $base-text-shadow;
 	&.active, &:focus {
 		opacity: .5;
 		color: #000;
 	}
 
 	@media only screen and (min-width: $desktop-min) {
-  	@include transition-property(all);
-	  @include transition-duration(200ms);
-	  @include transition-timing-function(ease-in-out);
+  	@include transition;
 	  &:hover {
 			opacity: .5;
 			color: #000;
@@ -28,4 +26,161 @@
 		top: 10px;
 		padding: 10px;
 	}
+}
+
+.btn-home {
+	color: #fff;
+	background-color: transparent;
+	border-color: #fff;
+	font-weight: 300;
+	&.touch, &:focus {
+		color: #fff;
+		background-color: $base-button-background-color-hover;
+		border-color: #fff;
+		outline: 0;
+	}
+
+	@media only screen and (min-width: $desktop-min) {
+		@include transition;
+		&:hover {
+			color: #fff;
+			background-color: $base-button-background-color-hover;
+			border-color: #fff;
+		}		
+	}
+}
+
+.pillars {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+
+	li {
+		display: inline-block;
+		padding: 10px;
+		font-weight: 400;
+		font-size: 0.8em;
+		text-align: center;
+		line-height: 2em;
+		cursor: pointer;
+		&.active i, &.active:hover i {
+			background-color: #54BA53;
+			border-color: #54BA53;
+		}
+
+		@media only screen and (min-width: 768px) {
+			&:hover i {
+				background-color: $base-button-background-color-hover;
+			}
+		}
+
+		i {
+			border: 1px solid #fff;
+			border-radius: 50%;
+			display: block;
+			font-size: 2em;
+			height: 64px;
+			width: 64px;
+			text-align: center;
+			line-height: 64px;
+			@include transition;
+		}
+	}
+}
+
+.selected-pillars {
+	@extend .pillars;
+	margin-bottom: 50px;
+
+	li {
+		font-size: 1.1em;
+		font-weight: 300;
+		cursor: default;
+
+		i {
+			font-size: 2em;
+			height: 96px;
+			width: 96px;
+			line-height: 96px;
+		}
+	}
+
+	@media only screen and (max-width: $mobile-max) {
+		margin-bottom: 30px;
+
+		li {
+			font-size: 0.8em;
+
+			i {
+				height: 76px;
+				width: 76px;
+				line-height: 76px;
+			}
+		}
+	}
+}
+
+.btn-facebook {
+	@extend .animate;
+  background-color: #4c66a4 !important;
+  border-color: #4c66a4 !important;
+  font-weight: 100;
+  font-size: 2.5em;
+	padding: .6em 1em;
+	border-radius: .15em;
+	&:hover {
+		opacity: 0.9;
+	}
+
+	i {
+		margin-right: .5em;
+	}
+
+	@media only screen and (max-width: $mobile-max) {
+		font-weight: 400;
+		font-size: .9em;
+		padding: 1em .5em;
+		border-radius: 4px;
+		width: 260px;
+	}
+}
+
+.btn-next {
+	display: inline-block;
+	margin: 4px;
+	&.touch i, &:focus i {
+		background-color: $base-button-background-color-hover;
+	}
+
+	i {
+		height: 72px;
+		width: 72px;
+		border: 1px solid #fff;
+		line-height: 72px;
+		text-align: center;
+		border-radius: 50%;
+		font-size: 2em;
+		color: #fff;
+		display: inline-block;
+		@include transition;
+	}
+
+	@media only screen and (max-width: $desktop-large) {
+		display: block;
+	}
+
+	@media only screen and (min-width: $desktop-min) {
+		&:hover i {
+			background-color: $base-button-background-color-hover;
+		}
+	}
+
+	@media only screen and (max-width: $mobile-max) {
+		margin: 8px;
+	}
+}
+
+.btn-next-pillars {
+	@extend .btn-next;
+	vertical-align: top;
 }
