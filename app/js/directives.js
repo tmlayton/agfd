@@ -15,6 +15,9 @@ agfdApp.directive('appVersion', ['version', function(version) {
  * @copyright  ©2012 Matygo Educational Incorporated operating as Learndot
  * @license  Licensed under MIT license (see LICENSE.md)
  */
+
+ // To do - write directive handler for A, INPUT, SELECT to enable fast button and use default
+
 agfdApp.directive('fastClick', function ($parse, Modernizr) {
 
   'use strict';
@@ -68,5 +71,32 @@ agfdApp.provider('Modernizr', function () {
   this.$get = function () {
     return Modernizr || {};
   };
+});
 
+agfdApp.directive('draggable', function($document) {
+  return function(scope, element, attr) {
+    var startX = 0, startY = 0, x = 0, y = 0;
+    element.on('mousedown', function(event) {
+      // Prevent default dragging of selected content
+      event.preventDefault();
+      startX = event.screenX - x;
+      startY = event.screenY - y;
+      $document.on('mousemove', mousemove);
+      $document.on('mouseup', mouseup);
+    });
+
+    function mousemove(event) {
+      y = event.screenY - startY;
+      x = event.screenX - startX;
+      element.css({
+        top: y + 'px',
+        left:  x + 'px'
+      });
+    }
+
+    function mouseup() {
+      $document.unbind('mousemove', mousemove);
+      $document.unbind('mouseup', mouseup);
+    }
+  }
 });
