@@ -48,13 +48,11 @@
 	}
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: $desktop-min) {
 	#menuRight {
 
 		a {
-			@include transition-property(all);
-		  @include transition-duration(200ms);
-		  @include transition-timing-function(ease-in-out);
+			@include transition();
 			&:hover {
 				color: #000;
 			}
@@ -62,7 +60,7 @@
 	}
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: $mobile-max) {
 	#menuRight {
 		padding-top: 16px;
 
