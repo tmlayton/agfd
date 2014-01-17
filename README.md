@@ -5,17 +5,17 @@ This is [agreatfirstdate.com](https://agreatfirstdate.com/)'s next product relea
 ##Todo
 
 + Refactor SCSS
-..* Use Compass wherever possible
-..* Move hardcoded values to variables
-..* Refactor classes to objects and extend objects for edge cases
+  + Use Compass wherever possible
+  + Move hardcoded values to variables
+  + Refactor classes to objects and extend objects for edge cases
 
 + Angularjs
-..* Write directives for A, INPUT, SELECT, and [type='file'] to use fastbutton and perform default action
-..* Refactor for experience bugs
-..* Prototype application data using json files
-..* Form validation and errors
+  + Write directives for A, INPUT, SELECT, and [type='file'] to use fastbutton and perform default action
+  + Refactor for experience bugs
+  + Prototype application data using json files
+  + Form validation and errors
 
 + [Build remaining front end](http://goo.gl/IeSVI6)
-..* Navigate through sign up
-..* Not crazy about 1024x768 view
-..* Design pages view (FAQ, Privacy, Blog, etc)
+  + Navigate through sign up
+  + Not crazy about 1024x768 view
+  + Design pages view (FAQ, Privacy, Blog, etc)
