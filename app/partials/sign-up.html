@@ -1,22 +1,14 @@
-<div class="sign-up-box">
-	<ul class="selected-pillars">
-		<li class="active" ng-repeat="pillar in pillars | filter:'y'"><i class="fa fa-{{pillar.icon}}"></i>{{pillar.name}}</li>
-	</ul>
+<div class="box-w-sample">
+	<ul class="selected-pillars" ng-include="'partials/selected-pillars.html'"></ul>
 
-	<a class="btn btn-primary btn-lg btn-facebook"><i class="fa fa-facebook fa-lg"></i>Sign Up Privately with Facebook</a><br />
+	<a href="#/photo" class="btn btn-primary btn-lg btn-facebook"><i class="fa fa-facebook fa-lg"></i>Sign Up Privately with Facebook</a><br />
 	<span class="small">We never post to your wall</span>
 	<div class="or">or</div>
 	<form class="info">
-		<input type="text" placeholder="First Name" fast-click="focus($event)" />
-		<input type="email" placeholder="Email" fast-click="focus($event)" />
-		<input type="password" placeholder="Password" fast-click="focus($event)" />
-		<a href="#" class="btn-next"><i class="fa fa-chevron-right animate"></i></a>
+		<input type="text" placeholder="First Name" />
+		<input type="email" placeholder="Email" />
+		<input type="password" placeholder="Password" />
+		<a href="#/photo" class="btn-next"><i class="fa fa-chevron-right animate"></i></a>
 	</form>
-	</div>
-	</div>
-	<div class="sample">
-		<p><img src="img/profile-small-sample-1.jpg" /><i class="fa fa-heart"></i></p>
-		<p class="quote">"Had an awesome run on the Mesa Trail today!"</p>
-		<p class="what">What's this?</p>
-	</div>
 </div>
+<div ng-include="'partials/sample.html'"></div>
