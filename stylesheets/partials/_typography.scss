@@ -34,3 +34,63 @@ p {
 	font-weight: 300;
 	font-size: 1.1em;
 }
+
+.large {
+	font-size: 2.7em;
+
+	@media only screen and (max-width: $mobile-max) {
+		font-size: 2em;
+	}
+}
+
+.thin {
+	font-weight: $thin;
+}
+
+.light {
+	font-weight: $light;
+}
+
+.p1 {
+	margin-bottom: 8px;
+}
+
+.pages {
+  text-align: left;
+  
+  h1, h2 {
+    font-weight: $thin;
+    margin: 1.5em 0;
+    line-height: 1em;
+  }
+
+  h1 {
+    font-size: 4em;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 3em;
+    text-align: left;
+  }
+
+  dt {
+    font-weight: $regular;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+  }
+
+  dd {
+    margin-left: 10px;
+    font-weight: $light;
+    font-size: 0.9em;
+    margin-bottom: 1em;
+  }
+
+  p {
+    font-size: 1em;
+    line-height: 1.5em;
+    text-align: left;
+  }
+
+}
