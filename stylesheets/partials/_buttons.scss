@@ -1,4 +1,4 @@
-#showMenu {
+#btn-menu {
 	display: block;
 	position: absolute;
 	right: 20px; 
@@ -26,6 +26,19 @@
 		top: 10px;
 		padding: 10px;
 	}
+}
+
+.btn-round {
+	border: 1px solid $base-border-color;
+	border-radius: 50%;
+	display: block;
+	font-size: 2em;
+	height: 2.5em;
+	width: 2.5em;
+	text-align: center;
+	line-height: 2.5em;
+	@include transition;
+	margin: 0 auto;
 }
 
 .btn-home {
@@ -70,7 +83,7 @@
 			border-color: $bootstrap-green;
 		}
 
-		@media only screen and (min-width: 768px) {
+		@media only screen and (min-width: $desktop-min) {
 			&:hover i {
 				background-color: $base-button-background-color-hover;
 			}
@@ -95,15 +108,15 @@
 	margin-bottom: 50px;
 
 	li {
-		font-size: 1.1em;
+		font-size: 1.4em;
 		font-weight: $light;
 		cursor: default;
 
 		i {
 			font-size: 2em;
-			height: 96px;
-			width: 96px;
-			line-height: 96px;
+			height: 2.5em;
+			width: 2.5em;
+			line-height: 2.5em;
 		}
 	}
 
@@ -111,13 +124,7 @@
 		margin-bottom: 30px;
 
 		li {
-			font-size: 0.8em;
-
-			i {
-				height: 76px;
-				width: 76px;
-				line-height: 76px;
-			}
+			font-size: 1em;
 		}
 	}
 }
@@ -147,6 +154,26 @@
 	}
 }
 
+.btn-file {
+    position: relative;
+    overflow: hidden;
+
+    input[type=file] {
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+	    min-width: 100%;
+	    min-height: 100%;
+	    font-size: 999px;
+	    text-align: right;
+	    filter: alpha(opacity=0);
+	    opacity: 0;
+	    background: red;
+	    cursor: inherit;
+	    display: block;
+	}
+}
+
 .btn-next {
 	display: inline-block;
 	margin: 4px;
@@ -167,7 +194,7 @@
 		@include transition;
 	}
 
-	@media only screen and (max-width: $desktop-large) {
+	@media only screen and (max-width: $desktop-med) {
 		display: block;
 	}
 
