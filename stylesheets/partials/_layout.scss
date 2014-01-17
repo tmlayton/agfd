@@ -7,7 +7,7 @@
 	vertical-align: middle;
 }
 
-.pillars-box {
+.box {
 	padding: 7em 0;
 
 	@media only screen and (max-width: $mobile-max) {
@@ -15,21 +15,22 @@
 	}
 }
 
-.sign-up-box {
-	padding: 8em 0 220px 0;
+.box-w-sample {
+	padding: 8em 0 240px 0;
 
 	@media only screen and (max-width: $mobile-max) {
-		padding: 5em 0 220px 0;
+		padding: 5em 0 240px 0;
 	}
+}
+
+.inline {
+	display: inline-block;
 }
 
 #push {
 	z-index: 2;
   background: url(../img/background.jpg) no-repeat center center; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  @include background-size(cover);
   display: table;
 	position: absolute;
 	height: 100%;
