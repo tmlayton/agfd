@@ -9,8 +9,8 @@ describe('AgfdCtrl', function(){
 
   beforeEach(inject(function(_$httpBackend_, $rootScope, $controller) {
   	$httpBackend = _$httpBackend_;
-  	$httpBackend.expectGET('model/pillars.json').respond([{name: 'Taste'}, {name: 'Spirit'}]);
-    $httpBackend.expectGET('model/samples.json').respond([{pillar: 'Taste'}, {pillar: 'Spirit'}]);
+  	$httpBackend.expectGET('data/pillars.json').respond([{name: 'Taste'}, {name: 'Spirit'}]);
+    $httpBackend.expectGET('data/samples.json').respond([{pillar: 'Taste'}, {pillar: 'Spirit'}]);
  
     scope = $rootScope.$new();
     ctrl = $controller('AgfdCtrl', {$scope: scope});
