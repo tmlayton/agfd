@@ -7,19 +7,15 @@ agfdApp.controller('AgfdCtrl', function($scope, $http) {
 		$scope.pillars = data;
 	});
 
+	$http.get('model/samples.json').success(function(data) {
+		$scope.samples = data;
+	});
+
 	$scope.menuToggle = function() {
 		$scope.open = !($scope.open);
 	};
 
-	$scope.goToURL = function(url, target) {
-		target = target || "_self";
-		if (target && target == "_blank")
-			window.open(url);
-		else
-			window.location.href = url;
-	};
-
-	$scope.focus = function(e) {
-		e.target.focus();
+	$scope.random = function(n){
+    return parseInt(Math.random()*n);
 	};
 });
