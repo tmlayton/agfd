@@ -78,28 +78,33 @@ a:hover, a:active, a:focus {
 }
 
 /* line 10, ../../stylesheets/partials/_layout.scss */
-.pillars-box {
+.box {
   padding: 7em 0;
 }
 @media only screen and (max-width: 767px) {
   /* line 10, ../../stylesheets/partials/_layout.scss */
-  .pillars-box {
+  .box {
     padding: 4em 0;
   }
 }
 
 /* line 18, ../../stylesheets/partials/_layout.scss */
-.sign-up-box {
-  padding: 8em 0 220px 0;
+.box-w-sample {
+  padding: 8em 0 240px 0;
 }
 @media only screen and (max-width: 767px) {
   /* line 18, ../../stylesheets/partials/_layout.scss */
-  .sign-up-box {
-    padding: 5em 0 220px 0;
+  .box-w-sample {
+    padding: 5em 0 240px 0;
   }
 }
 
 /* line 26, ../../stylesheets/partials/_layout.scss */
+.inline {
+  display: inline-block;
+}
+
+/* line 30, ../../stylesheets/partials/_layout.scss */
 #push {
   z-index: 2;
   background: url(../img/background.jpg) no-repeat center center;
@@ -127,7 +132,7 @@ a:hover, a:active, a:focus {
   -webkit-perspective: 1000;
   -webkit-backface-visibility: hidden;
 }
-/* line 44, ../../stylesheets/partials/_layout.scss */
+/* line 45, ../../stylesheets/partials/_layout.scss */
 #push.active {
   -webkit-transform: translate3d(-260px, 0, 0);
   -moz-transform: translate3d(-260px, 0, 0);
@@ -178,8 +183,74 @@ p {
   font-size: 1.1em;
 }
 
+/* line 38, ../../stylesheets/partials/_typography.scss */
+.large {
+  font-size: 2.7em;
+}
+@media only screen and (max-width: 767px) {
+  /* line 38, ../../stylesheets/partials/_typography.scss */
+  .large {
+    font-size: 2em;
+  }
+}
+
+/* line 46, ../../stylesheets/partials/_typography.scss */
+.thin {
+  font-weight: 100;
+}
+
+/* line 50, ../../stylesheets/partials/_typography.scss */
+.light {
+  font-weight: 300;
+}
+
+/* line 54, ../../stylesheets/partials/_typography.scss */
+.p1 {
+  margin-bottom: 8px;
+}
+
+/* line 58, ../../stylesheets/partials/_typography.scss */
+.pages {
+  text-align: left;
+}
+/* line 61, ../../stylesheets/partials/_typography.scss */
+.pages h1, .pages h2 {
+  font-weight: 100;
+  margin: 1.5em 0;
+  line-height: 1em;
+}
+/* line 67, ../../stylesheets/partials/_typography.scss */
+.pages h1 {
+  font-size: 4em;
+  text-align: center;
+}
+/* line 72, ../../stylesheets/partials/_typography.scss */
+.pages h2 {
+  font-size: 3em;
+  text-align: left;
+}
+/* line 77, ../../stylesheets/partials/_typography.scss */
+.pages dt {
+  font-weight: 400;
+  font-size: 1.1em;
+  margin-bottom: 5px;
+}
+/* line 83, ../../stylesheets/partials/_typography.scss */
+.pages dd {
+  margin-left: 10px;
+  font-weight: 300;
+  font-size: 0.9em;
+  margin-bottom: 1em;
+}
+/* line 90, ../../stylesheets/partials/_typography.scss */
+.pages p {
+  font-size: 1em;
+  line-height: 1.5em;
+  text-align: left;
+}
+
 /* line 1, ../../stylesheets/partials/_buttons.scss */
-#showMenu {
+#btn-menu {
   display: block;
   position: absolute;
   right: 20px;
@@ -191,13 +262,13 @@ p {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 /* line 11, ../../stylesheets/partials/_buttons.scss */
-#showMenu.active, #showMenu:focus {
+#btn-menu.active, #btn-menu:focus {
   opacity: .5;
   color: #000;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1025px) {
   /* line 1, ../../stylesheets/partials/_buttons.scss */
-  #showMenu {
+  #btn-menu {
     -webkit-transition-property: all;
     -moz-transition-property: all;
     -o-transition-property: all;
@@ -212,14 +283,14 @@ p {
     transition-timing-function: ease-in-out;
   }
   /* line 18, ../../stylesheets/partials/_buttons.scss */
-  #showMenu:hover {
+  #btn-menu:hover {
     opacity: .5;
     color: #000;
   }
 }
 @media only screen and (max-width: 767px) {
   /* line 1, ../../stylesheets/partials/_buttons.scss */
-  #showMenu {
+  #btn-menu {
     right: 10px;
     top: 10px;
     padding: 10px;
@@ -227,25 +298,50 @@ p {
 }
 
 /* line 31, ../../stylesheets/partials/_buttons.scss */
+.btn-round, .photo-editor {
+  border: 1px solid white;
+  border-radius: 50%;
+  display: block;
+  font-size: 2em;
+  height: 2.5em;
+  width: 2.5em;
+  text-align: center;
+  line-height: 2.5em;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  margin: 0 auto;
+}
+
+/* line 44, ../../stylesheets/partials/_buttons.scss */
 .btn-home {
   color: white;
   background-color: transparent;
   border-color: white;
   font-weight: 300;
 }
-/* line 36, ../../stylesheets/partials/_buttons.scss */
+/* line 49, ../../stylesheets/partials/_buttons.scss */
 .btn-home.touch, .btn-home:focus {
   color: white;
   background-color: rgba(255, 255, 255, 0.2);
   border-color: white;
   outline: 0;
 }
-/* line 42, ../../stylesheets/partials/_buttons.scss */
+/* line 55, ../../stylesheets/partials/_buttons.scss */
 .btn-home:hover {
   color: white;
 }
-@media only screen and (min-width: 768px) {
-  /* line 31, ../../stylesheets/partials/_buttons.scss */
+@media only screen and (min-width: 1025px) {
+  /* line 44, ../../stylesheets/partials/_buttons.scss */
   .btn-home {
     -webkit-transition-property: all;
     -moz-transition-property: all;
@@ -260,20 +356,20 @@ p {
     -o-transition-timing-function: ease-in-out;
     transition-timing-function: ease-in-out;
   }
-  /* line 48, ../../stylesheets/partials/_buttons.scss */
+  /* line 61, ../../stylesheets/partials/_buttons.scss */
   .btn-home:hover {
     background-color: rgba(255, 255, 255, 0.2);
     border-color: white;
   }
 }
 
-/* line 55, ../../stylesheets/partials/_buttons.scss */
+/* line 68, ../../stylesheets/partials/_buttons.scss */
 .pillars, .selected-pillars {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-/* line 60, ../../stylesheets/partials/_buttons.scss */
+/* line 73, ../../stylesheets/partials/_buttons.scss */
 .pillars li, .selected-pillars li {
   display: inline-block;
   padding: 10px;
@@ -283,18 +379,18 @@ p {
   line-height: 2em;
   cursor: pointer;
 }
-/* line 68, ../../stylesheets/partials/_buttons.scss */
+/* line 81, ../../stylesheets/partials/_buttons.scss */
 .pillars li.active i, .selected-pillars li.active i, .pillars li.active:hover i, .selected-pillars li.active:hover i {
   background-color: #54ba53;
   border-color: #54ba53;
 }
-@media only screen and (min-width: 768px) {
-  /* line 74, ../../stylesheets/partials/_buttons.scss */
+@media only screen and (min-width: 1025px) {
+  /* line 87, ../../stylesheets/partials/_buttons.scss */
   .pillars li:hover i, .selected-pillars li:hover i {
     background-color: rgba(255, 255, 255, 0.2);
   }
 }
-/* line 79, ../../stylesheets/partials/_buttons.scss */
+/* line 92, ../../stylesheets/partials/_buttons.scss */
 .pillars li i, .selected-pillars li i {
   border: 1px solid white;
   border-radius: 50%;
@@ -318,41 +414,35 @@ p {
   transition-timing-function: ease-in-out;
 }
 
-/* line 93, ../../stylesheets/partials/_buttons.scss */
+/* line 106, ../../stylesheets/partials/_buttons.scss */
 .selected-pillars {
   margin-bottom: 50px;
 }
-/* line 97, ../../stylesheets/partials/_buttons.scss */
+/* line 110, ../../stylesheets/partials/_buttons.scss */
 .selected-pillars li {
-  font-size: 1.1em;
+  font-size: 1.4em;
   font-weight: 300;
   cursor: default;
 }
-/* line 102, ../../stylesheets/partials/_buttons.scss */
+/* line 115, ../../stylesheets/partials/_buttons.scss */
 .selected-pillars li i {
   font-size: 2em;
-  height: 96px;
-  width: 96px;
-  line-height: 96px;
+  height: 2.5em;
+  width: 2.5em;
+  line-height: 2.5em;
 }
 @media only screen and (max-width: 767px) {
-  /* line 93, ../../stylesheets/partials/_buttons.scss */
+  /* line 106, ../../stylesheets/partials/_buttons.scss */
   .selected-pillars {
     margin-bottom: 30px;
   }
-  /* line 113, ../../stylesheets/partials/_buttons.scss */
+  /* line 126, ../../stylesheets/partials/_buttons.scss */
   .selected-pillars li {
-    font-size: 0.8em;
-  }
-  /* line 116, ../../stylesheets/partials/_buttons.scss */
-  .selected-pillars li i {
-    height: 76px;
-    width: 76px;
-    line-height: 76px;
+    font-size: 1em;
   }
 }
 
-/* line 125, ../../stylesheets/partials/_buttons.scss */
+/* line 132, ../../stylesheets/partials/_buttons.scss */
 .btn-facebook {
   background-color: #4c66a4 !important;
   border-color: #4c66a4 !important;
@@ -361,16 +451,16 @@ p {
   padding: .6em 1em;
   border-radius: .15em;
 }
-/* line 133, ../../stylesheets/partials/_buttons.scss */
+/* line 140, ../../stylesheets/partials/_buttons.scss */
 .btn-facebook:hover {
   opacity: 0.9;
 }
-/* line 137, ../../stylesheets/partials/_buttons.scss */
+/* line 144, ../../stylesheets/partials/_buttons.scss */
 .btn-facebook i {
   margin-right: .5em;
 }
 @media only screen and (max-width: 767px) {
-  /* line 125, ../../stylesheets/partials/_buttons.scss */
+  /* line 132, ../../stylesheets/partials/_buttons.scss */
   .btn-facebook {
     font-weight: 400;
     font-size: .9em;
@@ -380,16 +470,37 @@ p {
   }
 }
 
-/* line 150, ../../stylesheets/partials/_buttons.scss */
+/* line 157, ../../stylesheets/partials/_buttons.scss */
+.btn-file {
+  position: relative;
+  overflow: hidden;
+}
+/* line 161, ../../stylesheets/partials/_buttons.scss */
+.btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 999px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  background: red;
+  cursor: inherit;
+  display: block;
+}
+
+/* line 177, ../../stylesheets/partials/_buttons.scss */
 .btn-next, .btn-next-pillars {
   display: inline-block;
   margin: 4px;
 }
-/* line 153, ../../stylesheets/partials/_buttons.scss */
+/* line 180, ../../stylesheets/partials/_buttons.scss */
 .btn-next.touch i, .touch.btn-next-pillars i, .btn-next:focus i, .btn-next-pillars:focus i {
   background-color: rgba(255, 255, 255, 0.2);
 }
-/* line 157, ../../stylesheets/partials/_buttons.scss */
+/* line 184, ../../stylesheets/partials/_buttons.scss */
 .btn-next i, .btn-next-pillars i {
   height: 72px;
   width: 72px;
@@ -414,25 +525,25 @@ p {
   transition-timing-function: ease-in-out;
 }
 @media only screen and (max-width: 1199px) {
-  /* line 150, ../../stylesheets/partials/_buttons.scss */
+  /* line 177, ../../stylesheets/partials/_buttons.scss */
   .btn-next, .btn-next-pillars {
     display: block;
   }
 }
-@media only screen and (min-width: 768px) {
-  /* line 175, ../../stylesheets/partials/_buttons.scss */
+@media only screen and (min-width: 1025px) {
+  /* line 202, ../../stylesheets/partials/_buttons.scss */
   .btn-next:hover i, .btn-next-pillars:hover i {
     background-color: rgba(255, 255, 255, 0.2);
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 150, ../../stylesheets/partials/_buttons.scss */
+  /* line 177, ../../stylesheets/partials/_buttons.scss */
   .btn-next, .btn-next-pillars {
     margin: 8px;
   }
 }
 
-/* line 185, ../../stylesheets/partials/_buttons.scss */
+/* line 212, ../../stylesheets/partials/_buttons.scss */
 .btn-next-pillars {
   vertical-align: top;
 }
@@ -506,8 +617,10 @@ p {
 .sample img {
   border-radius: 50%;
   margin: 0 4px;
+  width: 64px;
+  height: 64px;
 }
-/* line 55, ../../stylesheets/partials/_figures.scss */
+/* line 57, ../../stylesheets/partials/_figures.scss */
 .sample i {
   border: 1px solid #fff;
   border-radius: 50%;
@@ -520,17 +633,17 @@ p {
   vertical-align: middle;
   margin: 0 4px;
 }
-/* line 67, ../../stylesheets/partials/_figures.scss */
+/* line 69, ../../stylesheets/partials/_figures.scss */
 .sample .quote {
   font-size: 1.1em;
 }
-/* line 70, ../../stylesheets/partials/_figures.scss */
+/* line 72, ../../stylesheets/partials/_figures.scss */
 .sample .what {
   font-size: 0.8em;
   cursor: pointer;
 }
 
-/* line 76, ../../stylesheets/partials/_figures.scss */
+/* line 78, ../../stylesheets/partials/_figures.scss */
 .or {
   overflow: hidden;
   text-align: center;
@@ -539,7 +652,7 @@ p {
   margin: .5em auto;
   width: 50%;
 }
-/* line 83, ../../stylesheets/partials/_figures.scss */
+/* line 85, ../../stylesheets/partials/_figures.scss */
 .or:before, .or:after {
   background-color: #fff;
   content: "";
@@ -549,18 +662,18 @@ p {
   vertical-align: middle;
   width: 50%;
 }
-/* line 92, ../../stylesheets/partials/_figures.scss */
+/* line 94, ../../stylesheets/partials/_figures.scss */
 .or:before {
   right: 0.5em;
   margin-left: -50%;
 }
-/* line 96, ../../stylesheets/partials/_figures.scss */
+/* line 98, ../../stylesheets/partials/_figures.scss */
 .or:after {
   left: 0.5em;
   margin-right: -50%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 76, ../../stylesheets/partials/_figures.scss */
+  /* line 78, ../../stylesheets/partials/_figures.scss */
   .or {
     font-size: 1.2em;
     font-weight: 300;
@@ -619,7 +732,7 @@ p {
   padding: 30px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1025px) {
   /* line 54, ../../stylesheets/partials/_menu.scss */
   #menuRight a {
     -webkit-transition-property: all;
@@ -635,33 +748,33 @@ p {
     -o-transition-timing-function: ease-in-out;
     transition-timing-function: ease-in-out;
   }
-  /* line 58, ../../stylesheets/partials/_menu.scss */
+  /* line 56, ../../stylesheets/partials/_menu.scss */
   #menuRight a:hover {
     color: #000;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 66, ../../stylesheets/partials/_menu.scss */
+  /* line 64, ../../stylesheets/partials/_menu.scss */
   #menuRight {
     padding-top: 16px;
   }
-  /* line 69, ../../stylesheets/partials/_menu.scss */
+  /* line 67, ../../stylesheets/partials/_menu.scss */
   #menuRight a {
     padding: .4em 2em;
   }
-  /* line 73, ../../stylesheets/partials/_menu.scss */
+  /* line 71, ../../stylesheets/partials/_menu.scss */
   #menuRight .sub {
     margin-top: 1em;
   }
-  /* line 76, ../../stylesheets/partials/_menu.scss */
+  /* line 74, ../../stylesheets/partials/_menu.scss */
   #menuRight .sub a {
     padding: .1em 2.5em;
   }
-  /* line 81, ../../stylesheets/partials/_menu.scss */
+  /* line 79, ../../stylesheets/partials/_menu.scss */
   #menuRight .social {
     margin: 1em 0 0 2em;
   }
-  /* line 85, ../../stylesheets/partials/_menu.scss */
+  /* line 83, ../../stylesheets/partials/_menu.scss */
   #menuRight #closeMenu {
     top: 10px;
     right: 10px;
@@ -785,4 +898,18 @@ p {
   .info input[type="email"] {
     width: 90%;
   }
+}
+
+/* line 108, ../../stylesheets/partials/_forms.scss */
+.photo-editor {
+  overflow: hidden;
+  position: relative;
+}
+/* line 113, ../../stylesheets/partials/_forms.scss */
+.photo-editor img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: move;
+  width: 120%;
 }
