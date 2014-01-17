@@ -13,5 +13,9 @@ This is [agreatfirstdate.com](https://agreatfirstdate.com/)'s next product relea
 ..+ Write directives for A, INPUT, SELECT, and [type='file'] to use fastbutton and perform default action
 ..+ Refactor for experience bugs
 ..+ Prototype application data using json files
+..+ Form validation and errors
 
 + [Build remaining front end](http://goo.gl/IeSVI6)
+..+ Navigate through sign up
+..+ Not crazy about 1024x768 view
+..+ Design pages view (FAQ, Privacy, Blog, etc)
