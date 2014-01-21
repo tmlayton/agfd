@@ -29,9 +29,7 @@ a {
 }
 
 .animate {
-	@include transition-property(all);
-  @include transition-duration(200ms);
-  @include transition-timing-function(ease-in-out);
+	@include transition();
 }
 
 .small {
