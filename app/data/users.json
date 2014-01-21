@@ -1,0 +1,16 @@
+[
+	{
+		"avatar"							: "tim.jpg",
+		"coverimage"					:	"tim-cover-image.jpg",
+		"firstname"						: "Tim",
+		"lastname"						: "Layton",
+		"email"								:	"laytontm@gmail.com",
+		"location"						: "St. Louis, MO",
+		"points"							: "1337",
+		"connectednetworks"		:	[ "facebook", "twitter", "pinterest", "google-plus", "tumblr" ],
+		"pillars"							: [ "Taste", "Music", "Words", "Adventure" ],
+		"aboutme"							:	"I often think about how I’ll feel about my life when I’m at my end-of-days. Will I have regrets? Will I be proud? And putting myself in those shoes is how I make most decisions in life. There is so much of the world to see and to accomplish.",
+		"aboutyou"						:	"Looking for the right one! Want to meet someone who has a passion for living and wants to spend time with that special someone.",
+		"loremipsum"					: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nigel mansell socially mobile dolor ipsum middle eastern despot, imperial socially mobile nigel mansell middle eastern despot worn with distinction handsome wario Droopy robot moustache facial accessory dolor ipsum, socially mobile handsome worn with distinction imperial country baron casual style gent funny walk facial accessory nigel mansell robot moustache arcu boxing champion wario French café patron middle eastern despot spaghetti western Droopy dolor ipsum? Felis tricky sneezes frontiersman cunning like a fox? Robert winston mouthbrow charming villain challenge you to a duel kaiser bill dodgy uncle clive fox hunting iron tache. Caterpillar waiter tip top old bean. Mr frothy-top funny walk en time-warped cabbie dick dastardly mexican’t jimi hendrix, mexican’t mark lawrenson man of the year 1986 funny walk jimi hendrix en time-warped cabbie Fallen eyebrow andrew weatherall dick dastardly mr frothy-top yeoman farmer. Quis bogie basket horseshoe professor plum mustachio grooming? Toothbrush robot moustache I drink your milkshake spaghetti western success?"
+	}
+]
