@@ -33,7 +33,7 @@
 .middle {
 	display: table-cell;
 	vertical-align: middle;
-	background: image-url("background.jpg") no-repeat center center; 
+	background: url("../img/background.jpg") no-repeat center center; 
   @include background-size(cover);
 }
 

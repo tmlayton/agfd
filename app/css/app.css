@@ -121,7 +121,7 @@ a:hover, a:active, a:focus {
 .middle {
   display: table-cell;
   vertical-align: middle;
-  background: url('/app/img/background.jpg?1387322361') no-repeat center center;
+  background: url("../img/background.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
