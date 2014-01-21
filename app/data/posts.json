@@ -1,0 +1,32 @@
+[
+	{
+		"avatar"			: "profile-small-sample-1.jpg",
+		"pillar"	: "Fitness",
+		"text"		:	"Had an awesome run on the Mesa Trail today!"
+	},
+	{
+		"avatar"			: "profile-small-sample-2.jpg",
+		"pillar"	: "Music",
+		"text"		: "Got tickets for Love and Light at Bluebird Theater, so excited!"
+	},
+	{
+		"avatar"			: "profile-small-sample-3.jpg",
+		"pillar"	: "Taste",
+		"text"		:	"Went to Williams & Graham last night, always a good time."
+	},
+	{
+		"avatar"			: "profile-small-sample-1.jpg",
+		"pillar"	: "Spirit",
+		"text"		:	"I'm going to be teaching the Sunday school kids this summer, wish me luck :)"
+	},
+	{
+		"avatar"			: "profile-small-sample-2.jpg",
+		"pillar"	: "Family",
+		"text"		: "Off to our annually family BBQ."
+	},
+	{
+		"avatar"			: "profile-small-sample-3.jpg",
+		"pillar"	: "Words",
+		"text"		:	"Just read Delivering Happiness and LOVED it!"
+	}
+]
