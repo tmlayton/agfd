@@ -7,8 +7,12 @@ agfdApp.controller('AgfdCtrl', function($scope, $http) {
 		$scope.pillars = data;
 	});
 
-	$http.get('data/samples.json').success(function(data) {
-		$scope.samples = data;
+	$http.get('data/posts.json').success(function(data) {
+		$scope.posts = data;
+	});
+
+	$http.get('data/users.json').success(function(data) {
+		$scope.users = data;
 	});
 
 	$scope.menuToggle = function() {
@@ -18,4 +22,11 @@ agfdApp.controller('AgfdCtrl', function($scope, $http) {
 	$scope.random = function(n){
     return parseInt(Math.random()*n);
 	};
+
+	//Tabs
+	$scope.tabs = ["Feed", "Activity", "Photos", "Settings"];
+  $scope.selectedIndex = 0;
+  $scope.itemClicked = function ($index) {
+    $scope.selectedIndex = $index;
+  };
 });

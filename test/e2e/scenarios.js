@@ -10,7 +10,7 @@ describe('agfd app', function() {
 
 
   it('should automatically render pillars when hash/fragment is empty', function() {
-    expect(element('[ng-view] h1').text()).toMatch('Pick Your Pillars');
+    expect(element('.ng-view h1').text()).toMatch('Pick Your Pillars');
   });
 
 
@@ -21,8 +21,8 @@ describe('agfd app', function() {
     });
 
 
-    it('should render pillars when user navigates to /', function() {
-      expect(element('[ng-view] h1').text()).toMatch('Pick Your Pillars');
+    it('should render pillars partial when user navigates to /', function() {
+      expect(element('.ng-view h1').text()).toMatch('Pick Your Pillars');
     });
 
   });
@@ -35,11 +35,11 @@ describe('agfd app', function() {
     });
 
     it('should only display 4 pillars', function() {
-       expect(repeater('[ng-view] .selected-pillars li').count()).toBe(4);
+       expect(repeater('.ng-view .selected-pillars li').count()).toBe(4);
     });
 
     it('should render sign-up when user navigates to /sign-up', function() {
-      expect(element('[ng-view] .btn-facebook').text()).toMatch('Sign Up Privately with Facebook');
+      expect(element('.ng-view .btn-facebook').text()).toMatch('Sign Up Privately with Facebook');
     });
 
   });
@@ -51,11 +51,11 @@ describe('agfd app', function() {
     });
 
     it('should render a random sample post', function() {
-      expect(element('[ng-view] .sample .quote').text()).not().toMatch('""');
+      expect(element('.ng-view .sample-post .text').text()).not().toMatch('""');
     });
 
      it('should render a random sample post and filter a single pillar', function() {
-      expect(repeater('[ng-view] .sample i').count()).toBe(1);
+      expect(repeater('.ng-view .sample-post i').count()).toBe(1);
     });
 
   });
