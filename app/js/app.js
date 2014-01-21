@@ -10,11 +10,17 @@ angular.module('agfdApp', [
   'agfdApp.controllers'
 ]).
 config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/', {templateUrl: 'partials/pillars.html', controller: 'AgfdCtrl'});
-  $routeProvider.when('/sign-up', {templateUrl: 'partials/sign-up.html', controller: 'AgfdCtrl'});
-  $routeProvider.when('/photo', {templateUrl: 'partials/photo.html', controller: 'AgfdCtrl'});
-  $routeProvider.when('/photo-edit', {templateUrl: 'partials/photo-edit.html', controller: 'AgfdCtrl'});
-  $routeProvider.when('/faq', {templateUrl: 'partials/faq.html', controller: 'AgfdCtrl'});
-  $routeProvider.when('/privacy', {templateUrl: 'partials/privacy.html', controller: 'AgfdCtrl'});
+  //sign up
+  $routeProvider.when('/', {templateUrl: 'partials/sign-up/pillars.html', controller: 'AgfdCtrl'});
+  $routeProvider.when('/sign-up', {templateUrl: 'partials/sign-up/facebook-or-email.html', controller: 'AgfdCtrl'});
+  $routeProvider.when('/photo', {templateUrl: 'partials/sign-up/photo.html', controller: 'AgfdCtrl'});
+  $routeProvider.when('/photo-edit', {templateUrl: 'partials/sign-up/photo-edit.html', controller: 'AgfdCtrl'});
+
+  //profile
+  $routeProvider.when('/profile', {templateUrl: 'partials/profile/profile.html', controller: 'AgfdCtrl'});
+
+  //pages
+  $routeProvider.when('/faq', {templateUrl: 'partials/pages/faq.html', controller: 'AgfdCtrl'});
+  $routeProvider.when('/privacy', {templateUrl: 'partials/pages/privacy.html', controller: 'AgfdCtrl'});
   $routeProvider.otherwise({redirectTo: '/'});
 }]);
