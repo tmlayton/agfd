@@ -67,16 +67,22 @@ a:hover, a:active, a:focus {
 }
 
 /* line 1, ../../stylesheets/partials/_layout.scss */
+header {
+  position: relative;
+  z-index: 2;
+}
+
+/* line 6, ../../stylesheets/partials/_layout.scss */
 .center {
   text-align: center;
 }
 
-/* line 5, ../../stylesheets/partials/_layout.scss */
+/* line 10, ../../stylesheets/partials/_layout.scss */
 .container {
   position: relative;
 }
 
-/* line 9, ../../stylesheets/partials/_layout.scss */
+/* line 14, ../../stylesheets/partials/_layout.scss */
 #push {
   z-index: 2;
   position: absolute;
@@ -99,7 +105,7 @@ a:hover, a:active, a:focus {
   -webkit-perspective: 1000;
   -webkit-backface-visibility: hidden;
 }
-/* line 21, ../../stylesheets/partials/_layout.scss */
+/* line 26, ../../stylesheets/partials/_layout.scss */
 #push.active {
   -webkit-transform: translate3d(-260px, 0, 0);
   -moz-transform: translate3d(-260px, 0, 0);
@@ -110,14 +116,14 @@ a:hover, a:active, a:focus {
   left: -260px \0/;
 }
 
-/* line 27, ../../stylesheets/partials/_layout.scss */
+/* line 32, ../../stylesheets/partials/_layout.scss */
 .ng-view {
   display: table;
   height: 100%;
   width: 100%;
 }
 
-/* line 33, ../../stylesheets/partials/_layout.scss */
+/* line 38, ../../stylesheets/partials/_layout.scss */
 .middle {
   display: table-cell;
   vertical-align: middle;
@@ -128,58 +134,58 @@ a:hover, a:active, a:focus {
   background-size: cover;
 }
 
-/* line 40, ../../stylesheets/partials/_layout.scss */
+/* line 45, ../../stylesheets/partials/_layout.scss */
 .box {
   padding: 7em 0;
 }
 @media only screen and (max-width: 767px) {
-  /* line 40, ../../stylesheets/partials/_layout.scss */
+  /* line 45, ../../stylesheets/partials/_layout.scss */
   .box {
     padding: 4em 0;
   }
 }
 
-/* line 48, ../../stylesheets/partials/_layout.scss */
+/* line 53, ../../stylesheets/partials/_layout.scss */
 .box-w-sample {
   padding: 8em 0 240px 0;
 }
 @media only screen and (max-width: 767px) {
-  /* line 48, ../../stylesheets/partials/_layout.scss */
+  /* line 53, ../../stylesheets/partials/_layout.scss */
   .box-w-sample {
     padding: 5em 0 240px 0;
   }
 }
 
-/* line 56, ../../stylesheets/partials/_layout.scss */
+/* line 61, ../../stylesheets/partials/_layout.scss */
 .inline {
   display: inline-block;
 }
 
-/* line 60, ../../stylesheets/partials/_layout.scss */
+/* line 65, ../../stylesheets/partials/_layout.scss */
 .profile-box {
   background-color: #fff;
   height: 100%;
 }
 
-/* line 65, ../../stylesheets/partials/_layout.scss */
+/* line 70, ../../stylesheets/partials/_layout.scss */
 .profile-information {
   margin-top: -113.5px;
   margin-bottom: 1em;
 }
 @media only screen and (max-width: 1024px) {
-  /* line 65, ../../stylesheets/partials/_layout.scss */
+  /* line 70, ../../stylesheets/partials/_layout.scss */
   .profile-information {
     margin-top: -75px;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 65, ../../stylesheets/partials/_layout.scss */
+  /* line 70, ../../stylesheets/partials/_layout.scss */
   .profile-information {
     margin-top: -50px;
   }
 }
 
-/* line 81, ../../stylesheets/partials/_layout.scss */
+/* line 86, ../../stylesheets/partials/_layout.scss */
 .tab-view {
   background-color: #eeeeee;
   color: #4f4f4f;
