@@ -1,10 +1,40 @@
-.container {
+.center {
 	text-align: center;
+}
+
+.container {
+	position: relative;
+}
+
+#push {
+	z-index: 2;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	@include transition(all, 0.3s, ease);
+
+	/* Removes flicker in certain cases */
+	-webkit-perspective: 1000;
+	-webkit-backface-visibility: hidden;
+
+	&.active {
+		@include translate3d(-$menu-width, 0, 0);
+		/* IE 8 and 9  */ left: -$menu-width #{$ie-8-9};
+	}
+}
+
+.ng-view {
+	display: table;
+	height: 100%;
+	width: 100%;
 }
 
 .middle {
 	display: table-cell;
 	vertical-align: middle;
+	background: image-url("background.jpg") no-repeat center center; 
+  @include background-size(cover);
 }
 
 .box {
@@ -27,23 +57,29 @@
 	display: inline-block;
 }
 
-#push {
-	z-index: 2;
-  background: url(../img/background.jpg) no-repeat center center; 
-  @include background-size(cover);
-  display: table;
-	position: absolute;
+.profile-box {
+	background-color: #fff;
 	height: 100%;
-	width: 100%;
+}
 
-	@include transition(all, 0.3s, ease);
+.profile-information {
+	margin-top: -$base-avatar-size/2;
+	margin-bottom: 1em;
 
-	/* Removes flicker in certain cases */
-	-webkit-perspective: 1000;
-	-webkit-backface-visibility: hidden;
-
-	&.active {
-		@include translate3d(-$menu-width, 0, 0);
-		/* IE 8 and 9  */ left: -$menu-width #{$ie-8-9};
+	@media only screen and (max-width: $tablet-max) {
+		margin-top: -$tablet-avatar-size/2;
 	}
+
+	@media only screen and (max-width: $mobile-max) {
+		margin-top: -$mobile-avatar-size/2;
+	}
+}
+.profile-tabs {
+	
+}
+
+.tab-view {
+	background-color: $tabs-background-color;
+	color: $base-profile-font-color;
+	padding: 3em 0;
 }

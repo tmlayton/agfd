@@ -33,15 +33,15 @@
 #gradient {
 	@include background-image(linear-gradient($gradient-start, $gradient-end));
 	width: 100%;
-	height: 200px;
+	height: $base-gradient-height;
 	position: absolute;
 
 	@media only screen and (max-width: $mobile-max) {
-		height: 100px;
+		height: $mobile-gradient-height;
 	}
 }
 
-.sample {
+.sample-post {
 	position: absolute;
 	bottom: 0;
 	left: 50%;
@@ -66,7 +66,7 @@
 		vertical-align: middle;
 		margin: 0 4px;
 	}
-	.quote {
+	.text {
 		font-size: 1.1em;
 	}
 	.what {
@@ -103,5 +103,147 @@
 	@media only screen and (max-width: $mobile-max) {
 		font-size: 1.2em;
 		font-weight: 300;
+	}
+}
+
+.cover-image-box {
+	width: 100%;
+	height: $base-cover-image-height;
+	overflow: hidden;
+	@media only screen and (max-width: $tablet-max) {
+		height: $tablet-cover-image-height;
+	}
+	@media only screen and (max-width: $mobile-max) {
+		height: $mobile-cover-image-height;
+	}
+
+	.cover-image  {
+		width: 100%;
+		height: 100%;
+		background-position: top left;
+		background-repeat:no-repeat;
+		background-size: cover;
+	}
+
+	.bottom-gradient {
+		@include background-image(linear-gradient($bottom-gradient-start, $bottom-gradient-end));
+		width: 100%;
+		height: $base-gradient-height;
+		margin-top: -$base-gradient-height;
+		@media only screen and (max-width: $mobile-max) {
+			height: $mobile-gradient-height;
+			margin-top: -$mobile-gradient-height;
+		}
+	}
+}
+
+.avatar {
+	position: relative;
+	width: $base-avatar-size;
+	height: $base-avatar-size;
+	overflow: hidden;
+	display: block;
+	margin: 0 auto 1em auto;
+	@include border-radius(50%);
+
+	img {
+		width:100%;
+	}
+
+	@media only screen and (max-width: $tablet-max) {
+		width: $tablet-avatar-size;
+		height: $tablet-avatar-size;
+	}
+
+	@media only screen and (max-width: $mobile-max) {
+		width: $mobile-avatar-size;
+		height: $mobile-avatar-size;
+	}
+}
+
+.my-name {
+	font-size: $profile-name-font-size;
+	font-weight: $thin;
+	line-height: 1em;
+
+	@media only screen and (max-width: $tablet-max) {
+		font-size: $profile-tablet-name-font-size;
+	}
+
+	@media only screen and (max-width: $mobile-max) {
+		font-size: $profile-mobile-name-font-size;
+		font-weight: $light;
+	}
+}
+
+.my-location,.my-points,.my-connected-networks {
+	font-weight: $light;
+	display: inline-block;
+	margin: 0 .5em;
+	line-height: $profile-detail-line-height;
+
+	@media only screen and (max-width: $tablet-max) {
+		line-height: $profile-tablet-detail-line-height;
+	}
+
+	@media only screen and (max-width: $mobile-max) {
+		line-height: $profile-mobile-detail-line-height;
+	}
+}
+
+.my-location, .my-points {
+	font-size: $profile-detail-font-size;
+
+	@media only screen and (max-width: $tablet-max) {
+		font-size: $profile-tablet-detail-font-size;
+	}
+
+	@media only screen and (max-width: $mobile-max) {
+		font-size: $profile-mobile-detail-font-size;
+	}
+}
+
+.my-connected-networks i {
+	margin: 0 2px;
+	font-size: 1.5em;
+}
+
+.my-pillars {
+	ul {
+		margin: 1em 0;
+		padding: 0;
+		list-style: none;
+
+		li {
+			display: inline-block;
+			padding: .5em;
+
+			i {
+				position: relative;
+
+				span {
+					position: absolute;
+					font-size: .5em;
+					display: block;
+					line-height: 1em;
+					background-color: $base-profile-background-color;
+					bottom: 5px;
+					right: 5px;
+					padding: 1px;
+					font-weight: $thin;
+				}
+			}
+		}
+	}
+}
+
+.about-me,.about-you {
+	color: $base-profile-font-color;
+	line-height: 1.5em;
+	font-weight: $light;
+	margin: 0.5em 0;
+
+	textarea {
+		width: 100%;
 	}
 }
