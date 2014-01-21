@@ -1,0 +1,46 @@
+<div class="profile-box" ng-repeat="user in users | filter:users[0] | limitTo:1">
+
+	<section class="cover-image-box">
+		<div class="cover-image" style="background-image:url('img/users/{{user.coverimage}}');"></div>
+		<div class="bottom-gradient"></div>
+	</section>
+
+	<section class="profile-information">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-3 col-md-3 center">
+					<div class="avatar"><img ng-src="img/users/{{user.avatar}}" /></div>
+					<button type="button" class="btn btn-default btn-lg btn-xl">&nbsp;  +  &nbsp;</button>
+				</div>
+				<div class="col-xs-9 col-md-9">
+					<div class="my-name">{{user.firstname}} {{user.lastname}}</div>
+					<div class="my-location"><i class="fa fa-map-marker"></i> {{user.location}}</div>
+					<div class="my-points"><i class="fa fa-gift"></i> {{user.points}} points</div>
+					<div class="my-connected-networks"><i ng-repeat="network in user.connectednetworks" class="fa fa-{{network}}-square"> </i></div>
+					<div class="my-pillars">
+						<ul>
+							<li ng-repeat="mypillar in user.pillars"><i ng-repeat="pillar in pillars | filter:{ name: mypillar } | limitTo:1" class="fa fa-{{pillar.icon}} btn-profile"><span>{{random(20)}}</span></i></li>
+						</ul>
+					</div>
+					<div class="about-me" click-to-edit="user.aboutme"></div>
+					<div class="about-you" click-to-edit="user.aboutyou"></div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<section class="profile-tabs">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-3 col-md-3 btn-tab" ng-repeat="tab in tabs" ng-class="{selected: $index == selectedIndex }" ng-click="itemClicked($index)">{{tab}}</div>
+			</div>
+		</div>
+		<div class="tab-view">
+			<div class="container">
+				<p>{{user.loremipsum}}</p>
+			</div>
+		</div>
+	</section>
+
+</div>

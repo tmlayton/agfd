@@ -1,5 +1,0 @@
-<div class="sample" ng-repeat="sample in samples | filter:samples[random(samples.length)]">
-	<p><img ng-src="img/{{sample.img}}" /><i ng-repeat="pillar in pillars | filter:{ name: sample.pillar } | limitTo:1" class="fa fa-{{pillar.icon}}"></i></p>
-	<p class="quote">"{{sample.quote}}"</p>
-	<p class="what">What's this?</p>
-</div>
