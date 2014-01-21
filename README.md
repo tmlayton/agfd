@@ -19,3 +19,6 @@ This is [agreatfirstdate.com](https://agreatfirstdate.com/)'s next product relea
   + Navigate through sign up
   + Not crazy about 1024x768 view
   + Design pages view (FAQ, Privacy, Blog, etc)
+  + Add tour to profile page after sign up
+  + Add growl-ish notification
+  + DRY up sign up partials
