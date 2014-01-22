@@ -143,7 +143,7 @@
 	height: $base-avatar-size;
 	overflow: hidden;
 	display: block;
-	margin: 0 auto 1em auto;
+	margin: 0 0 1em auto;
 	@include border-radius(50%);
 
 	img {
@@ -173,6 +173,8 @@
 	@media only screen and (max-width: $mobile-max) {
 		font-size: $profile-mobile-name-font-size;
 		font-weight: $light;
+		margin-top: 4px;
+		margin-bottom: -4px;
 	}
 }
 
@@ -200,12 +202,26 @@
 
 	@media only screen and (max-width: $mobile-max) {
 		font-size: $profile-mobile-detail-font-size;
+		font-weight: $profile-mobile-detail-font-weight;
 	}
 }
 
-.my-connected-networks i {
-	margin: 0 2px;
-	font-size: 1.5em;
+.my-connected-networks {
+
+	@media only screen and (max-width: $mobile-max) {
+		display: none; //HIDE FOR NOW UNTIL WE FIGURE OUT A GOOD LAYOUT
+		color: $base-profile-border-color;
+		margin: 9px 0 0 2px;
+	}
+
+	i {	
+		margin: 0 2px;
+		font-size: 1.5em;
+
+		@media only screen and (max-width: $mobile-max) {
+			font-size: 1em;
+		}
+	}
 }
 
 .my-pillars {
@@ -234,6 +250,23 @@
 				}
 			}
 		}
+
+		@media only screen and (max-width: $mobile-max) {
+			margin: .5em 0 .8em 0;
+
+			li {
+				padding: 1px;
+
+				i {
+					font-size: 17px;
+
+					span {
+						bottom: 2px;
+						right: 1px;
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -241,9 +274,39 @@
 	color: $base-profile-font-color;
 	line-height: 1.5em;
 	font-weight: $light;
-	margin: 0.5em 0;
+	margin: .5em 0;
+	overflow:hidden;
+	padding-left:.5em;
 
 	textarea {
 		width: 100%;
+		margin-bottom: 3px;
+	}
+
+	@media only screen and (max-width: $mobile-max) {
+		font-size: .8em;
+		height: 1.4em;
+		&:before {
+			content:"\f196";
+			float: right;
+			font-family: FontAwesome;
+			line-height: 1.5em;
+		}
+
+		&.more {
+			height: auto;
+			&:before {
+				content:"";
+			}
+		}
+	}
+}
+
+.tab-view p {
+	padding: 3em 0;
+
+	@media only screen and (max-width: $mobile-max) {
+		font-size: .9em;
+		padding: 1em 0;
 	}
 }

@@ -215,10 +215,23 @@
 	vertical-align: top;
 }
 
-.btn-xl {
+#btn-plus {
 	font-size: 2.5em;
 	font-weight: $thin;
 	color: $base-profile-font-color;
+	width: $base-avatar-size;
+
+	@media only screen and (max-width: $tablet-max) {
+		line-height: $profile-tablet-detail-line-height;
+		font-size: 1.7em;
+		width: $tablet-avatar-size;
+	}
+
+	@media only screen and (max-width: $mobile-max) {
+		font-size: 1em;
+		width: $mobile-avatar-size;
+		font-weight: $light;
+	}
 }
 
 .btn-profile {
@@ -238,5 +251,9 @@
 	&.selected {
 		background-color: $tabs-background-color;
 		color: #4f4f4f;
+	}
+
+	@media only screen and (max-width: $mobile-max) {
+		font-size: .9em;
 	}
 }

@@ -3,6 +3,10 @@ header {
 	z-index: 2;
 }
 
+.right {
+	text-align: right;
+}
+
 .center {
 	text-align: center;
 }
@@ -86,5 +90,4 @@ header {
 .tab-view {
 	background-color: $tabs-background-color;
 	color: $base-profile-font-color;
-	padding: 3em 0;
 }
