@@ -29,4 +29,10 @@ agfdApp.controller('AgfdCtrl', function($scope, $http) {
   $scope.itemClicked = function ($index) {
     $scope.selectedIndex = $index;
   };
+
+  $scope.toggleClass = function($event, className) {
+		className = className || '';
+		angular.element($event.target).parent().toggleClass(className);
+	};
+
 });

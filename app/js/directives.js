@@ -105,13 +105,13 @@ agfdApp.directive("clickToEdit", function() {
   var editorTemplate = '<div class="click-to-edit">' +
   '<div ng-hide="view.editorEnabled">' +
   '"{{value}}" ' +
-  '<a ng-click="enableEditor()">Edit</a>' +
+  '<a ng-click="enableEditor()" class="btn btn-default btn-xs">Edit</a>' +
   '</div>' +
   '<div ng-show="view.editorEnabled">' +
   '<textarea ng-model="view.editableValue" class="form-control"></textarea>' +
-  '<a ng-click="save()">Save</a>' +
+  '<a ng-click="save()" class="btn btn-default btn-xs">Save</a>' +
   ' or ' +
-  '<a ng-click="disableEditor()">cancel</a>.' +
+  '<a ng-click="disableEditor()" class="btn btn-default btn-xs">cancel</a>.' +
   '</div>' +
   '</div>';
 
