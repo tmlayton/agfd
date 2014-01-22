@@ -10,9 +10,9 @@ h1, h2 {
 }
 
 h1 {
-	font-size: 7.5em;
+	font-size: 6em;
 
-	@media only screen and (max-width: $mobile-max) {
+	@media only screen and (max-width: $desktop-med) {
 		font-size: 4em;
 	}
 }

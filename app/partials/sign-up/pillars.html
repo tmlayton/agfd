@@ -2,10 +2,7 @@
 	<div class="container center">
 		<div class="box">
 			<h1>Pick Your Pillars</h1>
-			<p>Pillars are what you do. Pillars are what you value. Pillars are how you connect.</p>
-			<p><a href="http://player.vimeo.com/video/53564984?autoplay=1" title="Play A Great! First Date Video" class="btn btn-home btn-lg">Watch Video</a></p>
-
-			<h2>Which 4 are you?</h2>
+			<p class="p20">Pillars are what you do. Pillars are what you value. Pillars are how you connect. <a href="http://player.vimeo.com/video/53564984?autoplay=1" title="Play A Great! First Date Video" class="btn btn-home btn-sm">Watch Video</a></p>
 			<ul class="pillars">
 				<li ng-repeat="pillar in pillars" fast-click="on = !on" ng-class="{active: on}"><i class="fa fa-{{pillar.icon}}"></i>{{pillar.name}}</li>
 			</ul>

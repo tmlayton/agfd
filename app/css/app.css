@@ -67,27 +67,32 @@ a:hover, a:active, a:focus {
 }
 
 /* line 1, ../../stylesheets/partials/_layout.scss */
+.p20 {
+  margin-bottom: 20px;
+}
+
+/* line 5, ../../stylesheets/partials/_layout.scss */
 header {
   position: relative;
   z-index: 2;
 }
 
-/* line 6, ../../stylesheets/partials/_layout.scss */
+/* line 10, ../../stylesheets/partials/_layout.scss */
 .right {
   text-align: right;
 }
 
-/* line 10, ../../stylesheets/partials/_layout.scss */
+/* line 14, ../../stylesheets/partials/_layout.scss */
 .center {
   text-align: center;
 }
 
-/* line 14, ../../stylesheets/partials/_layout.scss */
+/* line 18, ../../stylesheets/partials/_layout.scss */
 .container {
   position: relative;
 }
 
-/* line 18, ../../stylesheets/partials/_layout.scss */
+/* line 22, ../../stylesheets/partials/_layout.scss */
 #push {
   z-index: 2;
   position: absolute;
@@ -110,7 +115,7 @@ header {
   -webkit-perspective: 1000;
   -webkit-backface-visibility: hidden;
 }
-/* line 30, ../../stylesheets/partials/_layout.scss */
+/* line 34, ../../stylesheets/partials/_layout.scss */
 #push.active {
   -webkit-transform: translate3d(-260px, 0, 0);
   -moz-transform: translate3d(-260px, 0, 0);
@@ -121,14 +126,14 @@ header {
   left: -260px \0/;
 }
 
-/* line 36, ../../stylesheets/partials/_layout.scss */
+/* line 40, ../../stylesheets/partials/_layout.scss */
 .ng-view {
   display: table;
   height: 100%;
   width: 100%;
 }
 
-/* line 42, ../../stylesheets/partials/_layout.scss */
+/* line 46, ../../stylesheets/partials/_layout.scss */
 .middle {
   display: table-cell;
   vertical-align: middle;
@@ -139,58 +144,58 @@ header {
   background-size: cover;
 }
 
-/* line 49, ../../stylesheets/partials/_layout.scss */
+/* line 53, ../../stylesheets/partials/_layout.scss */
 .box {
   padding: 7em 0;
 }
 @media only screen and (max-width: 767px) {
-  /* line 49, ../../stylesheets/partials/_layout.scss */
+  /* line 53, ../../stylesheets/partials/_layout.scss */
   .box {
     padding: 4em 0;
   }
 }
 
-/* line 57, ../../stylesheets/partials/_layout.scss */
+/* line 61, ../../stylesheets/partials/_layout.scss */
 .box-w-sample {
   padding: 8em 0 240px 0;
 }
 @media only screen and (max-width: 767px) {
-  /* line 57, ../../stylesheets/partials/_layout.scss */
+  /* line 61, ../../stylesheets/partials/_layout.scss */
   .box-w-sample {
     padding: 5em 0 240px 0;
   }
 }
 
-/* line 65, ../../stylesheets/partials/_layout.scss */
+/* line 69, ../../stylesheets/partials/_layout.scss */
 .inline {
   display: inline-block;
 }
 
-/* line 69, ../../stylesheets/partials/_layout.scss */
+/* line 73, ../../stylesheets/partials/_layout.scss */
 .profile-box {
   background-color: #fff;
   height: 100%;
 }
 
-/* line 74, ../../stylesheets/partials/_layout.scss */
+/* line 78, ../../stylesheets/partials/_layout.scss */
 .profile-information {
   margin-top: -113.5px;
   margin-bottom: 1em;
 }
 @media only screen and (max-width: 1024px) {
-  /* line 74, ../../stylesheets/partials/_layout.scss */
+  /* line 78, ../../stylesheets/partials/_layout.scss */
   .profile-information {
     margin-top: -75px;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 74, ../../stylesheets/partials/_layout.scss */
+  /* line 78, ../../stylesheets/partials/_layout.scss */
   .profile-information {
     margin-top: -50px;
   }
 }
 
-/* line 90, ../../stylesheets/partials/_layout.scss */
+/* line 94, ../../stylesheets/partials/_layout.scss */
 .tab-view {
   background-color: #eeeeee;
   color: #4f4f4f;
@@ -204,9 +209,9 @@ h1, h2 {
 
 /* line 12, ../../stylesheets/partials/_typography.scss */
 h1 {
-  font-size: 7.5em;
+  font-size: 6em;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1199px) {
   /* line 12, ../../stylesheets/partials/_typography.scss */
   h1 {
     font-size: 4em;
@@ -426,7 +431,7 @@ p {
 /* line 74, ../../stylesheets/partials/_buttons.scss */
 .pillars li, .selected-pillars li {
   display: inline-block;
-  padding: 10px;
+  padding: 7px;
   font-weight: 400;
   font-size: 0.8em;
   text-align: center;
@@ -484,19 +489,20 @@ p {
   height: 2.5em;
   width: 2.5em;
   line-height: 2.5em;
+  margin: 3px;
 }
 @media only screen and (max-width: 767px) {
   /* line 107, ../../stylesheets/partials/_buttons.scss */
   .selected-pillars {
     margin-bottom: 30px;
   }
-  /* line 127, ../../stylesheets/partials/_buttons.scss */
+  /* line 128, ../../stylesheets/partials/_buttons.scss */
   .selected-pillars li {
     font-size: 1em;
   }
 }
 
-/* line 133, ../../stylesheets/partials/_buttons.scss */
+/* line 134, ../../stylesheets/partials/_buttons.scss */
 .btn-facebook {
   background-color: #4c66a4 !important;
   border-color: #4c66a4 !important;
@@ -505,16 +511,16 @@ p {
   padding: .6em 1em;
   border-radius: .15em;
 }
-/* line 141, ../../stylesheets/partials/_buttons.scss */
+/* line 142, ../../stylesheets/partials/_buttons.scss */
 .btn-facebook:hover {
   opacity: 0.9;
 }
-/* line 145, ../../stylesheets/partials/_buttons.scss */
+/* line 146, ../../stylesheets/partials/_buttons.scss */
 .btn-facebook i {
   margin-right: .5em;
 }
 @media only screen and (max-width: 767px) {
-  /* line 133, ../../stylesheets/partials/_buttons.scss */
+  /* line 134, ../../stylesheets/partials/_buttons.scss */
   .btn-facebook {
     font-weight: 400;
     font-size: .9em;
@@ -524,12 +530,12 @@ p {
   }
 }
 
-/* line 158, ../../stylesheets/partials/_buttons.scss */
+/* line 159, ../../stylesheets/partials/_buttons.scss */
 .btn-file {
   position: relative;
   overflow: hidden;
 }
-/* line 162, ../../stylesheets/partials/_buttons.scss */
+/* line 163, ../../stylesheets/partials/_buttons.scss */
 .btn-file input[type=file] {
   position: absolute;
   top: 0;
@@ -545,16 +551,16 @@ p {
   display: block;
 }
 
-/* line 178, ../../stylesheets/partials/_buttons.scss */
+/* line 179, ../../stylesheets/partials/_buttons.scss */
 .btn-next, .btn-next-pillars {
   display: inline-block;
   margin: 4px;
 }
-/* line 181, ../../stylesheets/partials/_buttons.scss */
+/* line 182, ../../stylesheets/partials/_buttons.scss */
 .btn-next.touch i, .touch.btn-next-pillars i, .btn-next:focus i, .btn-next-pillars:focus i {
   background-color: rgba(255, 255, 255, 0.2);
 }
-/* line 185, ../../stylesheets/partials/_buttons.scss */
+/* line 186, ../../stylesheets/partials/_buttons.scss */
 .btn-next i, .btn-next-pillars i {
   height: 72px;
   width: 72px;
@@ -578,31 +584,25 @@ p {
   -o-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
 }
-@media only screen and (max-width: 1199px) {
-  /* line 178, ../../stylesheets/partials/_buttons.scss */
-  .btn-next, .btn-next-pillars {
-    display: block;
-  }
-}
 @media only screen and (min-width: 1025px) {
-  /* line 203, ../../stylesheets/partials/_buttons.scss */
+  /* line 200, ../../stylesheets/partials/_buttons.scss */
   .btn-next:hover i, .btn-next-pillars:hover i {
     background-color: rgba(255, 255, 255, 0.2);
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 178, ../../stylesheets/partials/_buttons.scss */
+  /* line 179, ../../stylesheets/partials/_buttons.scss */
   .btn-next, .btn-next-pillars {
     margin: 8px;
   }
 }
 
-/* line 213, ../../stylesheets/partials/_buttons.scss */
+/* line 210, ../../stylesheets/partials/_buttons.scss */
 .btn-next-pillars {
   vertical-align: top;
 }
 
-/* line 218, ../../stylesheets/partials/_buttons.scss */
+/* line 215, ../../stylesheets/partials/_buttons.scss */
 #btn-plus {
   font-size: 2.5em;
   font-weight: 100;
@@ -610,7 +610,7 @@ p {
   width: 227px;
 }
 @media only screen and (max-width: 1024px) {
-  /* line 218, ../../stylesheets/partials/_buttons.scss */
+  /* line 215, ../../stylesheets/partials/_buttons.scss */
   #btn-plus {
     line-height: 1em;
     font-size: 1.7em;
@@ -618,7 +618,7 @@ p {
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 218, ../../stylesheets/partials/_buttons.scss */
+  /* line 215, ../../stylesheets/partials/_buttons.scss */
   #btn-plus {
     font-size: 1em;
     width: 100px;
@@ -626,13 +626,13 @@ p {
   }
 }
 
-/* line 237, ../../stylesheets/partials/_buttons.scss */
+/* line 234, ../../stylesheets/partials/_buttons.scss */
 .btn-profile {
   border-color: #cccccc;
   color: #4f4f4f;
 }
 
-/* line 243, ../../stylesheets/partials/_buttons.scss */
+/* line 240, ../../stylesheets/partials/_buttons.scss */
 .btn-tab {
   color: #999;
   font-size: 1.5em;
@@ -641,13 +641,13 @@ p {
   text-align: center;
   cursor: pointer;
 }
-/* line 251, ../../stylesheets/partials/_buttons.scss */
+/* line 248, ../../stylesheets/partials/_buttons.scss */
 .btn-tab.selected {
   background-color: #eeeeee;
   color: #4f4f4f;
 }
 @media only screen and (max-width: 767px) {
-  /* line 243, ../../stylesheets/partials/_buttons.scss */
+  /* line 240, ../../stylesheets/partials/_buttons.scss */
   .btn-tab {
     font-size: .9em;
   }
@@ -1145,7 +1145,7 @@ p {
 .looking-for {
   text-align: center;
   padding: 0;
-  margin: 50px 0 0 0;
+  margin: 20px 0 0 0;
 }
 /* line 7, ../../stylesheets/partials/_forms.scss */
 .looking-for .select-style {
