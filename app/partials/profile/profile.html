@@ -27,30 +27,16 @@
 				</div>
 			</div>
 		</div>
-
 	</section>
 
 	<section class="profile-tabs">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-3 col-md-3 btn-tab" ng-repeat="tab in tabs" ng-class="{selected: $index == selectedIndex }" fast-click="itemClicked($index)">{{tab}}</div>
+				<div class="col-xs-3 col-md-3 btn-tab" ng-repeat="tab in tabs" ng-class="{selected: $index == selectedIndex }" fast-click="selectTab($index,tab.view);">{{tab.name}}</div>
 			</div>
 		</div>
 		<div class="tab-view">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4" ng-repeat="n in [] | range:3">
-						<div class="post" ng-repeat="post in posts | orderBy:'-date'" ng-if="$index%3==$parent.$index">
-							<img ng-src="img/users/{{post.avatar}}" class="post-avatar" />
-							<i ng-repeat="pillar in pillars | filter:{ name: post.pillar } | limitTo:1" class="fa fa-{{pillar.icon}} post-pillar"></i>
-							<span class="post-title">{{post.title}}</span>
-							<span class="post-date">{{post.date | date:'longDate'}}</span>
-							<span class="post-text">{{post.text}}</span>
-							<span ng-if="post.image != ''"><img ng-src="img/users/posts/{{post.image}}" class="post-image" /></span>
-						</div>
-					</div>
-				</div>
-			</div>
+			<div ng-init="tabView='feed.html'" ng-include="'partials/profile/modules/'+tabView"></div>
 		</div>
 	</section>
 
