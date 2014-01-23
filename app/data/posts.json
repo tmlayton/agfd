@@ -1,32 +1,98 @@
 [
 	{
-		"avatar"			: "profile-small-sample-1.jpg",
+		"avatar"	: "profile-small-sample-1.jpg",
 		"pillar"	: "Fitness",
-		"text"		:	"Had an awesome run on the Mesa Trail today!"
+		"text"		:	"Had an awesome run on the Mesa Trail today!",
+		"title"		: "Fitness",
+		"date"		: "2014-01-22T14:43:00",
+		"image"		: ""
 	},
 	{
-		"avatar"			: "profile-small-sample-2.jpg",
+		"avatar"	: "profile-small-sample-2.jpg",
 		"pillar"	: "Music",
-		"text"		: "Got tickets for Love and Light at Bluebird Theater, so excited!"
+		"text"		: "Got tickets for Love and Light at Bluebird Theater, so excited!",
+		"title"		: "Going to a concert",
+		"date"		: "2014-01-13T14:43:00",
+		"image"		: ""
 	},
 	{
-		"avatar"			: "profile-small-sample-3.jpg",
+		"avatar"	: "profile-small-sample-3.jpg",
 		"pillar"	: "Taste",
-		"text"		:	"Went to Williams & Graham last night, always a good time."
+		"text"		:	"Went to Williams & Graham last night, always a good time.",
+		"title"		: "Yummy Drinks",
+		"date"		: "2014-01-18T14:43:00",
+		"image"		: ""
 	},
 	{
-		"avatar"			: "profile-small-sample-1.jpg",
+		"avatar"	: "profile-small-sample-1.jpg",
 		"pillar"	: "Spirit",
-		"text"		:	"I'm going to be teaching the Sunday school kids this summer, wish me luck :)"
+		"text"		:	"I'm going to be teaching the Sunday school kids this summer, wish me luck :)",
+		"title"		: "Teaching Kids",
+		"date"		: "2014-01-08T14:43:00",
+		"image"		: ""
 	},
 	{
-		"avatar"			: "profile-small-sample-2.jpg",
+		"avatar"	: "profile-small-sample-2.jpg",
 		"pillar"	: "Family",
-		"text"		: "Off to our annually family BBQ."
+		"text"		: "Off to our annually family BBQ.",
+		"title"		: "Family",
+		"date"		: "2013-07-14T14:43:00",
+		"image"		: ""
 	},
 	{
-		"avatar"			: "profile-small-sample-3.jpg",
+		"avatar"	: "profile-small-sample-3.jpg",
 		"pillar"	: "Words",
-		"text"		:	"Just read Delivering Happiness and LOVED it!"
+		"text"		:	"Just read Delivering Happiness and LOVED it!",
+		"title"		: "Words",
+		"date"		: "2014-01-06T14:43:00",
+		"image"		: ""
+	},
+	{
+		"avatar"	: "profile-small-sample-1.jpg",
+		"pillar"	: "Adventure",
+		"text"		:	"Had an awesome time at Wise Mountain Inn, made friends with some goats!",
+		"title"		: "Travel",
+		"date"		: "2013-10-03T14:43:00",
+		"image"		: "goats.jpg"
+	},
+	{
+		"avatar"	: "profile-small-sample-2.jpg",
+		"pillar"	: "Adventure",
+		"text"		: "I'm planning a world trip this summer. I'm not sure where this picture is from but it sure is beautiful and I'm going.",
+		"title"		: "World Trip",
+		"date"		: "2014-01-23T14:43:00",
+		"image"		: "beach.jpg"
+	},
+	{
+		"avatar"	: "profile-small-sample-3.jpg",
+		"pillar"	: "Words",
+		"text"		:	"The Founders at Work is crazy. So cool to here how Apple got started.",
+		"title"		: "Words",
+		"date"		: "2014-01-04T14:43:00",
+		"image"		: "founders.jpg"
+	},
+	{
+		"avatar"	: "jennifer.jpg",
+		"pillar"	: "Taste",
+		"text"		:	"We got a french press as a gift a year ago and I just now used it. Its pretty awesome! The batch I made today about sent me to the moon. It may take me a while to get the portions correct.",
+		"title"		: "French Press",
+		"date"		: "2014-01-17T14:43:00",
+		"image"		: ""
+	},
+	{
+		"avatar"	: "jennifer.jpg",
+		"pillar"	: "Screen",
+		"text"		:	"I can't wait for new episodes to come on Netflix. Ron is my favorite.",
+		"title"		: "Parks & Recteation",
+		"date"		: "2013-10-12T14:43:00",
+		"image"		: ""
+	},
+	{
+		"avatar"	: "jennifer.jpg",
+		"pillar"	: "Words",
+		"text"		:	"This book is from a director at IDEO and all about innovation. So good!",
+		"title"		: "Ten Faces of Innovation",
+		"date"		: "2014-01-14T14:43:00",
+		"image"		: "innovation.jpg"
 	}
 ]
