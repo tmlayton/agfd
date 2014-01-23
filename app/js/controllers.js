@@ -24,10 +24,33 @@ agfdApp.controller('AgfdCtrl', function($scope, $http) {
 	};
 
 	//Tabs
-	$scope.tabs = ["Feed", "Activity", "Photos", "Settings"];
+	$scope.tabs = [
+		{
+			name : "Feed",
+			view : "feed.html"
+
+		},
+		{
+			name : "Activity",
+			view : "activity.html"
+
+		},
+		{
+			name : "Photos",
+			view : "photos.html"
+
+		},
+		{
+			name : "Settings",
+			view : "settings.html"
+
+		}
+	];
+
   $scope.selectedIndex = 0;
-  $scope.itemClicked = function ($index) {
+  $scope.selectTab = function ($index, view) {
     $scope.selectedIndex = $index;
+    $scope.tabView = view;
   };
 
   $scope.toggleClass = function($event, className) {
