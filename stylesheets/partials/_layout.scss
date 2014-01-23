@@ -94,4 +94,8 @@ header {
 .tab-view {
 	background-color: $tabs-background-color;
 	color: $base-profile-font-color;
+	padding: 1em 0;
+	@media only screen and (max-width: $mobile-max) {
+		padding: 0;
+	}
 }

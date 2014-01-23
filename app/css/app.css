@@ -199,6 +199,13 @@ header {
 .tab-view {
   background-color: #eeeeee;
   color: #4f4f4f;
+  padding: 1em 0;
+}
+@media only screen and (max-width: 767px) {
+  /* line 94, ../../stylesheets/partials/_layout.scss */
+  .tab-view {
+    padding: 0;
+  }
 }
 
 /* line 7, ../../stylesheets/partials/_typography.scss */
@@ -357,7 +364,7 @@ p {
 }
 
 /* line 32, ../../stylesheets/partials/_buttons.scss */
-.btn-round, .btn-profile, .photo-editor {
+.btn-round, .btn-profile, .post-pillar, .photo-editor {
   border: 1px solid white;
   border-radius: 50%;
   display: block;
@@ -627,7 +634,7 @@ p {
 }
 
 /* line 234, ../../stylesheets/partials/_buttons.scss */
-.btn-profile {
+.btn-profile, .post-pillar {
   border-color: #cccccc;
   color: #4f4f4f;
 }
@@ -1037,6 +1044,64 @@ p {
     font-size: .9em;
     padding: 1em 0;
   }
+}
+
+/* line 314, ../../stylesheets/partials/_modules.scss */
+.post {
+  background-color: white;
+  margin: 20px 0;
+  padding: 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 2px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 2px;
+  box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 2px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* line 323, ../../stylesheets/partials/_modules.scss */
+.post-avatar {
+  height: 52px;
+  width: 52px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  margin: 10px;
+  float: left;
+}
+
+/* line 331, ../../stylesheets/partials/_modules.scss */
+.post-title {
+  font-weight: 700;
+  display: block;
+  margin-top: 20px;
+}
+
+/* line 337, ../../stylesheets/partials/_modules.scss */
+.post-date {
+  display: block;
+  color: #999999;
+}
+
+/* line 342, ../../stylesheets/partials/_modules.scss */
+.post-pillar {
+  float: right;
+  margin: 10px;
+  font-size: 1.5em;
+}
+
+/* line 349, ../../stylesheets/partials/_modules.scss */
+.post-text {
+  display: block;
+  clear: both;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+/* line 356, ../../stylesheets/partials/_modules.scss */
+.post-image {
+  width: 100%;
 }
 
 /* line 1, ../../stylesheets/partials/_menu.scss */
