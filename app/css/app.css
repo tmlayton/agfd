@@ -1082,16 +1082,17 @@ p {
 .post-date {
   display: block;
   color: #999999;
+  line-height: 1em;
 }
 
-/* line 342, ../../stylesheets/partials/_modules.scss */
+/* line 343, ../../stylesheets/partials/_modules.scss */
 .post-pillar {
   float: right;
   margin: 10px;
   font-size: 1.5em;
 }
 
-/* line 349, ../../stylesheets/partials/_modules.scss */
+/* line 350, ../../stylesheets/partials/_modules.scss */
 .post-text {
   display: block;
   clear: both;
@@ -1099,7 +1100,7 @@ p {
   padding: 10px;
 }
 
-/* line 356, ../../stylesheets/partials/_modules.scss */
+/* line 357, ../../stylesheets/partials/_modules.scss */
 .post-image {
   width: 100%;
 }
