@@ -364,7 +364,7 @@ p {
 }
 
 /* line 32, ../../stylesheets/partials/_buttons.scss */
-.btn-round, .btn-profile, .post-pillar, .photo-editor {
+.btn-round, .btn-profile, .post-pillar, .feed-post-pillar, .activity-post-pillar, .photo-editor {
   border: 1px solid white;
   border-radius: 50%;
   display: block;
@@ -634,7 +634,7 @@ p {
 }
 
 /* line 234, ../../stylesheets/partials/_buttons.scss */
-.btn-profile, .post-pillar {
+.btn-profile, .post-pillar, .feed-post-pillar, .activity-post-pillar {
   border-color: #cccccc;
   color: #4f4f4f;
 }
@@ -1086,13 +1086,29 @@ p {
 }
 
 /* line 343, ../../stylesheets/partials/_modules.scss */
-.post-pillar {
-  float: right;
+.post-pillar, .feed-post-pillar, .activity-post-pillar {
   margin: 10px;
   font-size: 1.5em;
 }
 
-/* line 350, ../../stylesheets/partials/_modules.scss */
+/* line 349, ../../stylesheets/partials/_modules.scss */
+.feed-post-pillar {
+  float: right;
+}
+
+/* line 354, ../../stylesheets/partials/_modules.scss */
+.activity-post-pillar {
+  float: left;
+}
+
+/* line 359, ../../stylesheets/partials/_modules.scss */
+.activity-post-network {
+  float: right;
+  color: #cccccc;
+  font-size: 1.5em;
+}
+
+/* line 365, ../../stylesheets/partials/_modules.scss */
 .post-text {
   display: block;
   clear: both;
@@ -1100,7 +1116,7 @@ p {
   padding: 10px;
 }
 
-/* line 357, ../../stylesheets/partials/_modules.scss */
+/* line 372, ../../stylesheets/partials/_modules.scss */
 .post-image {
   width: 100%;
 }

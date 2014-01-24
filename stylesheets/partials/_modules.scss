@@ -342,8 +342,23 @@
 
 .post-pillar {
 	@extend .btn-profile;
-	float: right;
 	margin: $post-avatar-margin;
+	font-size: 1.5em;
+}
+
+.feed-post-pillar {
+	@extend .post-pillar;
+	float: right;
+}
+
+.activity-post-pillar {
+	@extend .post-pillar;
+	float: left;
+}
+
+.activity-post-network {
+	float: right;
+	color: $post-social-icon-color;
 	font-size: 1.5em;
 }
 
