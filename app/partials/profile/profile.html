@@ -16,7 +16,7 @@
 					<div class="my-name">{{user.firstname}} {{user.lastname}}</div>
 					<div class="my-location"><i class="fa fa-map-marker"></i> {{user.location}}</div>
 					<div class="my-points"><i class="fa fa-gift"></i> {{user.points}} points</div>
-					<div class="my-connected-networks"><i ng-repeat="network in user.connectednetworks" class="fa fa-{{network}}-square"> </i></div>
+					<div class="my-connected-networks"><i ng-repeat="network in user.connectednetworks" class="fa fa-{{network}}-square"></i></div>
 					<div class="my-pillars">
 						<ul>
 							<li ng-repeat="mypillar in user.pillars"><i ng-repeat="pillar in pillars | filter:{ name: mypillar }" class="fa fa-{{pillar.icon}} btn-profile"><span>{{($parent.$index+1)*8}}</span></i></li>
