@@ -1,13 +1,13 @@
 <div class="container">
 	<div class="row">
 		<div class="col-md-4" ng-repeat="n in [] | range:3">
-			<div class="post" ng-repeat="post in posts | orderBy:'-date'" ng-if="$index%3==$parent.$index">
+			<div class="post" ng-repeat="post in posts | filter:{ user: user.email } | orderBy:'-date'" ng-if="$index%3==$parent.$index">
 				<i ng-repeat="pillar in pillars | filter:{ name: post.pillar } | limitTo:1" class="fa fa-{{pillar.icon}} activity-post-pillar"></i>
 				<i ng-if="post.network != ''" class="fa fa-{{post.network}} activity-post-network"></i>
 				<span class="post-title">{{post.title}}</span>
 				<span class="post-date">{{post.date | date:'longDate'}}</span>
 				<span class="post-text">{{post.text}}</span>
-				<span ng-if="post.image != ''"><img ng-src="img/users/posts/{{post.image}}" class="post-image" /></span>
+				<span ng-if="post.image != null"><img ng-src="img/users/posts/{{post.image}}" class="post-image" /></span>
 			</div>
 		</div>
 	</div>
