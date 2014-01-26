@@ -5,8 +5,9 @@
 		"text"		:	"Had an awesome run on the Mesa Trail today!",
 		"title"		: "Fitness",
 		"date"		: "2014-01-22T14:43:00",
-		"image"		: "",
-		"network"	: "facebook"
+		"image"		: null,
+		"network"	: "facebook",
+		"user"		: null
 	},
 	{
 		"avatar"	: "profile-small-sample-2.jpg",
@@ -14,8 +15,9 @@
 		"text"		: "Got tickets for Love and Light at Bluebird Theater, so excited!",
 		"title"		: "Going to a concert",
 		"date"		: "2014-01-13T14:43:00",
-		"image"		: "",
-		"network"	: "twitter"
+		"image"		: null,
+		"network"	: "twitter",
+		"user"		: null
 	},
 	{
 		"avatar"	: "profile-small-sample-3.jpg",
@@ -23,8 +25,9 @@
 		"text"		:	"Went to Williams & Graham last night, always a good time.",
 		"title"		: "Yummy Drinks",
 		"date"		: "2014-01-18T14:43:00",
-		"image"		: "",
-		"network"	: "pinterest"
+		"image"		: null,
+		"network"	: "pinterest",
+		"user"		: null
 	},
 	{
 		"avatar"	: "profile-small-sample-1.jpg",
@@ -32,8 +35,9 @@
 		"text"		:	"I'm going to be teaching the Sunday school kids this summer, wish me luck :)",
 		"title"		: "Teaching Kids",
 		"date"		: "2014-01-08T14:43:00",
-		"image"		: "",
-		"network"	: "google-plus"
+		"image"		: null,
+		"network"	: "google-plus",
+		"user"		: null
 	},
 	{
 		"avatar"	: "profile-small-sample-2.jpg",
@@ -41,8 +45,9 @@
 		"text"		: "Off to our annually family BBQ.",
 		"title"		: "Family",
 		"date"		: "2013-07-14T14:43:00",
-		"image"		: "",
-		"network"	: "tumblr"
+		"image"		: null,
+		"network"	: "tumblr",
+		"user"		: null
 	},
 	{
 		"avatar"	: "profile-small-sample-3.jpg",
@@ -50,8 +55,9 @@
 		"text"		:	"Just read Delivering Happiness and LOVED it!",
 		"title"		: "Words",
 		"date"		: "2014-01-06T14:43:00",
-		"image"		: "",
-		"network"	: ""
+		"image"		: null,
+		"network"	: null,
+		"user"		: null
 	},
 	{
 		"avatar"	: "profile-small-sample-1.jpg",
@@ -60,7 +66,8 @@
 		"title"		: "Travel",
 		"date"		: "2013-10-03T14:43:00",
 		"image"		: "goats.jpg",
-		"network"	: ""
+		"network"	: null,
+		"user"		: null
 	},
 	{
 		"avatar"	: "profile-small-sample-2.jpg",
@@ -69,7 +76,8 @@
 		"title"		: "World Trip",
 		"date"		: "2014-01-23T14:43:00",
 		"image"		: "beach.jpg",
-		"network"	: ""
+		"network"	: null,
+		"user"		: null
 	},
 	{
 		"avatar"	: "profile-small-sample-3.jpg",
@@ -78,7 +86,8 @@
 		"title"		: "Words",
 		"date"		: "2014-01-04T14:43:00",
 		"image"		: "founders.jpg",
-		"network"	: ""
+		"network"	: null,
+		"user"		: null
 	},
 	{
 		"avatar"	: "jennifer.jpg",
@@ -86,8 +95,9 @@
 		"text"		:	"We got a french press as a gift a year ago and I just now used it. Its pretty awesome! The batch I made today about sent me to the moon. It may take me a while to get the portions correct.",
 		"title"		: "French Press",
 		"date"		: "2014-01-17T14:43:00",
-		"image"		: "",
-		"network"	: ""
+		"image"		: null,
+		"network"	: null,
+		"user"		: null
 	},
 	{
 		"avatar"	: "jennifer.jpg",
@@ -95,8 +105,9 @@
 		"text"		:	"I can't wait for new episodes to come on Netflix. Ron is my favorite.",
 		"title"		: "Parks & Recteation",
 		"date"		: "2013-10-12T14:43:00",
-		"image"		: "",
-		"network"	: ""
+		"image"		: null,
+		"network"	: null,
+		"user"		: null
 	},
 	{
 		"avatar"	: "jennifer.jpg",
@@ -105,6 +116,177 @@
 		"title"		: "Ten Faces of Innovation",
 		"date"		: "2014-01-14T14:43:00",
 		"image"		: "innovation.jpg",
-		"network"	: ""
+		"network"	: null,
+		"user"		: null
+	},
+	{
+		"avatar"	: "tim.jpg",
+		"pillar"	: "Taste",
+		"text"		:	"Because there is nothing better than grinding code all night, mowing down a couple cheesey gordita crunches and a baja blast moutain dew.",
+		"title"		: "Taco Bell",
+		"date"		: "2013-10-01T14:43:00",
+		"image"		: null,
+		"network"	: "facebook",
+		"user"		: "laytontm@gmail.com"
+	},
+	{
+		"avatar"	: "tim.jpg",
+		"pillar"	: "Words",
+		"text"		:	"Awesome book. This was one I couldn't put down.",
+		"title"		: "Delivering Happiness",
+		"date"		: "2013-10-11T14:43:00",
+		"image"		: "book.jpg",
+		"network"	: "twitter",
+		"user"		: "laytontm@gmail.com"
+	},
+	{
+		"avatar"	: "tim.jpg",
+		"pillar"	: "Music",
+		"text"		:	"Spotify is free on mobile and tablets now <3",
+		"title"		: "Music",
+		"date"		: "2013-10-21T14:43:00",
+		"image"		: null,
+		"network"	: "google-plus",
+		"user"		: "laytontm@gmail.com"
+	},
+	{
+		"avatar"	: "tim.jpg",
+		"pillar"	: "Adventure",
+		"text"		:	"We were up at 11K or so feet camping at the Wise Mountain Inn in the mountains outside Breckenridge, but could still check in on Foursquare.",
+		"title"		: "Camping",
+		"date"		: "2013-11-01T14:43:00",
+		"image"		: "camping.jpg",
+		"network"	: "tumblr",
+		"user"		: "laytontm@gmail.com"
+	},
+	{
+		"avatar"	: "tim.jpg",
+		"pillar"	: "Music",
+		"text"		:	"Went to the Jon Batiste concert at the Sheldon. Didn't know what to expect and it turned out to be pretty amazing.",
+		"title"		: "Music",
+		"date"		: "2013-11-02T14:43:00",
+		"image"		: null,
+		"network"	: "tumblr",
+		"user"		: "laytontm@gmail.com"
+	},
+	{
+		"avatar"	: "tim.jpg",
+		"pillar"	: "Adventure",
+		"text"		:	"Beautiful sunset over Denver.",
+		"title"		: "Adventure",
+		"date"		: "2013-11-11T14:43:00",
+		"image"		: "denver.jpg",
+		"network"	: "pinterest",
+		"user"		: "laytontm@gmail.com"
+	},
+	{
+		"avatar"	: "tim.jpg",
+		"pillar"	: "Taste",
+		"text"		:	"If you get a chance, go to Mangia Italiano in Saint Louis, very good.",
+		"title"		: "Taste",
+		"date"		: "2014-01-05T14:43:00",
+		"image"		: null,
+		"network"	: "facebook",
+		"user"		: "laytontm@gmail.com"
+	},
+	{
+		"avatar"	: "tim.jpg",
+		"pillar"	: "Taste",
+		"text"		:	"From-scratch margarita, homemade simple syrup, fresh squeezed limes and agave tequila.",
+		"title"		: "Taste",
+		"date"		: "2013-11-21T14:43:00",
+		"image"		: "drink.jpg",
+		"network"	: null,
+		"user"		: "laytontm@gmail.com"
+	},
+	{
+		"avatar"	: "tim.jpg",
+		"pillar"	: "Words",
+		"text"		:	"Reading Linchpin. Meh.",
+		"title"		: "Words",
+		"date"		: "2013-11-05T14:43:00",
+		"image"		: null,
+		"network"	: "twitter",
+		"user"		: "laytontm@gmail.com"
+	},
+	{
+		"avatar"	: "tim.jpg",
+		"pillar"	: "Taste",
+		"text"		:	"Had chicken & waffles for the first time, big fan.",
+		"title"		: "Chicken & Waffles",
+		"date"		: "2013-12-01T14:43:00",
+		"image"		: "food.jpg",
+		"network"	: null,
+		"user"		: "laytontm@gmail.com"
+	},
+	{
+		"avatar"	: "tim.jpg",
+		"pillar"	: "Words",
+		"text"		:	"Read a couple product management books, not too impressed.",
+		"title"		: "Words",
+		"date"		: "2013-11-04T14:43:00",
+		"image"		: null,
+		"network"	: "twitter",
+		"user"		: "laytontm@gmail.com"
+	},
+	{
+		"avatar"	: "tim.jpg",
+		"pillar"	: "Music",
+		"text"		:	"Passion Pit concert at the Peabody, just wish I didn't have to work tomorrow.",
+		"title"		: "Music",
+		"date"		: "2013-12-11T14:43:00",
+		"image"		: "passionpit.jpg",
+		"network"	: null,
+		"user"		: "laytontm@gmail.com"
+	},
+	{
+		"avatar"	: "tim.jpg",
+		"pillar"	: "Words",
+		"text"		:	"I read The River of Doubt, about TRs journey into the amazon in the early 1900s. Very tough guys.",
+		"title"		: "Words",
+		"date"		: "2013-12-21T14:43:00",
+		"image"		: null,
+		"network"	: null,
+		"user"		: "laytontm@gmail.com"
+	},
+	{
+		"avatar"	: "tim.jpg",
+		"pillar"	: "Taste",
+		"text"		:	"I think I could eat sushi everyday.",
+		"title"		: "Sushi",
+		"date"		: "2014-01-01T14:43:00",
+		"image"		: "sushi.jpg",
+		"network"	: null,
+		"user"		: "laytontm@gmail.com"
+	},
+	{
+		"avatar"	: "tim.jpg",
+		"pillar"	: "Music",
+		"text"		:	"Concerts in the Park series in Saint Louis, the Urge played downtown.",
+		"title"		: "Music",
+		"date"		: "2014-01-10T14:43:00",
+		"image"		: "urge.jpg",
+		"network"	: "facebook",
+		"user"		: "laytontm@gmail.com"
+	},
+	{
+		"avatar"	: "tim.jpg",
+		"pillar"	: "Adventure",
+		"text"		:	"Just hopped on a plane to San Francisco.",
+		"title"		: "Adventure",
+		"date"		: "2014-01-15T14:43:00",
+		"image"		: null,
+		"network"	: "twitter",
+		"user"		: "laytontm@gmail.com"
+	},
+	{
+		"avatar"	: "tim.jpg",
+		"pillar"	: "Music",
+		"text"		:	"Because there is nothing better than grinding code all night, mowing down a couple cheesey gordita crunches and a baja blast moutain dew.",
+		"title"		: "Taco Bell",
+		"date"		: "2014-01-22T14:43:00",
+		"image"		: null,
+		"network"	: "tumblr",
+		"user"		: "laytontm@gmail.com"
 	}
 ]
