@@ -364,7 +364,7 @@ p {
 }
 
 /* line 32, ../../stylesheets/partials/_buttons.scss */
-.btn-round, .btn-profile, .post-pillar, .feed-post-pillar, .activity-post-pillar, .photo-editor {
+.btn-round, .btn-profile, .post-pillar, .feed-post-pillar, .activity-post-pillar, .photo-post-pillar, .photo-editor {
   border: 1px solid white;
   border-radius: 50%;
   display: block;
@@ -634,7 +634,7 @@ p {
 }
 
 /* line 234, ../../stylesheets/partials/_buttons.scss */
-.btn-profile, .post-pillar, .feed-post-pillar, .activity-post-pillar {
+.btn-profile, .post-pillar, .feed-post-pillar, .activity-post-pillar, .photo-post-pillar {
   border-color: #cccccc;
   color: #4f4f4f;
 }
@@ -699,7 +699,7 @@ p {
 }
 
 /* line 33, ../../stylesheets/partials/_modules.scss */
-#gradient {
+#gradient, .photo-post-gradient {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(34, 34, 34, 0.4)), color-stop(100%, rgba(34, 34, 34, 0)));
   background-image: -webkit-linear-gradient(rgba(34, 34, 34, 0.4), rgba(34, 34, 34, 0));
   background-image: -moz-linear-gradient(rgba(34, 34, 34, 0.4), rgba(34, 34, 34, 0));
@@ -711,7 +711,7 @@ p {
 }
 @media only screen and (max-width: 767px) {
   /* line 33, ../../stylesheets/partials/_modules.scss */
-  #gradient {
+  #gradient, .photo-post-gradient {
     height: 100px;
   }
 }
@@ -1047,7 +1047,7 @@ p {
 }
 
 /* line 314, ../../stylesheets/partials/_modules.scss */
-.post {
+.post, .photo-post {
   background-color: white;
   margin: 20px 0;
   padding: 10px;
@@ -1086,7 +1086,7 @@ p {
 }
 
 /* line 343, ../../stylesheets/partials/_modules.scss */
-.post-pillar, .feed-post-pillar, .activity-post-pillar {
+.post-pillar, .feed-post-pillar, .activity-post-pillar, .photo-post-pillar {
   margin: 10px;
   font-size: 1.5em;
 }
@@ -1119,6 +1119,36 @@ p {
 /* line 372, ../../stylesheets/partials/_modules.scss */
 .post-image {
   width: 100%;
+}
+
+/* line 376, ../../stylesheets/partials/_modules.scss */
+.photo-post {
+  padding: 0;
+  position: relative;
+}
+
+/* line 382, ../../stylesheets/partials/_modules.scss */
+.photo-post-pillar {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  border-color: white;
+  margin: 0;
+}
+
+/* line 392, ../../stylesheets/partials/_modules.scss */
+.photo-post-network {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: white;
+  font-size: 1.5em;
+}
+
+/* line 400, ../../stylesheets/partials/_modules.scss */
+.photo-post-gradient {
+  height: 100px;
 }
 
 /* line 1, ../../stylesheets/partials/_menu.scss */

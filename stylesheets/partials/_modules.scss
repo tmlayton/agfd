@@ -372,3 +372,32 @@
 .post-image {
 	width: 100%;
 }
+
+.photo-post {
+	@extend .post;
+	padding: 0;
+	position: relative;
+}
+
+.photo-post-pillar {
+	@extend .post-pillar;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	color: $photo-post-color;
+	border-color: $photo-post-color;
+	margin: 0;
+}
+
+.photo-post-network {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	color: $photo-post-color;
+	font-size: 1.5em;
+}
+
+.photo-post-gradient {
+	@extend #gradient;
+	height: $mobile-gradient-height;
+}
