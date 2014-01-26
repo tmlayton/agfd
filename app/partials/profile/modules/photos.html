@@ -1,6 +1,12 @@
 <div class="container">
-	Photos
-	<div ng-repeat="n in [] | range:50">
-		&nbsp;
+	<div class="row">
+		<div class="col-md-4" ng-repeat="n in [] | range:3">
+			<div class="photo-post" ng-repeat="post in posts | filter:{ user: user.email } | filter:{ image: '!!' } | orderBy:'-date'" ng-if="$index%3==$parent.$index">
+				<div class="photo-post-gradient"></div>
+				<i ng-repeat="pillar in pillars | filter:{ name: post.pillar } | limitTo:1" class="fa fa-{{pillar.icon}} photo-post-pillar"></i>
+				<i ng-if="post.network != ''" class="fa fa-{{post.network}} photo-post-network"></i>
+				<span><img ng-src="img/users/posts/{{post.image}}" class="post-image" /></span>
+			</div>
+		</div>
 	</div>
 </div>
