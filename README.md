@@ -10,15 +10,16 @@ This is [agreatfirstdate.com](https://agreatfirstdate.com/)'s next product relea
   + Refactor classes to objects and extend objects for edge cases
 
 + Angularjs
-  + Write directives for A, INPUT, SELECT, and [type='file'] to use fastbutton and perform default action
-  + Refactor for experience bugs
-  + Prototype application data using json files
+  + ~~Write directives for A, INPUT, SELECT, and [type='file'] to use fastbutton and perform default action~~
+  + ~~Prototype application data using json files~~
   + Form validation and errors
+  + General experience bugs, single-page app jumpiness and asynchronous loading
+  + Build complex data sets in controller and pass to ngRepeat for simple filtering
 
 + [Build remaining front end](http://goo.gl/IeSVI6)
-  + Navigate through sign up
-  + Not crazy about 1024x768 view
+  + ~~Navigate through sign up~~
+  + Not crazy about sign up responsive views, mobile profile view
   + Design pages view (FAQ, Privacy, Blog, etc)
   + Add tour to profile page after sign up
   + Add growl-ish notification
-  + DRY up sign up partials
+  + ~~DRY up sign up partials~~
