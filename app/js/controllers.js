@@ -57,5 +57,4 @@ agfdApp.controller('AgfdCtrl', function($scope, $http) {
 		className = className || '';
 		angular.element($event.target).parent().toggleClass(className);
 	};
-
 });
