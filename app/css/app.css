@@ -364,7 +364,7 @@ p {
 }
 
 /* line 32, ../../stylesheets/partials/_buttons.scss */
-.btn-round, .btn-profile, .post-pillar, .feed-post-pillar, .activity-post-pillar, .photo-post-pillar, .photo-editor {
+.btn-round, .btn-profile, .post-pillar, .feed-post-pillar, .activity-post-pillar, .photo-post-pillar, .settings-icon, .photo-editor {
   border: 1px solid white;
   border-radius: 50%;
   display: block;
@@ -430,13 +430,13 @@ p {
 }
 
 /* line 69, ../../stylesheets/partials/_buttons.scss */
-.pillars, .selected-pillars {
+.pillars, .selected-pillars, .settings-pillars {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 /* line 74, ../../stylesheets/partials/_buttons.scss */
-.pillars li, .selected-pillars li {
+.pillars li, .selected-pillars li, .settings-pillars li {
   display: inline-block;
   padding: 7px;
   font-weight: 400;
@@ -446,18 +446,18 @@ p {
   cursor: pointer;
 }
 /* line 82, ../../stylesheets/partials/_buttons.scss */
-.pillars li.active i, .selected-pillars li.active i, .pillars li.active:hover i, .selected-pillars li.active:hover i {
+.pillars li.active i, .selected-pillars li.active i, .settings-pillars li.active i, .pillars li.active:hover i, .selected-pillars li.active:hover i, .settings-pillars li.active:hover i {
   background-color: #54ba53;
   border-color: #54ba53;
 }
 @media only screen and (min-width: 1025px) {
   /* line 88, ../../stylesheets/partials/_buttons.scss */
-  .pillars li:hover i, .selected-pillars li:hover i {
+  .pillars li:hover i, .selected-pillars li:hover i, .settings-pillars li:hover i {
     background-color: rgba(255, 255, 255, 0.2);
   }
 }
 /* line 93, ../../stylesheets/partials/_buttons.scss */
-.pillars li i, .selected-pillars li i {
+.pillars li i, .selected-pillars li i, .settings-pillars li i {
   border: 1px solid white;
   border-radius: 50%;
   display: block;
@@ -634,7 +634,7 @@ p {
 }
 
 /* line 234, ../../stylesheets/partials/_buttons.scss */
-.btn-profile, .post-pillar, .feed-post-pillar, .activity-post-pillar, .photo-post-pillar {
+.btn-profile, .post-pillar, .feed-post-pillar, .activity-post-pillar, .photo-post-pillar, .settings-icon {
   border-color: #cccccc;
   color: #4f4f4f;
 }
@@ -1047,7 +1047,7 @@ p {
 }
 
 /* line 314, ../../stylesheets/partials/_modules.scss */
-.post, .photo-post {
+.post, .photo-post, .settings-box {
   background-color: white;
   margin: 20px 0;
   padding: 10px;
@@ -1149,6 +1149,58 @@ p {
 /* line 400, ../../stylesheets/partials/_modules.scss */
 .photo-post-gradient {
   height: 100px;
+}
+
+/* line 405, ../../stylesheets/partials/_modules.scss */
+.settings-box {
+  padding: 20px;
+}
+/* line 409, ../../stylesheets/partials/_modules.scss */
+.settings-box h3 {
+  margin: .5em 0;
+}
+/* line 413, ../../stylesheets/partials/_modules.scss */
+.settings-box input {
+  font-weight: 300;
+}
+/* line 417, ../../stylesheets/partials/_modules.scss */
+.settings-box form {
+  margin: 2em;
+}
+@media only screen and (max-width: 767px) {
+  /* line 417, ../../stylesheets/partials/_modules.scss */
+  .settings-box form {
+    margin: 2em 0;
+  }
+}
+/* line 425, ../../stylesheets/partials/_modules.scss */
+.settings-box .to {
+  font-weight: 400;
+  font-size: 1em;
+}
+
+/* line 431, ../../stylesheets/partials/_modules.scss */
+.settings-icon {
+  font-size: 1.5em;
+  float: left;
+  margin-right: 10px;
+}
+
+/* line 438, ../../stylesheets/partials/_modules.scss */
+.settings-pillars {
+  text-align: center;
+}
+/* line 442, ../../stylesheets/partials/_modules.scss */
+.settings-pillars li {
+  font-size: .9em;
+}
+/* line 444, ../../stylesheets/partials/_modules.scss */
+.settings-pillars li i {
+  border-color: #ccc;
+}
+/* line 447, ../../stylesheets/partials/_modules.scss */
+.settings-pillars li.active i {
+  color: #fff;
 }
 
 /* line 1, ../../stylesheets/partials/_menu.scss */

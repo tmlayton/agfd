@@ -401,3 +401,51 @@
 	@extend #gradient;
 	height: $mobile-gradient-height;
 }
+
+.settings-box {
+	@extend .post;
+	padding: $settings-box-padding;
+
+	h3 {
+		margin: .5em 0;
+	}
+
+	input {
+		font-weight: $light;
+	}
+
+	form {
+		margin: 2em;
+
+		@media only screen and (max-width: $mobile-max) {
+			margin: 2em 0;
+		}
+	}
+
+	.to {
+		font-weight: $regular;
+		font-size: 1em;
+	}
+}
+
+.settings-icon {
+	@extend .btn-profile;
+	font-size: 1.5em;
+	float: left;
+	margin-right: 10px;
+}
+
+.settings-pillars {
+	@extend .pillars;
+	text-align: center;
+
+	li {
+		font-size: .9em;
+		i {
+			border-color: #ccc;
+		}
+		&.active i {
+			color: #fff;
+		}
+	}
+}
