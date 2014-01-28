@@ -22,8 +22,8 @@
 							<li ng-repeat="mypillar in user.pillars"><i ng-repeat="pillar in pillars | filter:{ name: mypillar }" class="fa fa-{{pillar.icon}} btn-profile"><span>{{($parent.$index+1)*8}}</span></i></li>
 						</ul>
 					</div>
-					<div class="about-me" click-to-edit="user.aboutme" fast-click="toggleClass($event, 'more')"></div>
-					<div class="about-you" click-to-edit="user.aboutyou" fast-click="toggleClass($event, 'more')"></div>
+					<div class="about-me" click-to-edit="user.aboutme" ng-click="toggleClass($event, 'more')"></div>
+					<div class="about-you" click-to-edit="user.aboutyou" ng-click="toggleClass($event, 'more')"></div>
 				</div>
 			</div>
 		</div>
@@ -32,7 +32,7 @@
 	<section class="profile-tabs">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-3 col-md-3 btn-tab" ng-repeat="tab in tabs" ng-class="{selected: $index == selectedIndex }" fast-click="selectTab($index,tab.view);">{{tab.name}}</div>
+				<div class="col-xs-3 col-md-3 btn-tab" ng-repeat="tab in tabs" ng-class="{selected: $index == selectedIndex }" ng-click="selectTab($index,tab.view);">{{tab.name}}</div>
 			</div>
 		</div>
 		<div class="tab-view">

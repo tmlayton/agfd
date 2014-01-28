@@ -4,6 +4,7 @@
 // Declare app level module which depends on filters, and services
 angular.module('agfdApp', [
   'ngRoute',
+  'ngTouch',
   'agfdApp.filters',
   'agfdApp.services',
   'agfdApp.directives',
