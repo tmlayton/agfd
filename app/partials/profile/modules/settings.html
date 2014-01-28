@@ -1,6 +1,145 @@
 <div class="container">
-	Settings
-	<div ng-repeat="n in [] | range:50">
-		&nbsp;
+	
+	<div class="settings-box">
+		<i class="fa fa-user settings-icon"></i>
+		<h3>Profile</h3>
+		<div class="row">
+			<form role="form">
+				<div class="col-md-6">
+					<div class="input-group input-group-lg form-group">
+					  <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+					  <input type="email" class="form-control" placeholder="Email" />
+					</div>
+					<div class="input-group input-group-lg form-group">
+					  <span class="input-group-addon"><i class="fa fa-font"></i></span>
+					  <input type="text" class="form-control" placeholder="First Name" />
+					</div>
+					<div class="input-group input-group-lg form-group">
+					  <span class="input-group-addon"><i class="fa fa-bold"></i></span>
+					  <input type="text" class="form-control" placeholder="Last Name" />
+					</div>
+					<div class="input-group input-group-lg form-group">
+					  <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+					  <input type="text" class="form-control" placeholder="Birthdate (mm/dd/yyyy)" />
+					</div>
+				</div>
+				<div class="col-md-6">
+					<select class="form-control form-group input-lg">
+					  <option>I am a...</option>
+					  <option>Woman</option>
+					  <option>Man</option>
+					</select>
+					<select class="form-control form-group input-lg">
+					  <option>Looking for a...</option>
+					  <option>Woman</option>
+					  <option>Man</option>
+					</select>
+					<div class="input-group input-group-lg form-group">
+					  <span class="input-group-addon"><i class="fa fa-map-marker"></i></span>
+					  <input type="text" class="form-control" placeholder="In or around" />
+					</div>
+					<div class="input-group input-group-lg form-group">
+						<input type="text" class="form-control" placeholder="age" /> 
+						<span class="input-group-addon to"> to </span>
+						<input type="text" class="form-control" placeholder="age" />
+					</div>
+				</div>
+				<div class="col-md-12">
+					<h3 align="center">Your Pillars</h3>
+					<ul class="settings-pillars">
+						<li ng-repeat="pillar in pillars" ng-click="on = !on" ng-class="{active: on}"><i class="fa fa-{{pillar.icon}}"></i>{{pillar.name}}</li>
+					</ul>
+				</div>
+			</form>
+		</div>
 	</div>
+
+	<div class="settings-box">
+		<i class="fa fa-lock settings-icon"></i>
+		<h3>Password</h3>
+		<div class="row">
+			<form role="form">
+				<div class="col-md-12">
+					<div class="input-group input-group-lg form-group">
+					  <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+					  <input type="password" class="form-control" placeholder="Current Password" />
+					</div>
+					<div class="input-group input-group-lg form-group">
+					  <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+					  <input type="password" class="form-control" placeholder="New Password" />
+					</div>
+					<div class="input-group input-group-lg form-group">
+					  <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+					  <input type="password" class="form-control" placeholder="New Password Confirmation" />
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	
+	<div class="settings-box">
+		<i class="fa fa-credit-card settings-icon"></i>
+		<h3>Billing</h3>
+		<div class="row">
+			<form role="form">
+				<div class="col-md-6">
+
+					<div class="input-group input-group-lg form-group">
+					  <span class="input-group-addon"><i class="fa fa-user"></i></span>
+					  <input type="text" class="form-control" placeholder="Name on Card" />
+					</div>
+					<div class="input-group input-group-lg form-group">
+					  <span class="input-group-addon"><i class="fa fa-home"></i></span>
+					  <input type="text" class="form-control" placeholder="Address" />
+					</div>
+					<div class="input-group input-group-lg form-group">
+					  <span class="input-group-addon"><i class="fa fa-home"></i></span>
+					  <input type="text" class="form-control" placeholder="Address 2" />
+					</div>
+					<div class="input-group input-group-lg form-group">
+					  <span class="input-group-addon"><i class="fa fa-building-o"></i></span>
+					  <input type="text" class="form-control" placeholder="City" />
+					</div>
+					
+					<select class="form-control form-group input-lg">
+					  <option>State</option>
+					  <option>CO</option>
+					</select>
+
+					<div class="input-group input-group-lg form-group">
+					  <span class="input-group-addon"><i class="fa fa-envelope-o"></i></span>
+					  <input type="text" class="form-control" placeholder="Postal Code" />
+					</div>
+					
+					<select class="form-control form-group input-lg">
+					  <option>Country</option>
+					  <option>United States</option>
+					</select>
+
+				</div>
+				<div class="col-md-6">
+
+					<div class="input-group input-group-lg form-group">
+					  <span class="input-group-addon"><i class="fa fa-credit-card"></i></span>
+					  <input type="text" class="form-control" placeholder="Credit Card Number" />
+					</div>
+					<div class="input-group input-group-lg form-group">
+					  <span class="input-group-addon"><i class="fa fa-calendar-o"></i></span>
+					  <input type="text" class="form-control" placeholder="Expiration Date (mm/yyyy)" />
+					</div>
+					<div class="input-group input-group-lg form-group">
+					  <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+					  <input type="text" class="form-control" placeholder="CVC Code" />
+					</div>
+					<div class="input-group input-group-lg form-group">
+					  <span class="input-group-addon"><i class="fa fa-tag"></i></span>
+					  <input type="text" class="form-control" placeholder="Discount Code" />
+					</div>
+
+
+				</div>
+			</form>
+		</div>
+	</div>
+
 </div>
