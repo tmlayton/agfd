@@ -17,6 +17,7 @@ This is [agreatfirstdate.com](https://agreatfirstdate.com/)'s next product relea
   + Build complex data sets in controller and pass to ngRepeat for simple filtering
   + Loading animations for profile tabs
   + Rebuild settings tab to have click-to-edit fields
+  + Links on touch not firing default action for href attr when ng-click is applied
 
 + [Build remaining front end](http://goo.gl/IeSVI6)
   + ~~Navigate through sign up~~
@@ -26,3 +27,4 @@ This is [agreatfirstdate.com](https://agreatfirstdate.com/)'s next product relea
   + Add growl-ish notification
   + ~~DRY up sign up partials~~
   + Menu view for logged in
+  + Include dark logo
