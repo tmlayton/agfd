@@ -28,3 +28,10 @@ This is [agreatfirstdate.com](https://agreatfirstdate.com/)'s next product relea
   + ~~DRY up sign up partials~~
   + Menu view for logged in
   + Include dark logo
+  + Log in
+  + how it works
+  + get started?
+  + blog
+  + about
+  + careers
+  + contact
