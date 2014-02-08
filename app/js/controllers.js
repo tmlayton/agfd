@@ -2,7 +2,7 @@
 
 var agfdApp = angular.module('agfdApp.controllers', []);
 
-agfdApp.controller('AgfdCtrl', function($scope, $http) {
+agfdApp.controller('AgfdCtrl', function($rootScope, $scope, $http, $location, $anchorScroll) {
 	$http.get('data/pillars.json').success(function(data) {
 		$scope.pillars = data;
 	});
@@ -15,6 +15,15 @@ agfdApp.controller('AgfdCtrl', function($scope, $http) {
 		$scope.users = data;
 	});
 
+	$rootScope.loggedIn = false;
+	$scope.logIn = function() {
+		$rootScope.loggedIn = true;
+	};
+	$scope.logOut = function() {
+		$rootScope.loggedIn = false;
+	};
+
+	$scope.open = false;
 	$scope.menuToggle = function() {
 		$scope.open = !($scope.open);
 	};
@@ -48,7 +57,7 @@ agfdApp.controller('AgfdCtrl', function($scope, $http) {
 	];
 
   $scope.selectedIndex = 0;
-  $scope.selectTab = function ($index, view) {
+  $rootScope.selectTab = function ($index, view) {
     $scope.selectedIndex = $index;
     $scope.tabView = view;
   };
@@ -57,4 +66,13 @@ agfdApp.controller('AgfdCtrl', function($scope, $http) {
 		className = className || '';
 		angular.element($event.target).parent().toggleClass(className);
 	};
+
+	$scope.$on("$locationChangeStart", function(event, next, current) { 
+		$scope.open = false;
+		$anchorScroll();
+	});
+
+	$scope.scrollTo = function(ypos) {
+     window.scrollTo(0,ypos);
+  };
 });
