@@ -1,16 +1,20 @@
 <a id="closeMenu" ng-click="menuToggle()"><i class="fa fa-times"></i></a>
 <a href="#">How It Works</a>
-<a href="#">Get Started</a>
-<a href="#">Sign Up</a>
-<a href="#">Log In</a>
+<a href="#" ng-hide="loggedIn">Take a Peek</a>
+<a href="#/" ng-hide="loggedIn">Sign Up</a>
+<a href="#/log-in" ng-hide="loggedIn">Log In</a>
+<a href="#/profile" ng-show="loggedIn">Profile</a>
+<a href="" ng-click="selectTab(0,tabs[0].view);menuToggle();scrollTo(850)" ng-show="loggedIn">Browse</a>
+<a href="" ng-click="selectTab(3,tabs[3].view);menuToggle();scrollTo(850)" ng-show="loggedIn">Settings</a>
+<a href="#/" ng-show="loggedIn">Log Out</a>
 <nav class="sub">
-	<a href="#">Blog</a>
-	<a href="#/faq" ng-click="menuToggle()">FAQ</a>
-	<a href="#">About</a>
-	<a href="#">Careers</a>
-	<a href="#">Contact</a>
-	<a href="#/privacy" ng-click="menuToggle()">Privacy</a>
-	<a href="#">Terms of Use</a>
+	<a href="#/blog">Blog</a>
+	<a href="#/faq">FAQ</a>
+	<a href="#/about">About</a>
+	<a href="#/careers">Careers</a>
+	<a href="#/contact">Contact</a>
+	<a href="#/privacy">Privacy</a>
+	<a href="#/terms">Terms of Use</a>
 </nav>
 <nav class="social">
 	<a href="https://twitter.com/agreatfirstdate" target="_blank" title="A Great! First Date Twitter"><i class="fa fa-twitter-square"></i></a>
