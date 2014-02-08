@@ -98,7 +98,7 @@ header {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: black;
+  background-color: white;
   -webkit-transition-property: all;
   -moz-transition-property: all;
   -o-transition-property: all;
@@ -267,51 +267,6 @@ p {
 /* line 50, ../../stylesheets/partials/_typography.scss */
 .p1 {
   margin-bottom: 8px;
-}
-
-/* line 54, ../../stylesheets/partials/_typography.scss */
-.pages {
-  text-align: left;
-  background: url(../img/background.jpg) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-/* line 59, ../../stylesheets/partials/_typography.scss */
-.pages h1, .pages h2 {
-  font-weight: 100;
-  margin: 1.5em 0;
-  line-height: 1em;
-}
-/* line 65, ../../stylesheets/partials/_typography.scss */
-.pages h1 {
-  font-size: 4em;
-  text-align: center;
-}
-/* line 70, ../../stylesheets/partials/_typography.scss */
-.pages h2 {
-  font-size: 3em;
-  text-align: left;
-}
-/* line 75, ../../stylesheets/partials/_typography.scss */
-.pages dt {
-  font-weight: 400;
-  font-size: 1.1em;
-  margin-bottom: 5px;
-}
-/* line 81, ../../stylesheets/partials/_typography.scss */
-.pages dd {
-  margin-left: 10px;
-  font-weight: 300;
-  font-size: 0.9em;
-  margin-bottom: 1em;
-}
-/* line 88, ../../stylesheets/partials/_typography.scss */
-.pages p {
-  font-size: 1em;
-  line-height: 1.5em;
-  text-align: left;
 }
 
 /* line 1, ../../stylesheets/partials/_buttons.scss */
@@ -533,7 +488,7 @@ p {
     font-size: .9em;
     padding: 1em .5em;
     border-radius: 4px;
-    width: 260px;
+    width: 90%;
   }
 }
 
@@ -1201,6 +1156,84 @@ p {
 /* line 447, ../../stylesheets/partials/_modules.scss */
 .settings-pillars li.active i {
   color: #fff;
+}
+
+/* line 453, ../../stylesheets/partials/_modules.scss */
+.white-box {
+  background-color: #fff;
+  min-height: 100%;
+  padding-bottom: 7em;
+}
+@media only screen and (max-width: 767px) {
+  /* line 453, ../../stylesheets/partials/_modules.scss */
+  .white-box {
+    padding-bottom: 4em;
+  }
+}
+
+/* line 463, ../../stylesheets/partials/_modules.scss */
+.pages {
+  text-align: left;
+  background: url(../img/users/tim-cover-image.jpg) no-repeat top center;
+  -webkit-background-size: 2560px auto;
+  -moz-background-size: 2560px auto;
+  -o-background-size: 2560px auto;
+  background-size: 2560px auto;
+  color: #777777;
+  padding: 200px 0 0 0;
+}
+@media only screen and (max-width: 767px) {
+  /* line 463, ../../stylesheets/partials/_modules.scss */
+  .pages {
+    padding-top: 100px;
+  }
+}
+/* line 474, ../../stylesheets/partials/_modules.scss */
+.pages h1, .pages h2 {
+  font-weight: 100;
+  margin: 1.5em 0;
+  line-height: 1em;
+}
+/* line 482, ../../stylesheets/partials/_modules.scss */
+.pages h1 {
+  font-size: 4em;
+  text-align: center;
+}
+@media only screen and (max-width: 767px) {
+  /* line 482, ../../stylesheets/partials/_modules.scss */
+  .pages h1 {
+    font-size: 2em;
+  }
+}
+/* line 491, ../../stylesheets/partials/_modules.scss */
+.pages h2 {
+  font-size: 3em;
+  text-align: left;
+}
+@media only screen and (max-width: 767px) {
+  /* line 491, ../../stylesheets/partials/_modules.scss */
+  .pages h2 {
+    font-size: 1.5em;
+  }
+}
+/* line 500, ../../stylesheets/partials/_modules.scss */
+.pages dt {
+  font-weight: 400;
+  font-size: 1.1em;
+  margin-bottom: 5px;
+}
+/* line 506, ../../stylesheets/partials/_modules.scss */
+.pages dd {
+  margin-left: 10px;
+  font-weight: 300;
+  font-size: 0.9em;
+  margin-bottom: 1em;
+}
+/* line 513, ../../stylesheets/partials/_modules.scss */
+.pages p {
+  font-size: 1em;
+  line-height: 1.5em;
+  text-align: left;
 }
 
 /* line 1, ../../stylesheets/partials/_menu.scss */
