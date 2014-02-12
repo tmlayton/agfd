@@ -8,6 +8,7 @@ This is [agreatfirstdate.com](https://agreatfirstdate.com/)'s next product relea
   + Use Compass wherever possible
   + Move hardcoded values to variables
   + Refactor classes to objects and extend objects for edge cases
+  + Refactor ontouch styling
 
 + Angularjs
   + ~~Write directives for A, INPUT, SELECT, and [type='file'] to use fastbutton and perform default action~~
