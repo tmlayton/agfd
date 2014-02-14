@@ -1,5 +1,4 @@
-<div class="profile-box" ng-init="user=users[0];logIn()">
-
+<div class="profile-box" ng-init="user=users[getUser()];logIn()">
 	<section class="cover-image-box">
 		<div class="cover-image" style="background-image:url('img/users/{{user.coverimage}}');"></div>
 		<div class="bottom-gradient"></div>
@@ -13,7 +12,7 @@
 					<button type="button" class="btn btn-default btn-lg" id="btn-plus">Say Hi</button>
 				</div>
 				<div class="col-xs-8 col-sm-9 col-md-9">
-					<div class="my-name">{{user.firstname}} {{user.lastname}}</div>
+					<div class="my-name">{{user.firstname}} <span ng-if="isMe(getUser())">{{user.lastname}}</span><span ng-if="!isMe(getUser())">{{user.lastname|abbr}}</span></div>
 					<div class="my-location"><i class="fa fa-map-marker"></i> {{user.location}}</div>
 					<div class="my-points"><i class="fa fa-gift"></i> {{user.points}} points</div>
 					<div class="my-connected-networks"><i ng-repeat="network in user.connectednetworks" class="fa fa-{{network}}-square"></i></div>
@@ -22,8 +21,14 @@
 							<li ng-repeat="mypillar in user.pillars"><i ng-repeat="pillar in pillars | filter:{ name: mypillar }" class="fa fa-{{pillar.icon}} btn-profile"><span>{{($parent.$index+1)*8}}</span></i></li>
 						</ul>
 					</div>
-					<div class="about-me" click-to-edit="user.aboutme" ng-click="toggleClass($event, 'more')"></div>
-					<div class="about-you" click-to-edit="user.aboutyou" ng-click="toggleClass($event, 'more')"></div>
+					<span ng-if="isMe(getUser())">
+						<div class="about-me" click-to-edit="user.aboutme" ng-click="toggleClass($event, 'more', true)"></div>
+						<div class="about-you" click-to-edit="user.aboutyou" ng-click="toggleClass($event, 'more', true)"></div>
+					</span>
+					<span ng-if="!isMe(getUser())">
+						<div class="about-me" ng-click="toggleClass($event, 'more')">"{{user.aboutme}}"</div>
+						<div class="about-you" ng-click="toggleClass($event, 'more')">"{{user.aboutyou}}"</div>
+					</span>
 				</div>
 			</div>
 		</div>
