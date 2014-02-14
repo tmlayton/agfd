@@ -326,6 +326,7 @@
 	@include border-radius(50%);
 	margin: $post-avatar-margin;
 	float: left;
+	cursor: pointer;
 }
 
 .post-title {
