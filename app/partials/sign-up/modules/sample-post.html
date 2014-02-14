@@ -1,5 +1,5 @@
-<div class="sample-post" ng-init="post=posts[random(posts.length)]">
+<div class="sample-post" ng-init="post=getRandomPost()">
 	<p><img ng-src="img/users/{{post.avatar}}" /><i ng-repeat="pillar in pillars | filter:{ name: post.pillar } | limitTo:1" class="fa fa-{{pillar.icon}}"></i></p>
-	<p class="text">"{{post.text}}"</p>
+	<p class="text">"{{post.text|truncate:90}}"</p>
 	<p class="what">What's this?</p>
 </div>
