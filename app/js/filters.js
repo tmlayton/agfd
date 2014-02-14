@@ -18,3 +18,9 @@ agfdApp.filter('range', function() {
     return input;
   };
 });
+
+agfdApp.filter('abbr', function () {
+	return function(input) {
+		return input.substr(0,1) + ".";
+  };
+});
