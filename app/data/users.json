@@ -1,7 +1,7 @@
 [
 	{
 		"avatar"							: "tim.jpg",
-		"coverimage"					:	"tim-cover-image.jpg",
+		"coverimage"					:	"tim-cover.jpg",
 		"firstname"						: "Tim",
 		"lastname"						: "Layton",
 		"email"								:	"laytontm@gmail.com",
@@ -17,7 +17,7 @@
 	},
 	{
 		"avatar"							: "jennifer.jpg",
-		"coverimage"					:	"jennifer-cover-image.jpg",
+		"coverimage"					:	"jennifer-cover.jpg",
 		"firstname"						: "Jennifer",
 		"lastname"						: "Doe",
 		"email"								:	"jennifer@agreatfirstdate.com",

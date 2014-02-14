@@ -1,6 +1,6 @@
 [
 	{
-		"avatar"	: "profile-small-sample-1.jpg",
+		"avatar"	: "natasha.jpg",
 		"pillar"	: "Fitness",
 		"text"		:	"Had an awesome run on the Mesa Trail today!",
 		"title"		: "Fitness",
@@ -10,7 +10,7 @@
 		"user"		: "natasha@agreatfirstdate.com"
 	},
 	{
-		"avatar"	: "profile-small-sample-2.jpg",
+		"avatar"	: "lawrin.jpg",
 		"pillar"	: "Music",
 		"text"		: "Got tickets for Love and Light at Bluebird Theater, so excited!",
 		"title"		: "Going to a concert",
@@ -20,7 +20,7 @@
 		"user"		: "lawrin@agreatfirstdate.com"
 	},
 	{
-		"avatar"	: "profile-small-sample-3.jpg",
+		"avatar"	: "nicole.jpg",
 		"pillar"	: "Taste",
 		"text"		:	"Went to Williams & Graham last night, always a good time.",
 		"title"		: "Yummy Drinks",
@@ -30,7 +30,7 @@
 		"user"		: "nicole@agreatfirstdate.com"
 	},
 	{
-		"avatar"	: "profile-small-sample-1.jpg",
+		"avatar"	: "natasha.jpg",
 		"pillar"	: "Spirit",
 		"text"		:	"I'm going to be teaching the Sunday school kids this summer, wish me luck :)",
 		"title"		: "Teaching Kids",
@@ -40,7 +40,7 @@
 		"user"		: "natasha@agreatfirstdate.com"
 	},
 	{
-		"avatar"	: "profile-small-sample-2.jpg",
+		"avatar"	: "lawrin.jpg",
 		"pillar"	: "Family",
 		"text"		: "Off to our annually family BBQ.",
 		"title"		: "Family",
@@ -50,7 +50,7 @@
 		"user"		: "lawrin@agreatfirstdate.com"
 	},
 	{
-		"avatar"	: "profile-small-sample-3.jpg",
+		"avatar"	: "nicole.jpg",
 		"pillar"	: "Words",
 		"text"		:	"Just read Delivering Happiness and LOVED it!",
 		"title"		: "Words",
@@ -60,7 +60,7 @@
 		"user"		: "nicole@agreatfirstdate.com"
 	},
 	{
-		"avatar"	: "profile-small-sample-1.jpg",
+		"avatar"	: "natasha.jpg",
 		"pillar"	: "Adventure",
 		"text"		:	"Had an awesome time at Wise Mountain Inn, made friends with some goats!",
 		"title"		: "Travel",
@@ -70,7 +70,7 @@
 		"user"		: "natasha@agreatfirstdate.com"
 	},
 	{
-		"avatar"	: "profile-small-sample-2.jpg",
+		"avatar"	: "lawrin.jpg",
 		"pillar"	: "Adventure",
 		"text"		: "I'm planning a world trip this summer. I'm not sure where this picture is from but it sure is beautiful and I'm going.",
 		"title"		: "World Trip",
@@ -80,7 +80,7 @@
 		"user"		: "lawrin@agreatfirstdate.com"
 	},
 	{
-		"avatar"	: "profile-small-sample-3.jpg",
+		"avatar"	: "nicole.jpg",
 		"pillar"	: "Words",
 		"text"		:	"The Founders at Work is crazy. So cool to here how Apple got started.",
 		"title"		: "Words",
