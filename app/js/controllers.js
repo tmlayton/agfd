@@ -62,9 +62,9 @@ agfdApp.controller('AgfdCtrl', function($rootScope, $scope, $http, $location, $a
     $scope.tabView = view;
   };
 
-  $scope.toggleClass = function($event, className) {
+  $scope.toggleClass = function($event, className, toParent) {
 		className = className || '';
-		angular.element($event.target).parent().toggleClass(className);
+		toParent ? angular.element($event.target).parent().toggleClass(className) : angular.element($event.target).toggleClass(className);
 	};
 
 	$scope.$on("$locationChangeStart", function(event, next, current) { 
@@ -75,4 +75,14 @@ agfdApp.controller('AgfdCtrl', function($rootScope, $scope, $http, $location, $a
 	$scope.scrollTo = function(ypos) {
      window.scrollTo(0,ypos);
   };
+
+  $scope.location = $location;
+  $scope.getUser = function () {
+  	return ((($location.search()).u) ? ($location.search()).u : 0);
+  };
+
+  $scope.isMe = function(uid) {
+  	var myID = 0; //scope variable or function to get your user ID;
+  	return (uid == myID);
+  }
 });
