@@ -78,5 +78,21 @@
 		"iama"								: "woman",
 		"lookingfor"					: "man",
 		"ages"								: [ "18","50" ]
+	},
+	{
+		"avatar"							: "rory.jpg",
+		"coverimage"					:	"rory-cover.jpg",
+		"firstname"						: "Rory",
+		"lastname"						: "O'Rourke",
+		"email"								:	"rory@agreatfirstdate.com",
+		"location"						: "Denver, CO",
+		"points"							: "1337",
+		"connectednetworks"		:	[ "facebook" ],
+		"pillars"							: [ "Fitness", "Taste", "Screen", "Words" ],
+		"aboutme"							:	"I like to experience all that life has to offer. Yes, picking only four pillars was hard! I am fairly tall and athletic. I grew up in Montana and I have been in Denver for the last 5 years.",
+		"aboutyou"						:	"I guess I'd like a girl with as diverse interests as I have. She should like to cook, keep her body in good shape and be willing to have plenty of quiet time, alone or together. I'm not particularly religious, but I do meditate regularly. Other than that, let's just figure it out. Chemistry and common interest are the most important things to me!",
+		"iama"								: "man",
+		"lookingfor"					: "woman",
+		"ages"								: [ "18","50" ]
 	}
 ]
