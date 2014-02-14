@@ -298,5 +298,35 @@
 		"image"		: "founders.jpg",
 		"network"	: null,
 		"user"		: "laytontm@gmail.com"
+	},
+	{
+		"avatar"	: "rory.jpg",
+		"pillar"	: "Fitness",
+		"text"		:	"Holy hard class. A bunch of poses I'd never done before. I did float from down dog directly in to crow, which was pretty cool!",
+		"title"		: "Vital Yoga",
+		"date"		: "2012-05-23T14:43:00",
+		"image"		: null,
+		"network"	: null,
+		"user"		: "rory@agreatfirstdate.com"
+	},
+	{
+		"avatar"	: "rory.jpg",
+		"pillar"	: "Screen",
+		"text"		:	"I watched The League...Pretty funny. Ruxin is obnoxious!",
+		"title"		: "Screen",
+		"date"		: "2012-05-23T14:43:00",
+		"image"		: null,
+		"network"	: null,
+		"user"		: "rory@agreatfirstdate.com"
+	},
+	{
+		"avatar"	: "rory.jpg",
+		"pillar"	: "Taste",
+		"text"		:	"We took a trip to Italy and drank a lot of wine.",
+		"title"		: "Taste",
+		"date"		: "2012-05-23T14:43:00",
+		"image"		: "wine.jpg",
+		"network"	: null,
+		"user"		: "rory@agreatfirstdate.com"
 	}
 ]
