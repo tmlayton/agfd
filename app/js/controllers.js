@@ -36,22 +36,26 @@ agfdApp.controller('AgfdCtrl', function($rootScope, $scope, $http, $location, $a
 	$scope.tabs = [
 		{
 			name : "Feed",
-			view : "feed.html"
+			view : "feed.html",
+			public : false 
 
 		},
 		{
 			name : "Activity",
-			view : "activity.html"
+			view : "activity.html",
+			public : true 
 
 		},
 		{
 			name : "Photos",
-			view : "photos.html"
+			view : "photos.html",
+			public : true 
 
 		},
 		{
 			name : "Settings",
-			view : "settings.html"
+			view : "settings.html",
+			public : false 
 
 		}
 	];
@@ -84,5 +88,13 @@ agfdApp.controller('AgfdCtrl', function($rootScope, $scope, $http, $location, $a
   $scope.isMe = function(uid) {
   	var myID = 0; //scope variable or function to get your user ID;
   	return (uid == myID);
-  }
+  };
+
+  $scope.goToProfile = function(email) {
+  	var uid = 0;
+  	angular.forEach($scope.users, function(user, key){
+		  if (user.email == email) uid = key;
+		});
+		$location.url('/profile?u='+uid);
+  };
 });
