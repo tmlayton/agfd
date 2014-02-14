@@ -76,10 +76,6 @@ agfdApp.controller('AgfdCtrl', function($rootScope, $scope, $http, $location, $a
 		$anchorScroll();
 	});
 
-	$scope.scrollTo = function(ypos) {
-     window.scrollTo(0,ypos);
-  };
-
   $scope.location = $location;
   $scope.getUser = function () {
   	return ((($location.search()).u) ? ($location.search()).u : 0);
@@ -90,7 +86,7 @@ agfdApp.controller('AgfdCtrl', function($rootScope, $scope, $http, $location, $a
   	return (uid == myID);
   };
 
-  $scope.goToProfile = function(email) {
+  $scope.setProfileView = function(email) {
   	var uid = 0;
   	angular.forEach($scope.users, function(user, key){
 		  if (user.email == email) uid = key;
