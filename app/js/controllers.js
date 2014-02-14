@@ -93,4 +93,12 @@ agfdApp.controller('AgfdCtrl', function($rootScope, $scope, $http, $location, $a
 		});
 		$location.url('/profile?u='+uid);
   };
+
+  $scope.getRandomPost = function() {
+  	var filteredPosts = new Array();
+  	angular.forEach($scope.posts, function(post, key){
+		  if (post.user != "laytontm@gmail.com") filteredPosts.push(post); //hardcoded until we collect pillars and gender interest
+		});
+		return filteredPosts[$scope.random(filteredPosts.length)];
+  };
 });
