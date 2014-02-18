@@ -101,4 +101,24 @@ agfdApp.controller('AgfdCtrl', function($rootScope, $scope, $http, $location, $a
 		});
 		return filteredPosts[$scope.random(filteredPosts.length)];
   };
+
+  $rootScope.postPillar = '';
+  $scope.addPost = function() {
+  	var date = new Date();
+  	var image = ($scope.postImage) ? 'denver.jpg' : null;
+    $scope.posts.push({
+    	"avatar"	: $scope.user.avatar,
+			"pillar"	: $scope.postPillar,
+			"text"		:	$scope.postText,
+			"title"		: ($scope.postTitle) ? $scope.postTitle : $scope.postPillar,
+			"date"		: date.toISOString(),
+			"image"		: image,
+			"network"	: null,
+			"user"		: $scope.user.email
+    });
+    $rootScope.postPillar = '';
+    $rootScope.postText = '';
+    $rootScope.postTitle = '';
+    $rootScope.postImage = '';
+  };
 });

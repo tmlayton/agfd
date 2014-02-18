@@ -1,6 +1,26 @@
 <div class="container">
 	<div class="row">
 		<div class="col-md-4" ng-repeat="n in [] | range:3">
+			<div class="post" ng-if="$first&&isMe(getUser())">
+				<form class="add-post" ng-submit="addPost()">
+					<div class="form-group">
+						<select class="form-control" ng-model="$root.postPillar">
+							<option value="">Select a pillar</option>
+							<option ng-repeat="myPillar in user.pillars" value="{{myPillar}}">{{myPillar}}</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" ng-model="$root.postTitle" placeholder="Title (optional)">
+					</div>
+					<div class="form-group">
+						<textarea class="form-control" ng-model="$root.postText" placeholder="What are you up to?" rows="3"></textarea>
+					</div>
+					<div class="form-group btn-file">
+						<button class="btn btn-default btn-block btn-lg"><i class="fa fa-picture-o"></i> Attach a photo</button><input type="file" ng-model="$root.postImage" />
+					</div>
+					<input class="btn btn-info btn-lg btn-block" type="submit" value="Post">
+				</form>
+			</div>
 			<div class="post" ng-repeat="post in posts | filter:{ user: user.email } | orderBy:'-date'" ng-if="$index%3==$parent.$index">
 				<i ng-repeat="pillar in pillars | filter:{ name: post.pillar } | limitTo:1" class="fa fa-{{pillar.icon}} activity-post-pillar"></i>
 				<i ng-if="post.network != ''" class="fa fa-{{post.network}} activity-post-network"></i>

@@ -1237,6 +1237,11 @@ p {
   text-align: left;
 }
 
+/* line 522, ../../stylesheets/partials/_modules.scss */
+.add-post {
+  margin: 10px;
+}
+
 /* line 1, ../../stylesheets/partials/_menu.scss */
 #menuRight {
   position: absolute;
