@@ -1,9 +1,0 @@
-$base-transition-property: all;
-$base-transition-duration: 200ms;
-$base-transition-timing-function: ease-in-out;
-
-@mixin transition($property: $base-transition-property, $duration: $base-transition-duration, $timing-function: $base-transition-timing-function) {
-	@include transition-property($property);
-	@include transition-duration($duration);
-	@include transition-timing-function($timing-function);
-}
